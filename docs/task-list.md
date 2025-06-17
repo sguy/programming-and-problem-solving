@@ -61,15 +61,14 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
 * **Goal:** Write the first 2-3 notebooks which will provide an introduction to the Jupyter notebook environment and the Python programming language.
 * **Tasks:**
     1. **Notebook 1**
-        * [ ] Create `notebooks/01-getting-started.ipynb`which covers the following:
-          * [ ] Working with Jupyter notebooks
-          * [ ] The Google Colab platform
-          * [ ] What is programming? (Conceptual introduction)
-          * [ ] Basic Markdown Syntax
-          * [ ] How to run Python code cells
-          * [ ] Introduction to "Tools for problem solving" (e.g., mental models, layers of abstraction) - brief overview
+        * [x] Create `notebooks/01-getting-started.ipynb`which covers the following:
+          * [x] Understanding Jupyter Notebooks and their cell-based structure (Markdown vs. Code cells).
+          * [x] Navigating and using the Google Colab interface (e.g., adding/deleting cells, using the Table of Contents, saving to Google Drive, managing AI assistant settings).
+          * [x] Writing, editing, and rendering basic Markdown (e.g., headings, lists).
+          * [x] Running Python code cells and observing their output.
     2. **Notebook 2**
         * [ ] Create `notebooks/02-first-steps-with-python.ipynb`which covers the following:
+          * [ ] What is programming? (Conceptual introduction)
           * [ ] Using the `print()` function for output
           * [ ] Variables
           * [ ] Introduction to Types
@@ -80,3 +79,4 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
         * [ ] Deeper dive into "Reading errors" and basic debugging strategies
         * [ ] Further exploration of "Tools for problem solving" with simple examples
         * [ ] Reinforce "What is programming?" with practical context
+        * [ ] Introduction to "Tools for problem solving" (e.g., mental models, layers of abstraction) - brief overview
