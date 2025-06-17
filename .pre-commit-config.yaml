@@ -1,0 +1,22 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+  - repo: https://github.com/psf/black
+    rev: 24.4.2 # Choose a version consistent with your project
+    hooks:
+      - id: black
+        language_version: python3.11 # Specify your project's Python version
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.2 # Choose a version consistent with your project
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix] # Auto-fix and ensure commit fails if fixes are made
+      - id: ruff-format # If you want Ruff to also handle formatting (can replace Black or work with it)
+        # If using Black primarily for formatting, you might comment out or remove ruff-format

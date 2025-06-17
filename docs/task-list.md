@@ -20,7 +20,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
         * [x] Configure Black for formatting (e.g., `pyproject.toml`).
         * [x] Ensure PEP-8 compliance is enforced by linters.
         * [x] Configure Mypy for static type checking (in `pyproject.toml`).
-        * [ ] Configure pre-commit hooks for Ruff and Black.
+        * [x] Configure pre-commit hooks for Ruff and Black.
     4. **Continuous Integration (GitHub Actions):**
         * [x] Create a basic GitHub Actions workflow for:
             * [x] Checking out code.
@@ -61,14 +61,22 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
 * **Goal:** Write the first 2-3 notebooks which will provide an introduction to the Jupyter notebook environment and the Python programming language.
 * **Tasks:**
     1. **Notebook 1**
-        * [ ] Create `notebook/01-getting-started.ipynb`which covers the following:
+        * [ ] Create `notebooks/01-getting-started.ipynb`which covers the following:
           * [ ] Working with Jupyter notebooks
           * [ ] The Google Colab platform
+          * [ ] What is programming? (Conceptual introduction)
           * [ ] Basic Markdown Syntax
           * [ ] How to run Python code cells
+          * [ ] Introduction to "Tools for problem solving" (e.g., mental models, layers of abstraction) - brief overview
     2. **Notebook 2**
-        * [ ] Create `notebook/02-first-steps-with-python.ipynb`which covers the following:
+        * [ ] Create `notebooks/02-first-steps-with-python.ipynb`which covers the following:
+          * [ ] Using the `print()` function for output
           * [ ] Variables
           * [ ] Introduction to Types
             * Strings (str)
             * Numbers - for the first lesson don't make a distinction between int and float
+          * [ ] Basic "Reading errors": understanding simple error messages
+    3. **Notebook 3 (or integrate into 1 & 2)**
+        * [ ] Deeper dive into "Reading errors" and basic debugging strategies
+        * [ ] Further exploration of "Tools for problem solving" with simple examples
+        * [ ] Reinforce "What is programming?" with practical context

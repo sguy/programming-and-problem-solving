@@ -15,7 +15,7 @@ students between 13-16 years old.
 
 2) Assume the students will run the Jupyter notebooks on Google's Colab service since it will provide a zero-installation platform.
 
-3) Programming should be presented as a versitile tool that can be used in many disciplines.  The explainations and examples presented in the course should all be very pragmatic and demonstrate how programming can help students to further their understanding in other subjects.  
+3) Programming should be presented as a versatile tool applicable across many disciplines. Explanations and examples should be pragmatic, demonstrating how programming aids understanding in subjects like mathematics (e.g., using iterations for better estimates), finance (e.g., understanding loan interest), science (e.g., simulating simple phenomena or visualizing data), or even language arts (e.g., basic text analysis).
 
 
 ## Technology Choices
@@ -31,17 +31,34 @@ students between 13-16 years old.
   * Each notebook should have many opportunities for students to experiment.
 
 2) The first 2-3 notebooks will cover
+  * Working with Jupyter and Colab
+  * Basic Markdown
+  * Python
+    * Variables
+    * Types - simplified to strings and numbers
+    * Using print()
+    * Reading errors: learning to understand common error messages and basic debugging strategies.
+  * What is programming?
+  * Tools for problem solving
+    * Mental models - compare to models of an atom with different levels of sophistication
+    * Layers of abstraction
 
 3) Additional notebooks will be based on extended case studies of specific challenges
   * These challenges should be engaging
   * New Python concepts and techniques should be introduced as needed
+    * functions
+    * data structures
+      * tuples
+      * lists
+      * dicts
+    * classes (why do we use the ".function()" syntax on some things)
   * New problem solving techniques should be introduced as needed
   * There should be open-ended discussion questions
   * There should be a 'going further' question that encourages students to continue digging deeper after the 'end' of the notebook.
 
 ## Project Background
 
-Research these books for background information:
+Research these books for background information.  These are only pointers,  **check for copyright status before using**.
 
 * [The Coder's Apprentice: Learning Programming with Python 3 (Version 1.1)](https://annas-archive.org/md5/8212681b58208f9d05dfc99192901350)
 * [Zero to Py : A Comprehensive Guide to Learning the Python Programming Language](https://annas-archive.org/md5/944741a690c5cfa1e67ba614981767ec)
@@ -50,4 +67,3 @@ Research these books for background information:
 * [Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages (Pragmatic Programmers)](https://annas-archive.org/md5/273f1bdd83328f3dc08de8b76324d71d)
 * [Python: Introduction To Python Programming: Beginner's Guide To Computer Programming And Machine Learning (Python Programming, Machine Learning, Programming for Beginners)](https://annas-archive.org/md5/34994d824c4a5143016649a3cff7b963)
 * [Learning Algorithms Through Programming and Puzzle Solving.](https://annas-archive.org/md5/ccf5c7cc60b885fecb510b84f52adcfb)
-
