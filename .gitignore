@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+**/*.swp
+**/*.pyc
+**/__pycache__/*
+paps-venv/**
+.coverage

@@ -1,0 +1,184 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "programming-and-problem-solving"
+version = "0.1.0"
+description = "Introduction to Programming and Problem Solving"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic-settings~=2.9",
+    "pandas~=2.3",
+    "numpy~=2.2",
+    "matplotlib~=3.10",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff~=0.5.0", # Example: Update to a more recent version
+    "black~=25.1",
+    "mypy~=1.16",
+    "pytest~=8.4",
+    "pytest-cov~=6.2",
+    "pre-commit~=3.7",
+]
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+# Set line length to be consistent with Black
+line-length = 100
+# Specify the Python version your project targets.
+# Adjust "py310" to your project's actual Python version (e.g., "py39", "py311").
+target-version = "py310"
+
+[tool.ruff.lint]
+# For a comprehensive list of rules and their meanings, see: https://docs.astral.sh/ruff/rules/
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "UP",  # pyupgrade (modernize code)
+    "I",   # isort (import sorting)
+    "D",   # pydocstyle (docstring conventions)
+    "N",   # pep8-naming (naming conventions)
+    "ANN", # flake8-annotations (type hint enforcement)
+    "B",   # flake8-bugbear (potential bugs and design problems)
+    "BLE", # flake8-blind-except (catches blind `except Exception`)
+    "C4",  # flake8-comprehensions (more Pythonic comprehensions)
+    "S",   # flake8-bandit (security linter)
+    "SIM", # flake8-simplify (simplification suggestions)
+    "ARG", # flake8-unused-arguments
+    "PT",  # flake8-pytest-style
+    "TID", # flake8-tidy-imports (enforce absolute imports, etc.)
+    "LOG", # flake8-logging-format
+    "PIE", # flake8-pie (various improvements)
+    "Q",   # flake8-quotes (string quote consistency)
+    "TRY", # tryceratops (exception handling best practices)
+    "RUF", # Ruff-specific rules
+]
+
+ignore = [
+    # Example: "D100", # Ignore missing docstrings in public modules (if desired)
+    # Example: "ANN101", # Ignore missing type hints for self (if transitioning)
+    "TRY003", # TRY003 Avoid specifying long messages outside the exception class
+]
+
+# Fixable rules will be automatically fixed when running `ruff --fix`
+fixable = ["ALL"]
+unfixable = []
+
+# Configure per-file ignores
+[tool.ruff.lint.per-file-ignores]
+# For test files, it's common to ignore:
+# - S101: Use of `assert` (tests are full of assertions, so this rule is noisy here).
+# - D: All pydocstyle rules (docstrings for test functions are often less formal or deemed
+#      less critical if the test function names are descriptive).
+"tests/*" = ["S101",
+             "D",
+             "ANN001",
+             "ANN002",
+             "ANN003",
+             "ANN201",
+             "ANN202",
+             "ARG001",
+             "PT004",
+             "PT012",
+             "TRY003"]
+
+# Configure pydocstyle for Google style docstrings, as per your style guide
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+# Configure isort for import ordering, as per your style guide
+[tool.ruff.lint.isort]
+# Assumes your local application modules are under a "paps" namespace,
+# based on the "paps/" directory in your task list. Adjust if needed.
+known-first-party = ["paps"]
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder",
+]
+force-sort-within-sections = true # Style guide: "Sort alphabetically"
+
+# Configure flake8-tidy-imports to enforce absolute imports
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all" # Style guide: "Always use absolute imports"
+
+# Configure flake8-annotations for type hint enforcement
+[tool.ruff.lint.flake8-annotations]
+mypy-init-return = true          # Allow __init__ to not have a return type hint
+allow-star-arg-any = false       # Require explicit types for *args, **kwargs (not just Any if ANN401 is active)
+suppress-dummy-args = true       # Don't require type hints for unused args like `_`
+
+# Optional: Ruff's own formatter configuration.
+# This helps if you use `ruff format` or if `ruff --fix` applies formatting changes.
+# It's configured to align with Black's defaults + your line length.
+[tool.ruff.format]
+quote-style = "double" # Default for Black
+indent-style = "space"
+skip-magic-trailing-comma = false # Black's default behavior
+line-ending = "lf" # Consistent line endings
+docstring-code-format = true # Format code examples in docstrings
+docstring-code-line-length = "dynamic" # Infer from context, respecting overall line length
+
+[tool.mypy]
+# For a full list of options, see: https://mypy.readthedocs.io/en/stable/config_file.html
+python_version = "3.10" # Must match ruff.target-version and your project's Python version
+
+# Strictness options - uncomment and adjust as your project matures
+disallow_untyped_defs = true      # Report errors for functions without annotations
+disallow_incomplete_defs = true   # Report errors for functions with some annotations but not all
+# disallow_untyped_calls = true   # Report errors for calling functions without annotations
+
+warn_return_any = true            # Warn about functions returning Any
+warn_unused_ignores = true        # Warn about unused # type: ignore comments
+no_implicit_optional = true       # Don't allow None to be implicitly part of a type
+
+ignore_missing_imports = true     # Suppress errors about imports not found (common for 3rd party libs without stubs)
+# If you have specific modules that are missing stubs and you don't want to ignore all:
+# [[tool.mypy.overrides]]
+# module = "some_missing_stub_module.*"
+# ignore_missing_imports = true
+
+# Exclude virtual environments and other non-project directories
+exclude = ["venv", "\\.venv", ".*/migrations/.*"] # Add other patterns as needed
+
+[tool.pytest.ini_options]
+# For a full list of options, see: https://docs.pytest.org/en/stable/reference/reference.html#configuration-options
+python_files = "test_*.py *_test.py tests_*.py" # Standard pytest discovery patterns
+python_classes = "Test* *" # Discover Test prefixed classes and all other classes
+python_functions = "test_*" # Discover test_ prefixed functions
+
+# Specify the directory where your tests are located
+testpaths = [
+    "tests",
+]
+
+# Tell pytest to add 'src' to the sys.path
+pythonpath = ["src"]
+
+# Add common command-line options here
+# -ra: show extra test summary information for all (p)assed, (f)ailed, (s)kipped, (x)failed, (X)passed
+# --strict-markers: ensure all @pytest.mark.NAME markers are registered
+# --cov=paps: enable code coverage reporting for the 'paps' package (requires pytest-cov)
+# --cov-report=term-missing: show missing lines in coverage report
+addopts = "-ra --strict-markers --cov=paps --cov-report=term-missing"
+
+# Register custom markers to avoid warnings (add your project-specific markers here)
+# markers = [
+#     "slow: marks tests as slow to run",
+#     "integration: marks integration tests",
+# ]
+
+# Optional: Configure logging for tests
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
