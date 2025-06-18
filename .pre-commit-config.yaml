@@ -12,7 +12,7 @@ repos:
     rev: 24.4.2 # Choose a version consistent with your project
     hooks:
       - id: black
-        language_version: python3.11 # Specify your project's Python version
+        language_version: python3.10 # Specify your project's Python version
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.4.2 # Choose a version consistent with your project
     hooks:
