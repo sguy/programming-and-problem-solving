@@ -14,7 +14,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
         * [x] Set up `.gitignore` for Python and common OS files.
         * [x] Establish project directory structure (e.g., `src/`, `tests/`, `docs/`, `notebooks/`).
     2. **Python Environment:**
-        * [x] Set up `venv` and create initial ``pyproject.toml` 
+        * [x] Set up `venv` and create initial ``pyproject.toml`
     3. **Development Tooling Configuration:**
         * [x] Configure Ruff for linting (e.g., `pyproject.toml` or `ruff.toml`).
         * [x] Configure Black for formatting (e.g., `pyproject.toml`).
@@ -53,7 +53,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
     - Computer Science
       - Sorting
       - Encoding & Encryption
-    - Finance  
+    - Finance
       - Compound interest
 
 ## Phase 3: Initial Notebooks
@@ -75,8 +75,18 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * Strings (str)
             * Numbers - for the first lesson don't make a distinction between int and float
           * [ ] Basic "Reading errors": understanding simple error messages
-    3. **Notebook 3 (or integrate into 1 & 2)**
-        * [ ] Deeper dive into "Reading errors" and basic debugging strategies
-        * [ ] Further exploration of "Tools for problem solving" with simple examples
-        * [ ] Reinforce "What is programming?" with practical context
-        * [ ] Introduction to "Tools for problem solving" (e.g., mental models, layers of abstraction) - brief overview
+    3. **Notebook 3**
+    4. **Notebook 4 - Prime Numbers**
+        * This notebook will work up to calculating a list of prime numbers.  Along the way, it will introduce some basic problem solving techniques and explain new programming tools that we will need to solve the problem.
+        * [ ] Introduce the problem of finding prime numbers.
+        * [ ] Discuss the problem solving technique of specifying the problem, understanding it, and breaking it into smaller pieces.
+        * [ ] Discussion - how would you break up this problem?  Use a click-to-reveal cell that shows how we will be solving the problem in this lesson.
+        * [ ] Basic arithmetic (+, -, *, /) on Numbers (int or float) in Python
+        * [ ] A closer look at divisibility - introducing the modulo operator (`%`).
+        * [ ] Logic: How to determine if a single number is prime? (Algorithm: e.g., check for divisors from 2 up to number-1).
+        * [ ] Python Tool: Introduction to Loops (e.g., `for` loops with `range()`).
+        * [ ] Python Tool: Declaring Python Functions (`def`, parameters, `return`).
+        * [ ] Building Block: The `is_prime(number)` function. (Implement the logic, using a loop to check divisors).
+        * [ ] What is a list?
+        * [ ] Putting It All Together: Generating a list of prime numbers. (Use a loop to iterate through a range, call `is_prime()`, and add primes to a list).
+        * [ ] Reflecting on the problem solving process - an important step
