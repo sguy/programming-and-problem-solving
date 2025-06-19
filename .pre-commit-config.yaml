@@ -18,5 +18,9 @@ repos:
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix] # Auto-fix and ensure commit fails if fixes are made
-      - id: ruff-format # If you want Ruff to also handle formatting (can replace Black or work with it)
-        # If using Black primarily for formatting, you might comment out or remove ruff-format
+
+# Hook to clear Jupyter Notebook output cells before committing
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.7.1 # Use a recent version of nbstripout
+    hooks:
+      - id: nbstripout
