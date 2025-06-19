@@ -56,17 +56,17 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
     - Finance
       - Compound interest
 
-## Phase 3: Initial Notebooks
+## Phase 3: Notebooks
 
-* **Goal:** Write the first 2-3 notebooks which will provide an introduction to the Jupyter notebook environment and the Python programming language.
+* **Goal:** Write notebooks which will provide an introduction to the Jupyter notebook environment, the Python programming language, and problem solving techniques.
 * **Tasks:**
-    1. **Notebook 1**
+    1. **Notebook 1 - Getting Started**
         * [x] Create `notebooks/01-getting-started.ipynb`which covers the following:
           * [x] Understanding Jupyter Notebooks and their cell-based structure (Markdown vs. Code cells).
           * [x] Navigating and using the Google Colab interface (e.g., adding/deleting cells, using the Table of Contents, saving to Google Drive, managing AI assistant settings).
           * [x] Writing, editing, and rendering basic Markdown (e.g., headings, lists).
           * [x] Running Python code cells and observing their output.
-    2. **Notebook 2**
+    2. **Notebook 2 - First Steps with Python**
         * [ ] Create `notebooks/02-first-steps-with-python.ipynb`which covers the following:
           * [ ] What is programming? (Conceptual introduction)
           * [ ] Using the `print()` function for output
@@ -75,18 +75,76 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * Strings (str)
             * Numbers - for the first lesson don't make a distinction between int and float
           * [ ] Basic "Reading errors": understanding simple error messages
-    3. **Notebook 3**
-    4. **Notebook 4 - Prime Numbers**
-        * This notebook will work up to calculating a list of prime numbers.  Along the way, it will introduce some basic problem solving techniques and explain new programming tools that we will need to solve the problem.
-        * [ ] Introduce the problem of finding prime numbers.
-        * [ ] Discuss the problem solving technique of specifying the problem, understanding it, and breaking it into smaller pieces.
-        * [ ] Discussion - how would you break up this problem?  Use a click-to-reveal cell that shows how we will be solving the problem in this lesson.
-        * [ ] Basic arithmetic (+, -, *, /) on Numbers (int or float) in Python
-        * [ ] A closer look at divisibility - introducing the modulo operator (`%`).
-        * [ ] Logic: How to determine if a single number is prime? (Algorithm: e.g., check for divisors from 2 up to number-1).
-        * [ ] Python Tool: Introduction to Loops (e.g., `for` loops with `range()`).
-        * [ ] Python Tool: Declaring Python Functions (`def`, parameters, `return`).
-        * [ ] Building Block: The `is_prime(number)` function. (Implement the logic, using a loop to check divisors).
-        * [ ] What is a list?
-        * [ ] Putting It All Together: Generating a list of prime numbers. (Use a loop to iterate through a range, call `is_prime()`, and add primes to a list).
-        * [ ] Reflecting on the problem solving process - an important step
+    3. **Notebook 3 - Shapes and Calculations**
+        * [ ] Create `notebooks/03-shapes-and-calculations.ipynb` (or similar name) which covers:
+            * [ ] Introduction: Why calculate perimeter, area, volume?
+            * [ ] Recap/Introduce Basic Arithmetic in Python (if not sufficiently covered in Notebook 2).
+            * [ ] Performing calculations with hardcoded values (e.g., `length = 5`, `area = length * width`).
+            * [ ] Highlight that `(` and `)` were used in the perimeter example to ensure that the `+` was applied before the `*`
+            * [ ] Introducing `input()`:
+                * [ ] Prompting the user for dimensions.
+                * [ ] Emphasizing string-to-number conversion (`int()`, `float()`).
+            * [ ] Introducing Functions:
+                * [ ] Why use functions? (DRY principle).
+                * [ ] Defining functions with parameters (e.g., `calculate_rectangle_area(length, width)`).
+                * [ ] Using `return` to get results from functions.
+                * [ ] Calling functions with user-provided input.
+            * [ ] Mini-Challenges: e.g., "Write a function to calculate the area of a triangle," or "Calculate the volume of a cube."
+    4. **Notebook 4 - Python's Decision Power & Organizing with Lists**
+        * [ ] Create `notebooks/04-decisions-and-lists.ipynb` (or similar name) which covers:
+            * [ ] Introduction: Making decisions and organizing data.
+            * [ ] Understanding Boolean values (`True`, `False`).
+            * [ ] Using Comparison Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`) to create Boolean expressions.
+            * [ ] Conditional Statements:
+                * [ ] `if` statements for conditional execution.
+                * [ ] `else` statements for alternative execution.
+                * [ ] `elif` statements for multiple conditions.
+            * [ ] Introduction to Lists:
+                * [ ] Creating empty lists and lists with initial items.
+                * [ ] Adding items to a list using `.append()`.
+                * [ ] Python Tool: New Syntax alert - calling methods (functions) on a value (object instance).  We don't want to dive into objects yet, but be aware that some values in Python have methods that can be called using the "object.method()" syntax.
+                * [ ] Getting the length of a list using `len()`.
+            * [ ] Mini-Challenges: e.g., "Movie Ticket Pricer" using conditionals, "My Favorite Things" using lists.
+    5. **Notebook 5 - Caesar Cipher**
+        * [ ] Create `notebooks/05-the-caesar-cipher.ipynb` which covers:
+          * [ ] Brief explaination of the Caesar Cipher and its history
+          * [ ] Statement of problem - we want a system that lets two partys exchange secret messages
+          * [ ] Let's Plan - how should we break up this problem?
+          * [ ] Learning more about strings
+            * [ ] string.upper()
+            * [ ] Deeper dive into how strings are represented (do not get into the complexity of unicode)
+              * [ ] Strings as lists of Characters
+              * [ ] Special characters / ignoring characters that are not in A-Z
+          * [ ] Encoding a character
+            * [ ] Changing characters to ints with ord()
+            * [ ] The modulo `%` operator - wrapping around fixed size lists.
+            * [ ] Your turn to code: the `encode_char()` function.
+          * [ ] Encoding a message
+            * [ ] What is a for loop?
+            * [ ] Your turn to code: the `encode_message()` function
+          * [ ] Decoding a message
+            * [ ] Your turn to code: the `decode_char()` function
+            * [ ] Stop and think: How are `encode_char()` and `decode_char()` different?
+              * [ ] Can they share implementation? DRY
+              * [ ] Tip: testing `a == decode_char(offset, encode_char(offset, a))`
+            * [ ] Your turn to code: the `decode_message()` function
+            * [ ] Stop and Think: is the relationship between `encode_message()` and `decode_message()` similar to the relationship between `encode_char()` and `decode_char()`?
+              * [ ] Can we reuse code?
+              * [ ] What about testing?
+    6. **Notebook 6 - Prime Numbers**
+        * [ ] Create `notebooks/06-prime-numbers.ipynb` which covers:
+          * This notebook will work up to calculating a list of prime numbers.  Along the way, it will introduce some basic problem solving techniques and explain new programming tools that we will need to solve the problem.
+          * [ ] Introduce the problem of finding prime numbers.
+          * [ ] Discuss the problem solving technique of specifying the problem, understanding it, and breaking it into smaller pieces.
+          * [ ] Discussion - how would you break up this problem?  Use a click-to-reveal cell that outlines how we will be solving the problem in this lesson.
+          * [ ] Reminder of basic arithmetic (+, -, *, /) on Numbers (int or float) in Python
+          * [ ] A closer look at divisibility - introducing the modulo operator (`%`).
+          * [ ] Booleans and Conditionals (if/else) - quick introduction
+          * [ ] Python Tool: Reminder about declaring Python Functions (`def`, parameters, `return`).
+          * [ ] The is_divisible function
+          * [ ] Logic: How to determine if a single number is prime? (Algorithm: e.g., check for divisors from 2 up to number-1).
+          * [ ] Python Tool: Introduction to Loops (e.g., `for` loops with `range()`).
+          * [ ] Building Block: The `is_prime(number)` function. (Implement the logic, using a loop to check divisors).
+          * [ ] What is a list?
+          * [ ] Putting It All Together: Generating a list of prime numbers. (Use a loop to iterate through a range, call `is_prime()`, and add primes to a list).
+          * [ ] Reflecting on the problem solving process - an important step
