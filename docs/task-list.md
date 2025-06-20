@@ -137,14 +137,14 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [ ] Introduce the problem of finding prime numbers.
           * [ ] Discuss the problem solving technique of specifying the problem, understanding it, and breaking it into smaller pieces.
           * [ ] Discussion - how would you break up this problem?  Use a click-to-reveal cell that outlines how we will be solving the problem in this lesson.
-          * [ ] Reminder of basic arithmetic (+, -, *, /) on Numbers (int or float) in Python
-          * [ ] A closer look at divisibility - introducing the modulo operator (`%`).
-          * [ ] Booleans and Conditionals (if/else) - quick introduction
-          * [ ] Python Tool: Reminder about declaring Python Functions (`def`, parameters, `return`).
-          * [ ] The is_divisible function
+          * [ ] Revise the modulo operator (`%`) - using it for divisibility instead of wrapping around a fixed size list.  How are these ideas related?
+          * [ ] Your turn to code: The is_divisible function
           * [ ] Logic: How to determine if a single number is prime? (Algorithm: e.g., check for divisors from 2 up to number-1).
-          * [ ] Python Tool: Introduction to Loops (e.g., `for` loops with `range()`).
+          * [ ] Python Tool: Reminder of how to use Loops (e.g., `for` loops with `range()`).
+          * [ ] Mini-challenge: print the multiples of 3 from 3 * 1 to 3 * 6.
+          * [ ] Tip: Remember range goes from 0 to n-1 inclusive.
           * [ ] Building Block: The `is_prime(number)` function. (Implement the logic, using a loop to check divisors).
-          * [ ] What is a list?
-          * [ ] Putting It All Together: Generating a list of prime numbers. (Use a loop to iterate through a range, call `is_prime()`, and add primes to a list).
-          * [ ] Reflecting on the problem solving process - an important step
+          * [ ] Revise lists.
+          * [ ] Mini-challenge: make a list of multiples of 3 from 3 * 1 to 3 * 6.
+          * [ ] Your turn to code: Putting It All Together: Generating a list of prime numbers. (Use a loop to iterate through a range, call `is_prime()`, and add primes to a list).
+          * [ ] Reflecting on the problem solving process - an important step.  How do you think?  What clicks with you?  Meta-cognition.
