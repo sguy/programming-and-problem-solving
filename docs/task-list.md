@@ -67,14 +67,16 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [x] Writing, editing, and rendering basic Markdown (e.g., headings, lists).
           * [x] Running Python code cells and observing their output.
     2. **Notebook 2 - First Steps with Python**
-        * [ ] Create `notebooks/02-first-steps-with-python.ipynb`which covers the following:
-          * [ ] What is programming? (Conceptual introduction)
-          * [ ] Using the `print()` function for output
-          * [ ] Variables
-          * [ ] Introduction to Types
-            * Strings (str)
-            * Numbers - for the first lesson don't make a distinction between int and float
-          * [ ] Basic "Reading errors": understanding simple error messages
+        * [x] Create `notebooks/02-first-steps-with-python.ipynb`which covers the following:
+          * [x] What is programming? (Conceptual introduction)
+          * [x] Comments
+          * [x] Using the `print()` function for output
+          * [x] Variables
+          * [x] Introduction to Types
+            * [x] Strings (str)
+            * [x] Numbers - for the first lesson don't make a distinction between int and float
+          * [x] Syntax Highlighting
+          * [x] Basic "Reading errors": understanding simple error messages
     3. **Notebook 3 - Shapes and Calculations**
         * [ ] Create `notebooks/03-shapes-and-calculations.ipynb` (or similar name) which covers:
             * [ ] Introduction: Why calculate perimeter, area, volume?
