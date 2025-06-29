@@ -78,11 +78,11 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [x] Syntax Highlighting
           * [x] Basic "Reading errors": understanding simple error messages
     3. **Notebook 3 - Shapes and Calculations**
-        * [ ] Create `notebooks/03-basic-calculations.ipynb` which covers:
-            * [ ] Introduction: Why calculate perimeter, area, volume?
-            * [ ] Basic Arithmetic in Python (`+`, `-`, `*`, `/`).
-            * [ ] Performing calculations with hardcoded values (e.g., `length = 5`, `area = length * width`).
-            * [ ] Highlight that `(` and `)` were used in the perimeter example to ensure that the `+` was applied before the `*`
+        * [x] Create `notebooks/03-basic-calculations.ipynb` which covers:
+            * [x] Introduction: Why calculate perimeter, area, volume?
+            * [x] Basic Arithmetic in Python (`+`, `-`, `*`, `/`).
+            * [x] Performing calculations with hardcoded values (e.g., `length = 5`, `area = length * width`).
+            * [x] Highlight that `(` and `)` were used in the perimeter example to ensure that the `+` was applied before the `*`
     4. **Notebook 4 - Interactive Programs**
         * [ ] Create `notebooks/04-interactive-programs.ipynb` which covers:
             * [ ] Introducing `input()` to get information from the user.

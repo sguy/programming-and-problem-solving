@@ -1,0 +1,37 @@
+<svg width="250" height="220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14">
+  <style>
+    .triangle-fill { fill: #E0F7FA; }
+    .right-triangle-fill { fill: #B2EBF2; }
+    .line { stroke: #006064; stroke-width: 2; }
+    .height-line { stroke: #D84315; stroke-width: 1.5; stroke-dasharray: 4,2; }
+    .label { fill: #37474F; text-anchor: middle; }
+    .s-label { fill: #006064; }
+    .h-label { fill: #D84315; }
+  </style>
+
+  <!-- Triangle points -->
+  <defs>
+    <path id="triangle-path" d="M 25 200 L 225 200 L 125 26.8 z" />
+  </defs>
+
+  <!-- Full triangle fill -->
+  <use href="#triangle-path" class="triangle-fill" />
+
+  <!-- Right triangle highlight -->
+  <path d="M 125 200 L 225 200 L 125 26.8 z" class="right-triangle-fill" />
+
+  <!-- Triangle outline -->
+  <use href="#triangle-path" class="line" fill="none" />
+
+  <!-- Height line -->
+  <line x1="125" y1="200" x2="125" y2="26.8" class="height-line"/>
+
+  <!-- Right angle symbol -->
+  <path d="M 125 200 L 135 200 L 135 190" stroke="black" fill="none" stroke-width="1"/>
+
+  <!-- Labels -->
+  <text x="175" y="125" class="label s-label" transform="rotate(60 175 125)">s</text>
+  <text x="75" y="125" class="label s-label" transform="rotate(-60 75 125)">s</text>
+  <text x="175" y="215" class="label s-label">s/2</text>
+  <text x="115" y="115" class="label h-label" text-anchor="end">h</text>
+</svg>

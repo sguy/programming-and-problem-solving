@@ -44,8 +44,30 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 
 * 💡 **Tip:** For helpful hints, shortcuts, or best practices.
   * _Example: "💡 **Tip:** You can use `Ctrl+Enter` (or `Cmd+Enter` on Mac) to run a code cell in Colab!"_
-* 🎯 **Mini-Challenge:** For small, focused coding exercises or tasks.
-  * _Example: "🎯 **Mini-Challenge:** Try changing the `message` variable to display your own name."_
+* 🎯 **Mini-Challenge:** For small, focused coding exercises or tasks. Mini-challenges should follow a consistent structure to guide the student effectively, as seen in `03-basic-calculations.ipynb`.
+  * **1. The Prompt:** A markdown cell that clearly states the problem.
+  * **2. Hints (Optional):** For more complex problems, provide a series of hints using collapsible `<details>` tags.
+      * **Important:** To ensure Markdown inside the hint renders correctly, add a blank line after the `<summary>` tag.
+      ```markdown
+      <details>
+        <summary>Click for Hint #1</summary>
+
+        Your **Markdown-formatted** hint goes here.
+      </details>
+      ```
+  * **3. Student Code Cell:** A code cell with starter code, comments, and a clear placeholder like `# YOUR CODE HERE`.
+  * **4. Solution Cell:** A separate markdown cell with a collapsible `<details>` block containing a fully-commented solution.
+      * The solution should print intermediate results where helpful.
+      * Each `print()` statement in the solution should be followed by a comment showing the expected output. For `input()`, it should show a sample interaction.
+      * _Example:_
+      ```python
+      # Solution code for a print statement
+      print("The area is:", area)
+      # Expected output: The area is: 50
+
+      # Solution code for an input statement
+      user_name = input("What is your name? ") # Sample interaction: What is your name? Ada
+      ```
 * 🚀 **Pro-Tip:** For more advanced tips or insights for curious students.
   * _Example: "🚀 **Pro-Tip:** Python also supports f-strings for even more flexible string formatting. We'll explore those later!"_
 * 🐍 **Python / New Concept:** When introducing a new Python command, programming concept, or key vocabulary.
@@ -104,6 +126,10 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 
 * **Formatting:** Use markdown formatting (headings, bold, italics, lists, etc.) to structure content and improve readability.
 * **Images/GIFs:** Use relevant images or GIFs to illustrate concepts or make the notebook more engaging, but ensure they are optimized for web and do not significantly increase loading times.
+* **Image Linking:** All images stored in the repository must be linked using the full GitHub raw content URL to ensure they render correctly on all platforms (e.g., nbviewer, GitHub).
+    * _Example:_ `!Description`
+* **Mathematical Formulas:** Use LaTeX for all mathematical formulas to visually distinguish them from Python code. This ensures they are rendered clearly and professionally.
+    * _Example:_ `$$Area = \frac{base \times height}{2}$$` instead of `Area = (base * height) / 2`.
 * **Conciseness:** Keep explanations clear and to the point.
 
 ## 7. General Best Practices
