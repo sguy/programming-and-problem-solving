@@ -1,0 +1,39 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <style>
+    .frame { fill: #D2B48C; stroke: #8B4513; stroke-width: 2; }
+    .hole { fill: white; stroke: #A9A9A9; stroke-width: 1; }
+    .dim-line { stroke: black; stroke-width: 1; marker-start: url(#arrow); marker-end: url(#arrow); }
+    .dim-text { text-anchor: middle; fill: #333; }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="black" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Frame (outer rectangle) -->
+  <rect x="50" y="50" width="300" height="90" class="frame"/>
+
+  <!-- Hole (inner rectangle) -->
+  <rect x="95" y="72.5" width="210" height="45" class="hole"/>
+
+  <!-- Dimension lines -->
+  <!-- Outer width -->
+  <line x1="50" y1="30" x2="350" y2="30" class="dim-line"/>
+  <text x="200" y="25" class="dim-text">20 ft</text>
+
+  <!-- Outer height -->
+  <line x1="370" y1="50" x2="370" y2="140" class="dim-line"/>
+  <text x="385" y="95" class="dim-text">6 ft</text>
+
+  <!-- Inner width -->
+  <line x1="95" y1="150" x2="305" y2="150" class="dim-line"/>
+  <text x="200" y="165" class="dim-text">14 ft</text>
+
+  <!-- Inner height -->
+  <line x1="80" y1="72.5" x2="80" y2="117.5" class="dim-line"/>
+  <text x="65" y="95" class="dim-text">3 ft</text>
+</svg>
