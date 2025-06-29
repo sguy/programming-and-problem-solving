@@ -78,22 +78,23 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [x] Syntax Highlighting
           * [x] Basic "Reading errors": understanding simple error messages
     3. **Notebook 3 - Shapes and Calculations**
-        * [ ] Create `notebooks/03-shapes-and-calculations.ipynb` (or similar name) which covers:
+        * [ ] Create `notebooks/03-basic-calculations.ipynb` which covers:
             * [ ] Introduction: Why calculate perimeter, area, volume?
-            * [ ] Recap/Introduce Basic Arithmetic in Python (if not sufficiently covered in Notebook 2).
+            * [ ] Basic Arithmetic in Python (`+`, `-`, `*`, `/`).
             * [ ] Performing calculations with hardcoded values (e.g., `length = 5`, `area = length * width`).
             * [ ] Highlight that `(` and `)` were used in the perimeter example to ensure that the `+` was applied before the `*`
-            * [ ] Introducing `input()`:
-                * [ ] Prompting the user for dimensions.
-                * [ ] Emphasizing string-to-number conversion (`int()`, `float()`).
-            * [ ] Introducing Functions:
-                * [ ] Why use functions? (DRY principle).
-                * [ ] Defining functions with parameters (e.g., `calculate_rectangle_area(length, width)`).
-                * [ ] Using `return` to get results from functions.
-                * [ ] Calling functions with user-provided input.
-            * [ ] Mini-Challenges: e.g., "Write a function to calculate the area of a triangle," or "Calculate the volume of a cube."
-    4. **Notebook 4 - Python's Decision Power & Organizing with Lists**
-        * [ ] Create `notebooks/04-decisions-and-lists.ipynb` (or similar name) which covers:
+    4. **Notebook 4 - Interactive Programs**
+        * [ ] Create `notebooks/04-interactive-programs.ipynb` which covers:
+            * [ ] Introducing `input()` to get information from the user.
+            * [ ] Emphasizing string-to-number conversion (`int()`, `float()`).
+    5. **Notebook 5 - Reusable Code with Functions**
+        * [ ] Create `notebooks/05-reusable-code-with-functions.ipynb` which covers:
+            * [ ] Why use functions? (DRY principle).
+            * [ ] Defining functions with parameters (e.g., `calculate_rectangle_area(length, width)`).
+            * [ ] Using `return` to get results from functions.
+            * [ ] Calling functions with user-provided input.
+    6. **Notebook 6 - Python's Decision Power & Organizing with Lists**
+        * [ ] Create `notebooks/06-decisions-and-lists.ipynb` (or similar name) which covers:
             * [ ] Introduction: Making decisions and organizing data.
             * [ ] Understanding Boolean values (`True`, `False`).
             * [ ] Using Comparison Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`) to create Boolean expressions.
@@ -107,8 +108,8 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
                 * [ ] Python Tool: New Syntax alert - calling methods (functions) on a value (object instance).  We don't want to dive into objects yet, but be aware that some values in Python have methods that can be called using the "object.method()" syntax.
                 * [ ] Getting the length of a list using `len()`.
             * [ ] Mini-Challenges: e.g., "Movie Ticket Pricer" using conditionals, "My Favorite Things" using lists.
-    5. **Notebook 5 - Caesar Cipher**
-        * [ ] Create `notebooks/05-the-caesar-cipher.ipynb` which covers:
+    7. **Notebook 7 - Caesar Cipher**
+        * [ ] Create `notebooks/07-the-caesar-cipher.ipynb` which covers:
           * [ ] Brief explaination of the Caesar Cipher and its history
           * [ ] Statement of problem - we want a system that lets two partys exchange secret messages
           * [ ] Let's Plan - how should we break up this problem?
@@ -133,8 +134,8 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [ ] Stop and Think: is the relationship between `encode_message()` and `decode_message()` similar to the relationship between `encode_char()` and `decode_char()`?
               * [ ] Can we reuse code?
               * [ ] What about testing?
-    6. **Notebook 6 - Prime Numbers**
-        * [ ] Create `notebooks/06-prime-numbers.ipynb` which covers:
+    8. **Notebook 8 - Prime Numbers**
+        * [ ] Create `notebooks/08-prime-numbers.ipynb` which covers:
           * This notebook will work up to calculating a list of prime numbers.  Along the way, it will introduce some basic problem solving techniques and explain new programming tools that we will need to solve the problem.
           * [ ] Introduce the problem of finding prime numbers.
           * [ ] Discuss the problem solving technique of specifying the problem, understanding it, and breaking it into smaller pieces.
