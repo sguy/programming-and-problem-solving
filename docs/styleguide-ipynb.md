@@ -40,33 +40,33 @@ This document outlines the best practices and conventions for creating iPython n
 
 ## 4. Section Icons and Decoration
 
-Use consistent visual cues (e.g., emojis or icons) to denote different types of information. This helps students quickly identify the purpose of a section.
+Use consistent visual cues (e.g., emojis or icons) to denote different types of information. This helps students quickly identify the purpose of a section. **To ensure these sections appear in the notebook's table of contents, they should be formatted as markdown headers (e.g., `##` or `###`). As a general guideline, use `##` for major new topics and `###` for sub-topics, tips, and challenges.**
 
-* 💡 **Tip:** For helpful hints, shortcuts, or best practices.
-  * _Example: "💡 **Tip:** You can use `Ctrl+Enter` (or `Cmd+Enter` on Mac) to run a code cell in Colab!"_
-* 🎯 **Mini-Challenge:** For small, focused coding exercises or tasks. Mini-challenges should follow a consistent structure to guide the student effectively, as seen in `03-basic-calculations.ipynb`.
+* `### 💡 Tip:` For helpful hints, shortcuts, or best practices.
+  * _Example: "`### 💡 Tip:` You can use `Ctrl+Enter` (or `Cmd+Enter` on Mac) to run a code cell in Colab!"_
+* `### 🎯 Mini-Challenge:` For small, focused coding exercises or tasks. Mini-challenges should follow a consistent structure to guide the student effectively, as seen in `03-basic-calculations.ipynb`.
   * To guide the student effectively, mini-challenges should follow a consistent **sequence of cells** without explicit numbering or labels like "Prompt" or "Solution".
-    1.  The challenge begins with a markdown cell containing the `🎯 **Mini-Challenge:**` heading and the problem description.
+    1.  The challenge begins with a markdown cell containing the `### 🎯 Mini-Challenge:` heading and the problem description.
     2.  This is followed by an optional markdown cell containing one or more collapsible `<details>` blocks for hints.
     3.  Next is the student's code cell, pre-populated with starter code and a `# YOUR CODE HERE` placeholder.
     4.  Finally, a markdown cell provides the solution within a collapsible `<details>` block (e.g., `<summary>Click to see the solution</summary>`).
-* 🚀 **Pro-Tip:** For more advanced tips or insights for curious students.
-  * _Example: "🚀 **Pro-Tip:** Python also supports f-strings for even more flexible string formatting. We'll explore those later!"_
-* 🐍 **Python / New Concept:** When introducing a new Python command, programming concept, or key vocabulary.
-  * _Example: "🐍 **New Concept: Variables** - Variables are like containers that store information."_
-* ⚠️ **Heads Up!:** For important distinctions, common pitfalls, or things students need to be particularly careful about.
-  * _Example: "⚠️ **Heads Up!** Python is case-sensitive, meaning `myVariable` and `myvariable` are different."_
-* 🤔 **Discussion Question:** To prompt thought and reflection. These can be open-ended.
-  * _Example: "🤔 **Discussion Question:** Can you think of other situations where using a loop would be helpful?"_
-* 🔗 **External Resources:** For links to relevant external websites, videos, or articles.
-  * _Example: "🔗 **External Resource:** For more about Python lists, check out the official Python documentation [link]."_
-* 📚 **Learning More / Dig Deeper:** To suggest further exploration or optional advanced topics.
-  * _Example: "📚 **Learning More:** If you're interested in game development with Python, you might want to explore the Pygame library."_
-* ✅ **Check Your Understanding:** For quick comprehension questions (e.g., multiple choice, fill-in-the-blank within a markdown cell).
+* `### 🚀 Pro-Tip:` For more advanced tips or insights for curious students.
+  * _Example: "`### 🚀 Pro-Tip:` Python also supports f-strings for even more flexible string formatting. We'll explore those later!"_
+* `## 🐍 New Concept:` When introducing a new Python command, programming concept, or key vocabulary.
+  * _Example: "`## 🐍 New Concept:` Variables - Variables are like containers that store information."_
+* `### ⚠️ Heads Up!:` For important distinctions, common pitfalls, or things students need to be particularly careful about.
+  * _Example: "`### ⚠️ Heads Up!:` Python is case-sensitive, meaning `myVariable` and `myvariable` are different."_
+* `### 🤔 Discussion Question:` To prompt thought and reflection. These can be open-ended.
+  * _Example: "`### 🤔 Discussion Question:` Can you think of other situations where using a loop would be helpful?"_
+* `### 🔗 External Resources:` For links to relevant external websites, videos, or articles.
+  * _Example: "`### 🔗 External Resources:` For more about Python lists, check out the official Python documentation [link]."_
+* `### 📚 Learning More / Dig Deeper:` To suggest further exploration or optional advanced topics.
+  * _Example: "`### 📚 Learning More:` If you're interested in game development with Python, you might want to explore the Pygame library."_
+* `### ✅ Check Your Understanding:` For quick comprehension questions (e.g., multiple choice, fill-in-the-blank within a markdown cell).
   * _Example of a multiple-choice question:_
 
         ```markdown
-        ✅ **Check Your Understanding:**
+        ### ✅ Check Your Understanding:
         Which of the following is a Python keyword used to define a variable that stores a whole number?
         a) `string`
         b) `float`
@@ -79,7 +79,7 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
   * _Example with a revealable answer (useful in Colab):_
 
         ```markdown
-        ✅ **Check Your Understanding:**
+        ### ✅ Check Your Understanding:
         What would `print(5 + 3)` display?
 
         <details>
@@ -88,7 +88,7 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
         </details>
         ```
 
-* 🎉 **Milestone / Well Done!:** To acknowledge progress and provide encouragement after completing a significant section or challenge.
+* `## 🎉 Milestone / Well Done!:` To acknowledge progress and provide encouragement after completing a significant section or challenge.
 
 **Usage:**
 
