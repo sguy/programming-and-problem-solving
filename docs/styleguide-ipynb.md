@@ -49,7 +49,7 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
     1.  The challenge begins with a markdown cell containing the `### 🎯 Mini-Challenge:` heading and the problem description.
     2.  This is followed by an optional markdown cell containing one or more collapsible `<details>` blocks for hints.
     3.  Next is the student's code cell, pre-populated with starter code and a `# YOUR CODE HERE` placeholder.
-    4.  Finally, a markdown cell provides the solution within a collapsible `<details>` block (e.g., `<summary>Click to see the solution</summary>`).
+    4.  Finally, a markdown cell provides the solution within a collapsible `<details>` block (e.g., `<summary>Click to see a possible solution</summary>`).
 * `### 🚀 Pro-Tip:` For more advanced tips or insights for curious students.
   * _Example: "`### 🚀 Pro-Tip:` Python also supports f-strings for even more flexible string formatting. We'll explore those later!"_
 * `## 🐍 New Concept:` When introducing a new Python command, programming concept, or key vocabulary.
