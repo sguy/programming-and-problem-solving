@@ -204,6 +204,7 @@ This style guide is a living document and may be updated as the project evolves.
 * **Test Thoroughly:** Run through the entire notebook as a student would to catch errors, typos, or confusing instructions.
 * **Save Regularly:** Encourage students to save their work (though Colab autosaves).
 * **Iterative Improvement:** Be open to feedback and iterate on notebook content to improve the learning experience.
+* **Meaningful Cell IDs:** Assign meaningful, human-readable IDs to each cell in the notebook's JSON source (e.g., `id: "case-study-intro"`). This practice makes version control diffs more informative and the raw notebook file easier to navigate.
 
 ---
 This style guide is a living document and may be updated as the project evolves.

@@ -84,15 +84,15 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [x] Performing calculations with hardcoded values (e.g., `length = 5`, `area = length * width`).
             * [x] Highlight that `(` and `)` were used in the perimeter example to ensure that the `+` was applied before the `*`
     4. **Notebook 4 - Interactive Programs**
-        * [ ] Create `notebooks/04-interactive-programs.ipynb` which covers:
-            * [ ] Introducing `input()` to get information from the user.
-            * [ ] Emphasizing string-to-number conversion (`int()`, `float()`).
+        * [x] Create `notebooks/04-interactive-programs.ipynb` which covers:
+            * [x] Introducing `input()` to get information from the user.
+            * [x] Emphasizing string-to-number conversion (`int()`, `float()`).
     5. **Notebook 5 - Reusable Code with Functions**
-        * [ ] Create `notebooks/05-reusable-code-with-functions.ipynb` which covers:
-            * [ ] Why use functions? (DRY principle).
-            * [ ] Defining functions with parameters (e.g., `calculate_rectangle_area(length, width)`).
-            * [ ] Using `return` to get results from functions.
-            * [ ] Calling functions with user-provided input.
+        * [x] Create `notebooks/05-reusable-code-with-functions.ipynb` which covers:
+            * [x] Why use functions? (DRY principle).
+            * [x] Defining functions with `def`, parameters, and `return`.
+            * [x] Exploring different function patterns (e.g., with/without parameters, with/without return values).
+            * [x] Case Study: Using function **composition** to solve a larger problem (surface area of a pyramid).
     6. **Notebook 6 - Python's Decision Power & Organizing with Lists**
         * [ ] Create `notebooks/06-decisions-and-lists.ipynb` (or similar name) which covers:
             * [ ] Introduction: Making decisions and organizing data.

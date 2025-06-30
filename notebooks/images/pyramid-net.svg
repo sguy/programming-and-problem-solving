@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .shape {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2;
+      }
+      .height-line {
+        stroke: blue;
+        stroke-width: 1.5;
+        stroke-dasharray: 4, 4;
+      }
+      .label {
+        font-family: sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        text-anchor: middle;
+        fill: red;
+      }
+    </style>
+  </defs>
+
+  <!-- White background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <g id="pyramid-net">
+    <!-- Base of the pyramid -->
+    <rect x="150" y="150" width="100" height="100" class="shape"/>
+
+    <!-- Triangular faces -->
+    <path d="M 150,150 L 200,30 L 250,150" class="shape"/> <!-- Top face -->
+    <path d="M 250,150 L 370,200 L 250,250" class="shape"/> <!-- Right face -->
+    <path d="M 250,250 L 200,370 L 150,250" class="shape"/> <!-- Bottom face -->
+    <path d="M 150,250 L 30,200 L 150,150" class="shape"/>  <!-- Left face -->
+
+    <!-- Dotted height lines (slant height) -->
+    <line x1="200" y1="150" x2="200" y2="30" class="height-line"/>  <!-- Top height -->
+    <line x1="250" y1="200" x2="370" y2="200" class="height-line"/> <!-- Right height -->
+    <line x1="200" y1="250" x2="200" y2="370" class="height-line"/> <!-- Bottom height -->
+    <line x1="150" y1="200" x2="30" y2="200" class="height-line"/>  <!-- Left height -->
+
+    <!-- Labels for base 'b' -->
+    <text x="200" y="162" class="label">b</text>
+    <text x="242" y="200" class="label" dominant-baseline="middle">b</text>
+    <text x="200" y="238" class="label" dominant-baseline="hanging">b</text>
+    <text x="158" y="200" class="label" dominant-baseline="middle">b</text>
+
+    <!-- Labels for height 'h' -->
+    <text x="208" y="90" class="label" text-anchor="start" dominant-baseline="middle">h</text>
+    <text x="310" y="192" class="label">h</text>
+    <text x="208" y="310" class="label" text-anchor="start" dominant-baseline="middle">h</text>
+    <text x="90" y="192" class="label">h</text>
+  </g>
+</svg>
