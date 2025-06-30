@@ -59,6 +59,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
 ## Phase 3: Notebooks
 
 * **Goal:** Write notebooks which will provide an introduction to the Jupyter notebook environment, the Python programming language, and problem solving techniques.
+* **Note:** A notebook will only be added to the `table-of-contents.ipynb` after its corresponding "Publish to TOC" task has been manually checked off (`[x]`). This ensures only completed and reviewed notebooks are visible to students.
 * **Tasks:**
     1. **Notebook 1 - Getting Started**
         * [x] Create `notebooks/01-getting-started.ipynb`which covers the following:
@@ -66,6 +67,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [x] Navigating and using the Google Colab interface (e.g., adding/deleting cells, using the Table of Contents, saving to Google Drive, managing AI assistant settings).
           * [x] Writing, editing, and rendering basic Markdown (e.g., headings, lists).
           * [x] Running Python code cells and observing their output.
+        * [x] Publish to TOC
     2. **Notebook 2 - First Steps with Python**
         * [x] Create `notebooks/02-first-steps-with-python.ipynb`which covers the following:
           * [x] What is programming? (Conceptual introduction)
@@ -77,39 +79,45 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [x] Numbers - for the first lesson don't make a distinction between int and float
           * [x] Syntax Highlighting
           * [x] Basic "Reading errors": understanding simple error messages
+        * [x] Publish to TOC
     3. **Notebook 3 - Shapes and Calculations**
         * [x] Create `notebooks/03-basic-calculations.ipynb` which covers:
             * [x] Introduction: Why calculate perimeter, area, volume?
             * [x] Basic Arithmetic in Python (`+`, `-`, `*`, `/`).
             * [x] Performing calculations with hardcoded values (e.g., `length = 5`, `area = length * width`).
             * [x] Highlight that `(` and `)` were used in the perimeter example to ensure that the `+` was applied before the `*`
+        * [x] Publish to TOC
     4. **Notebook 4 - Interactive Programs**
         * [x] Create `notebooks/04-interactive-programs.ipynb` which covers:
             * [x] Introducing `input()` to get information from the user.
             * [x] Emphasizing string-to-number conversion (`int()`, `float()`).
+        * [x] Publish to TOC
     5. **Notebook 5 - Reusable Code with Functions**
         * [x] Create `notebooks/05-reusable-code-with-functions.ipynb` which covers:
             * [x] Why use functions? (DRY principle).
             * [x] Defining functions with `def`, parameters, and `return`.
             * [x] Exploring different function patterns (e.g., with/without parameters, with/without return values).
             * [x] Case Study: Using function **composition** to solve a larger problem (surface area of a pyramid).
-    6. **Notebook 6 - Python's Decision Power & Organizing with Lists**
-        * [ ] Create `notebooks/06-decisions-and-lists.ipynb` (or similar name) which covers:
-            * [ ] Introduction: Making decisions and organizing data.
+        * [x] Publish to TOC
+    6. **Notebook 6 - Python's Decision Power**
+        * [ ] Create `notebooks/06-decisions.ipynb` which covers:
+            * [ ] Introduction: Making decisions.
             * [ ] Understanding Boolean values (`True`, `False`).
             * [ ] Using Comparison Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`) to create Boolean expressions.
-            * [ ] Conditional Statements:
-                * [ ] `if` statements for conditional execution.
-                * [ ] `else` statements for alternative execution.
-                * [ ] `elif` statements for multiple conditions.
-            * [ ] Introduction to Lists:
-                * [ ] Creating empty lists and lists with initial items.
-                * [ ] Adding items to a list using `.append()`.
-                * [ ] Python Tool: New Syntax alert - calling methods (functions) on a value (object instance).  We don't want to dive into objects yet, but be aware that some values in Python have methods that can be called using the "object.method()" syntax.
-                * [ ] Getting the length of a list using `len()`.
-            * [ ] Mini-Challenges: e.g., "Movie Ticket Pricer" using conditionals, "My Favorite Things" using lists.
-    7. **Notebook 7 - Caesar Cipher**
-        * [ ] Create `notebooks/07-the-caesar-cipher.ipynb` which covers:
+            * [ ] Conditional Statements: `if`, `else`, `elif`.
+            * [ ] Mini-Challenge: e.g., "Movie Ticket Pricer" using conditionals.
+        * [x] Publish to TOC
+    7. **Notebook 7 - Organizing with Lists**
+        * [ ] Create `notebooks/07-lists.ipynb` which covers:
+            * [ ] Introduction to Lists for organizing information.
+            * [ ] Creating empty lists and lists with initial items.
+            * [ ] Adding items to a list using `.append()`.
+            * [ ] Python Tool: New Syntax alert - calling methods on objects (`list.append()`).
+            * [ ] Getting the length of a list using `len()`.
+            * [ ] Mini-Challenge: e.g., "My Favorite Things" using lists.
+        * [ ] Publish to TOC
+    8. **Notebook 8 - Caesar Cipher**
+        * [ ] Create `notebooks/08-the-caesar-cipher.ipynb` which covers:
           * [ ] Brief explaination of the Caesar Cipher and its history
           * [ ] Statement of problem - we want a system that lets two partys exchange secret messages
           * [ ] Let's Plan - how should we break up this problem?
@@ -134,8 +142,9 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [ ] Stop and Think: is the relationship between `encode_message()` and `decode_message()` similar to the relationship between `encode_char()` and `decode_char()`?
               * [ ] Can we reuse code?
               * [ ] What about testing?
-    8. **Notebook 8 - Prime Numbers**
-        * [ ] Create `notebooks/08-prime-numbers.ipynb` which covers:
+        * [ ] Publish to TOC
+    9. **Notebook 9 - Prime Numbers**
+        * [ ] Create `notebooks/09-prime-numbers.ipynb` which covers:
           * This notebook will work up to calculating a list of prime numbers.  Along the way, it will introduce some basic problem solving techniques and explain new programming tools that we will need to solve the problem.
           * [ ] Introduce the problem of finding prime numbers.
           * [ ] Discuss the problem solving technique of specifying the problem, understanding it, and breaking it into smaller pieces.
@@ -151,3 +160,4 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [ ] Mini-challenge: make a list of multiples of 3 from 3 * 1 to 3 * 6.
           * [ ] Your turn to code: Putting It All Together: Generating a list of prime numbers. (Use a loop to iterate through a range, call `is_prime()`, and add primes to a list).
           * [ ] Reflecting on the problem solving process - an important step.  How do you think?  What clicks with you?  Meta-cognition.
+        * [ ] Publish to TOC
