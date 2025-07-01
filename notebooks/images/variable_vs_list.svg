@@ -12,35 +12,35 @@
 
     <!-- Left Side: Simple Variable -->
     <g transform="translate(150, 150)">
-        <text x="0" y="-65" class="label">name</text>
+        <text x="0" y="-65" class="label">item1</text>
         <rect x="-100" y="-50" width="200" height="100" class="box" rx="5"/>
-        <text x="0" y="5" class="value">"Ada"</text>
+        <text x="0" y="5" class="value">"grapes"</text>
     </g>
 
     <!-- Right Side: List Variable -->
     <g transform="translate(550, 150)">
-        <text x="0" y="-65" class="label">friends</text>
+        <text x="0" y="-65" class="label">shopping_list</text>
         <rect x="-220" y="-50" width="440" height="100" class="container"/>
 
         <!-- Item 0 -->
         <g transform="translate(-140, 0)">
             <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/>
-            <text x="0" y="5" class="value">"Alice"</text>
-            <text x="0" y="60" class="index">0</text>
+            <text x="0" y="-5" class="index">[0]</text>
+            <text x="0" y="25" class="value">"grapes"</text>
         </g>
 
         <!-- Item 1 -->
         <g transform="translate(0, 0)">
             <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/>
-            <text x="0" y="5" class="value">"Bob"</text>
-            <text x="0" y="60" class="index">1</text>
+            <text x="0" y="-5" class="index">[1]</text>
+            <text x="0" y="25" class="value">"apples"</text>
         </g>
 
         <!-- Item 2 -->
         <g transform="translate(140, 0)">
             <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/>
-            <text x="0" y="5" class="value">"Charlie"</text>
-            <text x="0" y="60" class="index">2</text>
+            <text x="0" y="-5" class="index">[2]</text>
+            <text x="0" y="25" class="value">"oranges"</text>
         </g>
     </g>
 </svg>

@@ -24,10 +24,14 @@
         <text x="0" y="-65" class="label">Before: groceries</text>
         <rect x="-150" y="-50" width="300" height="100" class="container"/>
         <g transform="translate(-70, 0)">
-            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/><text x="0" y="5" class="value">"milk"</text><text x="0" y="60" class="index">0</text>
+            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/>
+            <text x="0" y="-5" class="index">[0]</text>
+            <text x="0" y="25" class="value">"milk"</text>
         </g>
         <g transform="translate(70, 0)">
-            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/><text x="0" y="5" class="value">"eggs"</text><text x="0" y="60" class="index">1</text>
+            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/>
+            <text x="0" y="-5" class="index">[1]</text>
+            <text x="0" y="25" class="value">"eggs"</text>
         </g>
     </g>
 
@@ -39,13 +43,19 @@
         <text x="0" y="-65" class="label">After: groceries</text>
         <rect x="-220" y="-50" width="440" height="100" class="container"/>
         <g transform="translate(-140, 0)">
-            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/><text x="0" y="5" class="value">"milk"</text><text x="0" y="60" class="index">0</text>
+            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/>
+            <text x="0" y="-5" class="index">[0]</text>
+            <text x="0" y="25" class="value">"milk"</text>
         </g>
         <g transform="translate(0, 0)">
-            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/><text x="0" y="5" class="value">"eggs"</text><text x="0" y="60" class="index">1</text>
+            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/>
+            <text x="0" y="-5" class="index">[1]</text>
+            <text x="0" y="25" class="value">"eggs"</text>
         </g>
         <g transform="translate(140, 0)">
-            <rect x="-60" y="-40" width="120" height="80" class="new-box" rx="5"/><text x="0" y="5" class="value">"bread"</text><text x="0" y="60" class="index">2</text>
+            <rect x="-60" y="-40" width="120" height="80" class="new-box" rx="5"/>
+            <text x="0" y="-5" class="index">[2]</text>
+            <text x="0" y="25" class="value">"bread"</text>
         </g>
     </g>
 </svg>

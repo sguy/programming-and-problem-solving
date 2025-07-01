@@ -111,7 +111,7 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 * **Images/GIFs:** Use relevant images or GIFs to illustrate concepts or make the notebook more engaging, but ensure they are optimized for web and do not significantly increase loading times.
 * **Image Linking:** All images stored in the repository must be linked using the full GitHub raw content URL to ensure they render correctly on all platforms (e.g., nbviewer, GitHub).
   * The URL must point to the `refs/heads/main` branch and include the full path from the repository root (e.g., `notebooks/images/your-image.png`).
-  * _Example:_ `!A descriptive caption for the image.`
+  * _Example:_ `![A diagram showing a single variable box labeled](https://raw.githubusercontent.com/sguy/programming-and-problem-solving/refs/heads/main/notebooks/images/variable_vs_list.svg)`
 * **Mathematical Formulas:** Use LaTeX for all mathematical formulas to visually distinguish them from Python code. This ensures they are rendered clearly and professionally.
   * _Example:_ `$$Area = \frac{base \times height}{2}$$` instead of `Area = (base * height) / 2`.
 * **Conciseness:** Keep explanations clear and to the point.
@@ -197,7 +197,7 @@ This style guide is a living document and may be updated as the project evolves.
 * **Images/GIFs:** Use relevant images or GIFs to illustrate concepts or make the notebook more engaging, but ensure they are optimized for web and do not significantly increase loading times.
 * **Image Linking:** All images stored in the repository must be linked using the full GitHub raw content URL to ensure they render correctly on all platforms (e.g., nbviewer, GitHub).
   * The URL must point to the `refs/heads/main` branch and include the full path from the repository root (e.g., `notebooks/images/your-image.png`).
-  * _Example:_ `!A descriptive caption for the image.`
+  * _Example:_ `!A descriptive caption for the image`
 * **Mathematical Formulas:** Use LaTeX for all mathematical formulas to visually distinguish them from Python code. This ensures they are rendered clearly and professionally.
   * _Example:_ `$$Area = \frac{base \times height}{2}$$` instead of `Area = (base * height) / 2`.
 * **Conciseness:** Keep explanations clear and to the point.
