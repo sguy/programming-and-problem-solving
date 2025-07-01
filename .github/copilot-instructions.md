@@ -8,8 +8,8 @@ AI agents as a source of guiding principles when contributing to the PAPS projec
 
 ## Project Goals
 
-The PAPS project will provide a set of Jupyter notebooks that should serve as a complete set of self-study materials for 
-students between 13-16 years old.  
+The PAPS project will provide a set of Jupyter notebooks that should serve as a complete set of self-study materials for
+students between 13-16 years old.
 
 1) Assume no prior exposure to programmming.
 
@@ -67,3 +67,11 @@ Research these books for background information.  These are only pointers,  **ch
 * [Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages (Pragmatic Programmers)](https://annas-archive.org/md5/273f1bdd83328f3dc08de8b76324d71d)
 * [Python: Introduction To Python Programming: Beginner's Guide To Computer Programming And Machine Learning (Python Programming, Machine Learning, Programming for Beginners)](https://annas-archive.org/md5/34994d824c4a5143016649a3cff7b963)
 * [Learning Algorithms Through Programming and Puzzle Solving.](https://annas-archive.org/md5/ccf5c7cc60b885fecb510b84f52adcfb)
+
+## AI Assistant Interaction Style
+
+When asked to perform a "review" of a file or a concept, please follow this process:
+
+1.  **High-Level Summary:** Begin with a high-level summary of the item being reviewed. Mention its strengths and any major areas for improvement.
+2.  **Step-by-Step Plan:** Propose a detailed, step-by-step plan to address the identified areas for improvement. Each step should be small, incremental, and self-contained so that it can be approved and implemented individually.
+3.  **Await Approval:** After presenting the plan, wait for approval before proceeding with the first step.

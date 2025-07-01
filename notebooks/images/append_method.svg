@@ -1,0 +1,51 @@
+<svg width="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" font-family="monospace, sans-serif" font-size="20">
+    <style>
+        .box { fill: #f9f9f9; stroke: #666; stroke-width: 2; }
+        .container { fill: #eef; stroke: #55a; stroke-width: 2; rx: 10; }
+        .label { font-weight: bold; text-anchor: middle; }
+        .value { text-anchor: middle; fill: #c0392b; }
+        .index { text-anchor: middle; fill: #2980b9; font-size: 16px; }
+        .action-text { font-style: italic; text-anchor: middle; fill: #27ae60; font-size: 18px; }
+        .arrow { stroke: #27ae60; stroke-width: 3; marker-end: url(#arrowhead); }
+        .new-box { fill: #e8f8f5; stroke: #27ae60; stroke-width: 2; }
+    </style>
+
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60" />
+        </marker>
+    </defs>
+
+    <!-- White background -->
+    <rect width="100%" height="100%" fill="white"/>
+
+    <!-- Before State -->
+    <g transform="translate(400, 100)">
+        <text x="0" y="-65" class="label">Before: groceries</text>
+        <rect x="-150" y="-50" width="300" height="100" class="container"/>
+        <g transform="translate(-70, 0)">
+            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/><text x="0" y="5" class="value">"milk"</text><text x="0" y="60" class="index">0</text>
+        </g>
+        <g transform="translate(70, 0)">
+            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/><text x="0" y="5" class="value">"eggs"</text><text x="0" y="60" class="index">1</text>
+        </g>
+    </g>
+
+    <!-- Action Arrow and Text -->
+    <g transform="translate(400, 200)"><line x1="0" y1="-20" x2="0" y2="20" class="arrow"/><text x="130" y="5" class="action-text">.append("bread")</text></g>
+
+    <!-- After State -->
+    <g transform="translate(400, 300)">
+        <text x="0" y="-65" class="label">After: groceries</text>
+        <rect x="-220" y="-50" width="440" height="100" class="container"/>
+        <g transform="translate(-140, 0)">
+            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/><text x="0" y="5" class="value">"milk"</text><text x="0" y="60" class="index">0</text>
+        </g>
+        <g transform="translate(0, 0)">
+            <rect x="-60" y="-40" width="120" height="80" class="box" rx="5"/><text x="0" y="5" class="value">"eggs"</text><text x="0" y="60" class="index">1</text>
+        </g>
+        <g transform="translate(140, 0)">
+            <rect x="-60" y="-40" width="120" height="80" class="new-box" rx="5"/><text x="0" y="5" class="value">"bread"</text><text x="0" y="60" class="index">2</text>
+        </g>
+    </g>
+</svg>
