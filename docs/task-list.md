@@ -116,22 +116,38 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [ ] Getting the length of a list using `len()`.
             * [ ] Mini-Challenge: e.g., "My Favorite Things" using lists.
         * [ ] Publish to TOC
-    8. **Notebook 8 - Caesar Cipher**
-        * [ ] Create `notebooks/08-the-caesar-cipher.ipynb` which covers:
-          * [ ] Brief explaination of the Caesar Cipher and its history
-          * [ ] Statement of problem - we want a system that lets two partys exchange secret messages
+    8. **Notebook 8 - Mastering Loops**
+        * [x] Create `notebooks/08-for-loops.ipynb` which covers:
+          * [x] Introduction to loops and the concept of iteration (DRY principle).
+          * [x] Using `for` loops to iterate directly over items in a list.
+          * [x] Using `for` loops with `range()` to repeat actions a specific number of times.
+          * [x] Mini-Challenges: e.g., filtering a list, calculating statistics, and generating a multiplication table.
+        * [ ] Publish to TOC
+    9. **Notebook 9 - The Game Loop**
+        * [ ] Create `notebooks/09-the-game-loop.ipynb` which covers:
+          * [ ] Introduction to the "game loop" concept (e.g., initialize, loop, update, check for end).
+          * [ ] Introducing `while` loops for indefinite repetition.
+          * [ ] The concept of a "black box" function.
+          * [ ] Using a provided `random_number()` function without needing to understand its internal workings.
+          * [ ] Mini-Challenge 1: "Guess the Number" game (Hi/Low).
+          * [ ] Mini-Challenge 2: "Random Math Test" game (e.g., 5 random addition problems).
+        * [ ] Publish to TOC
+    10. **Notebook 10 - Caesar Cipher**
+        * [ ] Create `notebooks/10-the-caesar-cipher.ipynb` which covers:
+          * [ ] Brief explanation of the Caesar Cipher and its history
+          * [ ] Statement of problem - we want a system that lets two parties exchange secret messages
           * [ ] Let's Plan - how should we break up this problem?
           * [ ] Learning more about strings
             * [ ] string.upper()
             * [ ] Deeper dive into how strings are represented (do not get into the complexity of unicode)
-              * [ ] Strings as lists of Characters
+              * [ ] Strings as sequences of characters
               * [ ] Special characters / ignoring characters that are not in A-Z
           * [ ] Encoding a character
             * [ ] Changing characters to ints with ord()
             * [ ] The modulo `%` operator - wrapping around fixed size lists.
             * [ ] Your turn to code: the `encode_char()` function.
           * [ ] Encoding a message
-            * [ ] What is a for loop?
+            * [ ] Using a for loop to iterate over a message.
             * [ ] Your turn to code: the `encode_message()` function
           * [ ] Decoding a message
             * [ ] Your turn to code: the `decode_char()` function
@@ -139,19 +155,19 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
               * [ ] Can they share implementation? DRY
               * [ ] Tip: testing `a == decode_char(offset, encode_char(offset, a))`
             * [ ] Your turn to code: the `decode_message()` function
-            * [ ] Stop and Think: is the relationship between `encode_message()` and `decode_message()` similar to the relationship between `encode_char()` and `decode_char()`?
+            * [ ] Stop and Think: is the relationship between `encode_message()` and `decode_message()` similar to the one between `encode_char()` and `decode_char()`?
               * [ ] Can we reuse code?
               * [ ] What about testing?
         * [ ] Publish to TOC
-    9. **Notebook 9 - Prime Numbers**
-        * [ ] Create `notebooks/09-prime-numbers.ipynb` which covers:
+    11. **Notebook 11 - Prime Numbers**
+        * [ ] Create `notebooks/11-prime-numbers.ipynb` which covers:
           * This notebook will work up to calculating a list of prime numbers.  Along the way, it will introduce some basic problem solving techniques and explain new programming tools that we will need to solve the problem.
           * [ ] Introduce the problem of finding prime numbers.
           * [ ] Discuss the problem solving technique of specifying the problem, understanding it, and breaking it into smaller pieces.
           * [ ] Discussion - how would you break up this problem?  Use a click-to-reveal cell that outlines how we will be solving the problem in this lesson.
           * [ ] Revise the modulo operator (`%`) - using it for divisibility instead of wrapping around a fixed size list.  How are these ideas related?
           * [ ] Your turn to code: The is_divisible function
-          * [ ] Logic: How to determine if a single number is prime? (Algorithm: e.g., check for divisors from 2 up to number-1).
+          * [ ] Logic: How to determine if a single number is prime? (Algorithm: e.g., check for divisors from 2 up to number - 1).
           * [ ] Python Tool: Reminder of how to use Loops (e.g., `for` loops with `range()`).
           * [ ] Mini-challenge: print the multiples of 3 from 3 * 1 to 3 * 6.
           * [ ] Tip: Remember range goes from 0 to n-1 inclusive.
