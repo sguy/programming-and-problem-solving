@@ -31,6 +31,7 @@ This document outlines the best practices and conventions for creating iPython n
     * When linking to another notebook in this series, use the full Google Colab GitHub link format, for example: `Notebook 3: Shapes and Calculations`.
 * **End of Notebook:**
   * **Summary/Recap:** A concise summary of the key concepts covered in the notebook.
+  * **Discussion Question (Meta-cognition):** Before the final summary, include an open-ended discussion question (`### 🤔 Discussion Question:`) to encourage students to reflect on their learning process. For example: "Think back on the challenges in this notebook. Which concepts 'clicked' for you right away? Which ones were a bit tricky? What strategies did you use when you got stuck?"
   * **Key Takeaways:** Bullet points highlighting the most important points.
   * **Next Steps/Preview:** Briefly mention what will be covered in the next notebook or suggest further exploration.
 * **Interactivity & Engagement:**
