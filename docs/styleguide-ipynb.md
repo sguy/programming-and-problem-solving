@@ -27,6 +27,7 @@ This document outlines the best practices and conventions for creating iPython n
   * **Title:** Clear and descriptive title.
   * **Summary/Introduction:** A brief overview of what the notebook covers and what the student will learn.
   * **Inspirational Quote:** Include a humorous or insightful quote from a scientist, mathematician, computer scientist, or historical figure that is relevant to the notebook's topic. This helps set the tone and provides context.
+    * Where possible, link the author's name to their Wikipedia page to encourage further exploration (e.g., `> "..." — Grace Hopper`).
   * **Learning Objectives:** 2-3 bullet points outlining specific skills or knowledge students will gain.
   * **Prerequisites/Review:** A quick review of essential concepts from previous notebooks that will be used in the current one. Link back to relevant sections if possible.
     * When linking to another notebook in this series, use the full Google Colab GitHub link format, for example: `Notebook 3: Shapes and Calculations`.
