@@ -1,0 +1,104 @@
+<svg width="650" height="950" xmlns="http://www.w3.org/2000/svg">
+    <!--
+    A flowchart for the extended movie ticket pricer, demonstrating nested logic.
+    -->
+
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="white"/>
+
+    <!-- Define styles for shapes, text, and lines for consistency -->
+    <style>
+        .shape { fill: #e1f5fe; stroke: #0288d1; stroke-width: 2; }
+        .text { font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; text-anchor: middle; dominant-baseline: middle; fill: #212121; }
+        .line { fill: none; stroke: #424242; stroke-width: 2; marker-end: url(#arrowhead); }
+        .label { font-family: 'Helvetica', 'Arial', sans-serif; font-size: 12px; font-style: italic; text-anchor: middle; fill: #616161; }
+    </style>
+
+    <!-- Define the arrowhead marker to be used on the lines -->
+    <defs>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#424242" />
+        </marker>
+    </defs>
+
+    <!-- Flowchart Shapes -->
+    <rect x="275" y="20" width="100" height="40" rx="20" class="shape"/>
+    <text x="325" y="40" class="text">Start</text>
+
+    <rect x="225" y="90" width="200" height="50" class="shape"/>
+    <text x="325" y="115" class="text">Calculate Base Price (from age)</text>
+
+    <path d="M 225 170 L 425 170 L 400 210 L 200 210 Z" class="shape"/>
+    <text x="325" y="190" class="text">Get coupon status ('yes'/'no')</text>
+
+    <path d="M 325 240 L 405 290 L 325 340 L 245 290 Z" class="shape"/>
+    <text x="325" y="290" class="text">has_coupon == 'yes'?</text>
+
+    <!-- Left Branch (Yes Coupon) -->
+    <path d="M 50 320 L 200 320 L 175 360 L 25 360 Z" class="shape"/>
+    <text x="112.5" y="340" class="text">Get coupon amount</text>
+    <rect x="37.5" y="390" width="150" height="50" class="shape"/>
+    <text x="112.5" y="415" class="text">price = price - amount</text>
+
+    <!-- Right Branch (No Coupon) -->
+    <path d="M 450 320 L 600 320 L 575 360 L 425 360 Z" class="shape"/>
+    <text x="512.5" y="340" class="text">Get day of week</text>
+    <!-- Nested Decision -->
+    <path d="M 512.5 390 L 572.5 430 L 512.5 470 L 452.5 430 Z" class="shape"/>
+    <text x="512.5" y="430" class="text">day == 'Wed'?</text>
+    <!-- Nested Process -->
+    <rect x="475" y="500" width="75" height="50" class="shape"/>
+    <text x="512.5" y="525" class="text">price *= 0.8</text>
+
+    <!-- Final Check Decision -->
+    <path d="M 325 670 L 405 720 L 325 770 L 245 720 Z" class="shape"/>
+    <text x="325" y="720" class="text">price &lt; 0?</text>
+
+    <!-- Final Check Process -->
+    <rect x="425" y="695" width="100" height="50" class="shape"/>
+    <text x="475" y="720" class="text">price = 0</text>
+
+    <!-- Output -->
+    <path d="M 225 820 L 425 820 L 400 860 L 200 860 Z" class="shape"/>
+    <text x="325" y="840" class="text">Print final price</text>
+
+    <!-- End -->
+    <rect x="275" y="890" width="100" height="40" rx="20" class="shape"/>
+    <text x="325" y="910" class="text">End</text>
+
+    <!-- Connecting Lines and Labels -->
+    <path d="M 325 60 V 90" class="line"/>
+    <path d="M 325 140 V 170" class="line"/>
+    <path d="M 325 210 V 240" class="line"/>
+
+    <!-- Coupon Branch Lines -->
+    <path d="M 245 290 H 112.5 V 320" class="line"/>
+    <text x="180" y="280" class="label">True</text>
+    <path d="M 112.5 360 V 390" class="line"/>
+    <path d="M 112.5 440 V 640 H 325" class="line"/>
+
+    <!-- No Coupon Branch Lines -->
+    <path d="M 405 290 H 512.5 V 320" class="line"/>
+    <text x="460" y="280" class="label">False</text>
+    <path d="M 512.5 360 V 390" class="line"/>
+    <!-- Nested Lines -->
+    <path d="M 512.5 470 V 500" class="line"/>
+    <text x="535" y="485" class="label">True</text>
+    <path d="M 452.5 430 H 425 V 640 H 325" class="line"/>
+    <text x="435" y="420" class="label">False</text>
+    <path d="M 512.5 550 V 640 H 325" class="line"/>
+
+    <!-- Rejoin 1 to Final Check -->
+    <path d="M 325 640 V 670" class="line"/>
+
+    <!-- Final Check Lines -->
+    <path d="M 405 720 H 425" class="line"/>
+    <text x="415" y="710" class="label">True</text>
+    <path d="M 475 745 V 790 H 325" class="line"/>
+    <path d="M 325 770 V 790" class="line"/>
+    <text x="305" y="780" class="label">False</text>
+
+    <!-- Rejoin 2 to Output -->
+    <path d="M 325 790 V 820" class="line"/>
+    <path d="M 325 860 V 890" class="line"/>
+</svg>

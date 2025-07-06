@@ -1,0 +1,80 @@
+<svg width="450" height="650" xmlns="http://www.w3.org/2000/svg">
+    <!--
+    A flowchart diagram for an 'if/elif/else' statement, based on the movie ticket pricer example.
+    This visualizes a chain of decisions.
+    -->
+
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="white"/>
+
+    <!-- Define styles for shapes, text, and lines for consistency -->
+    <style>
+        .shape { fill: #e1f5fe; stroke: #0288d1; stroke-width: 2; }
+        .text { font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; text-anchor: middle; dominant-baseline: middle; fill: #212121; }
+        .line { fill: none; stroke: #424242; stroke-width: 2; marker-end: url(#arrowhead); }
+        .label { font-family: 'Helvetica', 'Arial', sans-serif; font-size: 12px; font-style: italic; text-anchor: middle; fill: #616161; }
+    </style>
+
+    <!-- Define the arrowhead marker to be used on the lines -->
+    <defs>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#424242" />
+        </marker>
+    </defs>
+
+    <!-- Flowchart Shapes (Centered) -->
+    <rect x="175" y="20" width="100" height="40" rx="20" class="shape"/>
+    <text x="225" y="40" class="text">Start</text>
+
+    <!-- Using a parallelogram for input -->
+    <path d="M 125 90 L 325 90 L 300 130 L 100 130 Z" class="shape"/>
+    <text x="225" y="110" class="text">Get user's age</text>
+
+    <!-- Decision 1 (if) -->
+    <path d="M 225 160 L 305 210 L 225 260 L 145 210 Z" class="shape"/>
+    <text x="225" y="210" class="text">age &lt; 5?</text>
+
+    <!-- Process for Decision 1 (True) -->
+    <rect x="330" y="185" width="100" height="50" class="shape"/>
+    <text x="380" y="210" class="text">price = 0</text>
+
+    <!-- Decision 2 (elif) -->
+    <path d="M 225 290 L 305 340 L 225 390 L 145 340 Z" class="shape"/>
+    <text x="225" y="340" class="text">age &lt;= 12?</text>
+
+    <!-- Process for Decision 2 (True) - NARROWER BOX -->
+    <rect x="340" y="315" width="80" height="50" class="shape"/>
+    <text x="380" y="340" class="text">price = 5</text>
+
+    <!-- Process for else -->
+    <rect x="150" y="420" width="150" height="50" class="shape"/>
+    <text x="225" y="445" class="text">price = 10</text>
+
+    <!-- Using a parallelogram for output -->
+    <path d="M 125 510 L 325 510 L 300 550 L 100 550 Z" class="shape"/>
+    <text x="225" y="530" class="text">Print price</text>
+
+    <rect x="175" y="580" width="100" height="40" rx="20" class="shape"/>
+    <text x="225" y="600" class="text">End</text>
+
+    <!-- Connecting Lines and Labels -->
+    <path d="M 225 60 V 90" class="line"/>
+    <path d="M 225 130 V 160" class="line"/>
+    <path d="M 305 210 H 330" class="line"/>
+    <text x="317" y="200" class="label">True</text>
+    <path d="M 225 260 V 290" class="line"/>
+    <text x="205" y="275" class="label">False</text>
+    <path d="M 305 340 H 340" class="line"/>
+    <text x="322" y="330" class="label">True</text>
+    <path d="M 225 390 V 420" class="line"/>
+    <text x="205" y="405" class="label">False</text>
+
+    <!-- Rejoining Paths -->
+    <path d="M 380 235 V 250 H 425 V 480 H 225" class="line"/> <!-- Rerouted line from price=0 -->
+    <path d="M 380 365 V 480 H 225" class="line"/>
+    <path d="M 225 470 V 480" class="line"/>
+
+    <!-- Final flow to end -->
+    <path d="M 225 480 V 510" class="line"/>
+    <path d="M 225 550 V 580" class="line"/>
+</svg>

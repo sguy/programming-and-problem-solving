@@ -100,12 +100,12 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [x] Case Study: Using function **composition** to solve a larger problem (surface area of a pyramid).
         * [x] Publish to TOC
     6. **Notebook 6 - Python's Decision Power**
-        * [ ] Create `notebooks/06-decisions.ipynb` which covers:
-            * [ ] Introduction: Making decisions.
-            * [ ] Understanding Boolean values (`True`, `False`).
-            * [ ] Using Comparison Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`) to create Boolean expressions.
-            * [ ] Conditional Statements: `if`, `else`, `elif`.
-            * [ ] Mini-Challenge: e.g., "Movie Ticket Pricer" using conditionals.
+        * [x] Create `notebooks/06-decisions.ipynb` which covers:
+            * [x] Introduction: Making decisions.
+            * [x] Understanding Boolean values (`True`, `False`).
+            * [x] Using Comparison Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`) to create Boolean expressions.
+            * [x] Conditional Statements: `if`, `else`, `elif`.
+            * [x] Mini-Challenge: e.g., "Movie Ticket Pricer" using conditionals.
         * [x] Publish to TOC
     7. **Notebook 7 - Organizing with Lists**
         * [ ] Create `notebooks/07-lists.ipynb` which covers:

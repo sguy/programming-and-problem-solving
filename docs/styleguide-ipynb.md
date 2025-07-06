@@ -10,7 +10,7 @@ This document outlines the best practices and conventions for creating iPython n
 * **Prior Experience:** Assumed to have no prior programming experience.
 * **Language:** Use clear, concise, and age-appropriate language. Avoid jargon where possible, or explain it thoroughly if necessary.
 * **Engagement:** Content should be engaging, relatable, and encouraging.
-*   **Tone:** Maintain an encouraging and professional tone. While enthusiasm is good, avoid overusing exclamation points to keep the content clear and readable.
+* **Tone:** Maintain an encouraging and professional tone. While enthusiasm is good, avoid overusing exclamation points to keep the content clear and readable.
 
 ## 2. Platform
 
@@ -20,9 +20,6 @@ This document outlines the best practices and conventions for creating iPython n
 
 ## 3. Notebook Structure & Content
 
-* **Estimated Time:** Each notebook should be designed to be completed in approximately **30-60 minutes**.
-
-  * Clearly state the estimated time at the beginning of the notebook.
 * **Beginning of Notebook:**
   * **Title:** Clear and descriptive title.
   * **Summary/Introduction:** A brief overview of what the notebook covers and what the student will learn.
@@ -30,13 +27,19 @@ This document outlines the best practices and conventions for creating iPython n
     * Where possible, link the author's name to their Wikipedia page to encourage further exploration (e.g., `> "..." — Grace Hopper`).
     * **Callback (Optional):** If it feels natural, consider referring back to the quote later in the notebook. This can help reinforce the central theme or message of the lesson.
   * **Learning Objectives:** 2-3 bullet points outlining specific skills or knowledge students will gain.
-  * **Prerequisites/Review:** A quick review of essential concepts from previous notebooks that will be used in the current one. Link back to relevant sections if possible.
-    * When linking to another notebook in this series, use the full Google Colab GitHub link format, for example: `Notebook 3: Shapes and Calculations`.
+  * **Prerequisites/Review:** A quick review of essential concepts from previous notebooks that will be used in the current one. Links to other notebooks must follow the format described in the **Linking Between Notebooks** section.
+  * **Navigation:** At the end of the introduction, include a link back to the Table of Contents for easy navigation.
+    * _Example:_ `[Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)`
+  * **Estimated Time:** Each notebook should be designed to be completed in approximately **30-60 minutes**.
+    * Clearly state the estimated time at the beginning of the notebook.
 * **End of Notebook:**
   * **Summary/Recap:** A concise summary of the key concepts covered in the notebook.
   * **Discussion Question (Meta-cognition):** Before the final summary, include an open-ended discussion question (`### 🤔 Discussion Question:`) to encourage students to reflect on their learning process. For example: "Think back on the challenges in this notebook. Which concepts 'clicked' for you right away? Which ones were a bit tricky? What strategies did you use when you got stuck?"
   * **Key Takeaways:** Bullet points highlighting the most important points.
-  * **Next Steps/Preview:** Briefly mention what will be covered in the next notebook or suggest further exploration.
+  * **Next Steps/Preview:** Briefly mention what will be covered in the next notebook or suggest further exploration. Any links must follow the format described in the **Linking Between Notebooks** section.
+  * **Navigation:** At the end of the introduction, include a link back to the Table of Contents for easy navigation.
+    * _Example:_ `[Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)`
+
 * **Interactivity & Engagement:**
   * **Minimum 1/3 Interactive Cells:** At least one-third of the cells in each notebook should be dedicated to interactive experimentation or mini-challenges.
   * **Code Cells:** Encourage students to run, modify, and experiment with code. Provide clear instructions and expected outputs.
@@ -52,16 +55,17 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
   * To guide the student effectively, mini-challenges should follow a consistent **sequence of cells** without explicit numbering or labels like "Prompt" or "Solution".
     1. The challenge begins with a markdown cell containing the `### 🎯 Mini-Challenge:` heading and the problem description.
     2. This is followed by an optional markdown cell containing one or more collapsible `<details>` blocks for hints.
-        *   **Writing Effective Hints:**
-            *   Break down complex problems into smaller, guided steps.
-            *   Use descriptive summaries for hints instead of generic labels like "Hint #1". For example, use `<summary>Hint: How do you find the side length?</summary>` or `<summary>Hint: The formula for the area of a circle</summary>`. This allows students to seek help for specific parts of the problem.
-            *   If a hint suggests calculating an intermediate value, it's helpful to provide the expected result (e.g., "After calculating the `outer_area`, its value should be `120`."). This helps students verify their progress.
+        * **Writing Effective Hints:**
+            * Break down complex problems into smaller, guided steps.
+            * Use descriptive summaries for hints instead of generic labels like "Hint #1". For example, use `<summary>Hint: How do you find the side length?</summary>` or `<summary>Hint: The formula for the area of a circle</summary>`. This allows students to seek help for specific parts of the problem.
+            * If a hint suggests calculating an intermediate value, it's helpful to provide the expected result (e.g., "After calculating the `outer_area`, its value should be `120`."). This helps students verify their progress.
     3. Next is the student's code cell, pre-populated with starter code and a `# YOUR CODE HERE` placeholder.
     4. Finally, a markdown cell provides the solution within a collapsible `<details>` block (e.g., `<summary>Click to see a possible solution</summary>`).
-        *   **Writing Effective Solutions:** The solution code should be well-commented and clearly demonstrate the steps to solve the problem.
-        *   **Show Intermediate Steps:** It is often helpful to show intermediate calculations (e.g., calculating `outer_area` and `inner_area` separately) to help students trace the logic and debug their own code.
-        *   **Show Expected Output:** Each `print()` statement in the solution should be followed by a comment showing the expected output. For `input()`, the comment should show a sample interaction.
-        *   _Example:_
+        * **Writing Effective Solutions:** The solution code should be well-commented and clearly demonstrate the steps to solve the problem.
+        * **Show Intermediate Steps:** It is often helpful to show intermediate calculations (e.g., calculating `outer_area` and `inner_area` separately) to help students trace the logic and debug their own code.
+        * **Show Expected Output:** Each `print()` statement in the solution should be followed by a comment showing the expected output. For `input()`, the comment should show a sample interaction.
+        * _Example:_
+
             ```python
             # Solution code for a print statement
             print("The area is:", area)
@@ -70,10 +74,12 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
             # Solution code for an input statement
             user_name = input("What is your name? ") # Sample interaction: What is your name? Ada
             ```
+
 * `### 🚀 Pro-Tip:` For more advanced tips or insights for curious students.
   * _Example: "`### 🚀 Pro-Tip:` Python also supports f-strings for even more flexible string formatting. We'll explore those later!"_
 * `## 🐍 New Concept:` When introducing a new Python command, programming concept, or key vocabulary.
   * _Example: "`## 🐍 New Concept:` Variables - Variables are like containers that store information."_
+  * **Connect to Prior Knowledge:** When possible, explicitly connect the new concept to something students have already learned. Draw comparisons (e.g., "Just like an `if` statement, a function definition uses an indented block of code...") or highlight contrasts to prevent confusion (e.g., "Unlike the `+` operator with numbers, using `+` with strings joins them together instead of doing math.").
 * `### ⚠️ Heads Up!:` For important distinctions, common pitfalls, or things students need to be particularly careful about.
   * _Example: "`### ⚠️ Heads Up!:` Python is case-sensitive, meaning `myVariable` and `myvariable` are different."_
 * `### 🤔 Discussion Question:` To prompt thought and reflection. These can be open-ended.
@@ -85,7 +91,7 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 * `### ✅ Check Your Understanding:` For quick comprehension questions (e.g., multiple choice, fill-in-the-blank within a markdown cell).
   * _Example of a multiple-choice question:_
 
-        ```markdown
+      ```markdown
         ### ✅ Check Your Understanding:
         Which of the following is a Python keyword used to define a variable that stores a whole number?
         a) `string`
@@ -94,11 +100,11 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
         d) `define`
 
         <!-- Answer: c) int -->
-        ```
+      ```
 
   * _Example with a revealable answer (useful in Colab):_
 
-        ```markdown
+      ```markdown
         ### ✅ Check Your Understanding:
         What would `print(5 + 3)` display?
 
@@ -107,7 +113,7 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 
           `8`
         </details>
-        ```
+      ```
 
 * `## 🎉 Milestone / Well Done!:` To acknowledge progress and provide encouragement after completing a significant section or challenge.
 
@@ -135,6 +141,18 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 * **Mathematical Formulas:** Use LaTeX for all mathematical formulas to visually distinguish them from Python code. This ensures they are rendered clearly and professionally.
   * _Example:_ `$$Area = \frac{base \times height}{2}$$` instead of `Area = (base * height) / 2`.
 * **Conciseness:** Keep explanations clear and to the point.
+* **Linking Between Notebooks** - When linking to another notebook in this project, use the standard Markdown link format `Link Text`. The URL must be the full Google Colab link that points to the GitHub repository. You can optionally append `#scrollTo=<cell-id>` to the URL to direct students to a specific cell within the target notebook.
+  * _Example (link to specific section of a lesson):_
+
+    ```markdown
+    [Defining and calling functions (Notebook 5)](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/05-reusable-code-with-functions.ipynb#scrollTo=1)
+    ```
+
+  * _Example (link to table of contents:_
+
+    ```markdown
+      [Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)
+    ```
 
 ## 7. General Best Practices
 
