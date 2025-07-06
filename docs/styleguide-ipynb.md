@@ -28,6 +28,8 @@ This document outlines the best practices and conventions for creating iPython n
     * **Callback (Optional):** If it feels natural, consider referring back to the quote later in the notebook. This can help reinforce the central theme or message of the lesson.
   * **Learning Objectives:** 2-3 bullet points outlining specific skills or knowledge students will gain.
   * **Prerequisites/Review:** A quick review of essential concepts from previous notebooks that will be used in the current one. Links to other notebooks must follow the format described in the **Linking Between Notebooks** section.
+    * The link text should be the full title of the notebook being referenced, embedded naturally in the sentence.
+    * _Example:_ `*   \[Concepts from Notebook 2: First Steps with Python\]\(https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/02-first-steps-with-python.ipynb\), including variables and data types.`
   * **Navigation:** At the end of the introduction, include a link back to the Table of Contents for easy navigation.
     * _Example:_ `[Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)`
   * **Estimated Time:** Each notebook should be designed to be completed in approximately **30-60 minutes**.
@@ -36,7 +38,17 @@ This document outlines the best practices and conventions for creating iPython n
   * **Summary/Recap:** A concise summary of the key concepts covered in the notebook.
   * **Discussion Question (Meta-cognition):** Before the final summary, include an open-ended discussion question (`### 🤔 Discussion Question:`) to encourage students to reflect on their learning process. For example: "Think back on the challenges in this notebook. Which concepts 'clicked' for you right away? Which ones were a bit tricky? What strategies did you use when you got stuck?"
   * **Key Takeaways:** Bullet points highlighting the most important points.
-  * **Next Steps/Preview:** Briefly mention what will be covered in the next notebook or suggest further exploration. Any links must follow the format described in the **Linking Between Notebooks** section.
+  * **Next Steps/Preview:** Briefly mention what will be covered in the next notebook.
+    * The section header (e.g., `### Next Up: ...`) should state the title of the next notebook but should **not** contain the link.
+    * The link to the next notebook should be placed within the descriptive paragraph that follows the header.
+    * _Example:_
+
+      ```markdown
+      ### Next Up: Notebook 4: Interactive Programs 🚀
+
+      In our next notebook, [Notebook 4: Interactive Programs](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/04-interactive-programs.ipynb)  we'll make our programs much more flexible...
+      ```
+
   * **Navigation:** At the very end of the notebook, include a link back to the Table of Contents. This link should be identical in format and text to the one used in the introduction to ensure a consistent user experience.
     * _Example:_ `[Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)`
 
@@ -141,17 +153,20 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 * **Mathematical Formulas:** Use LaTeX for all mathematical formulas to visually distinguish them from Python code. This ensures they are rendered clearly and professionally.
   * _Example:_ `$$Area = \frac{base \times height}{2}$$` instead of `Area = (base * height) / 2`.
 * **Conciseness:** Keep explanations clear and to the point.
-* **Linking Between Notebooks** - When linking to another notebook in this project, use the standard Markdown link format `Link Text`. The URL must be the full Google Colab link that points to the GitHub repository. You can optionally append `#scrollTo=<cell-id>` to the URL to direct students to a specific cell within the target notebook.
-  * _Example (link to specific section of a lesson):_
+* **Linking Between Notebooks:** All links to other notebooks in the project **must** be fully-qualified Google Colab URLs to ensure they work correctly for all users. Use the following structure:
+  * **Base URL:** `https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/`
+  * **Link Format:** `Link Text`
+  * **Deep Linking (Optional):** To link to a specific cell, append `#scrollTo=<cell-id>` to the URL.
+  * **Example (Standard Link):**
 
     ```markdown
-    [Defining and calling functions (Notebook 5)](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/05-reusable-code-with-functions.ipynb#scrollTo=1)
+    [Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)
     ```
 
-  * _Example (link to table of contents:_
+  * **Example (Deep Link):**
 
     ```markdown
-      [Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)
+    [Review functions in Notebook 5](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/05-reusable-code-with-functions.ipynb#scrollTo=1)
     ```
 
 ## 7. General Best Practices
