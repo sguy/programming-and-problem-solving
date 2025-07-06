@@ -98,6 +98,11 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [x] Defining functions with `def`, parameters, and `return`.
             * [x] Exploring different function patterns (e.g., with/without parameters, with/without return values).
             * [x] Case Study: Using function **composition** to solve a larger problem (surface area of a pyramid).
+            * [x] Parameters vs. Arguments.
+            * [x] Functions in Python vs. Functions in Math.
+            * [x] Combining Functions and User Input.
+            * [x] Check Your Understanding: Parameters vs. Arguments.
+            * [x] Discussion Question: Expanding Our Toolkit.
         * [x] Publish to TOC
     6. **Notebook 6 - Python's Decision Power**
         * [x] Create `notebooks/06-decisions.ipynb` which covers:
@@ -106,61 +111,77 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [x] Using Comparison Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`) to create Boolean expressions.
             * [x] Conditional Statements: `if`, `else`, `elif`.
             * [x] Mini-Challenge: e.g., "Movie Ticket Pricer" using conditionals.
+            * [x] Code Structure and Indentation.
+            * [x] Visualizing Decisions with Flowcharts.
+            * [x] Extending the Movie Ticket Pricer - Discount Days.
+            * [x] Refactoring - Improving Your Code's Design.
+            * [x] Simplifying Movie Ticket Prices.
+            * [x] Discussion Question: Real-world examples of decisions.
         * [x] Publish to TOC
     7. **Notebook 7 - Organizing with Lists**
-        * [ ] Create `notebooks/07-lists.ipynb` which covers:
-            * [ ] Introduction to Lists for organizing information.
-            * [ ] Creating empty lists and lists with initial items.
-            * [ ] Adding items to a list using `.append()`.
-            * [ ] Python Tool: New Syntax alert - calling methods on objects (`list.append()`).
-            * [ ] Getting the length of a list using `len()`.
-            * [ ] Mini-Challenge: e.g., "My Favorite Things" using lists.
+        * [x] Create `notebooks/07-lists.ipynb` which covers:
+            * [x] Introduction to Lists for organizing information.
+            * [x] Creating empty lists and lists with initial items.
+            * [x] Adding items to a list using `.append()`.
+            * [x] Accessing items in a list using **indexing** (e.g., `my_list[0]`).
+            * [x] Understanding the concept of a **method** as a function that belongs to an object.
+            * [x] Getting the length of a list using `len()`.
+            * [x] Mini-Challenge: Score Keeper.
+            * [x] Mini-Challenge: Guest List.
+            * [x] Mini-Challenge: Build a List from Scratch.
+            * [x] Mini-Challenge: Simple Shopping Cart.
         * [ ] Publish to TOC
     8. **Notebook 8 - Mastering Loops**
         * [x] Create `notebooks/08-for-loops.ipynb` which covers:
           * [x] Introduction to loops and the concept of iteration (DRY principle).
           * [x] Using `for` loops to iterate directly over items in a list.
           * [x] Using `for` loops with `range()` to repeat actions a specific number of times.
-          * [x] Mini-Challenges: e.g., filtering a list, calculating statistics, and generating a multiplication table.
+          * [x] Mini-Challenge: Build Your Own `len()`.
+          * [x] Mini-Challenge: Filter the Pets.
+          * [x] Mini-Challenge: Simple Statistics.
+          * [x] Mini-Challenge: Multiples.
+          * [x] Mini-Challenge: Multiplication Table.
+          * [x] The Perfect Trio - `len()`, `range()`, and Indexing.
         * [ ] Publish to TOC
     9. **Notebook 9 - The Game Loop**
-        * [ ] Create `notebooks/09-the-game-loop.ipynb` which covers:
-          * [ ] Introduction to the "game loop" concept (e.g., initialize, loop, update, check for end).
-          * [ ] Introducing `while` loops for indefinite repetition.
-          * [ ] The concept of a "black box" function.
-          * [ ] Using a provided `random_number()` function without needing to understand its internal workings.
-          * [ ] Mini-Challenge 1: "Guess the Number" game (Hi/Low).
+        * [x] Create `notebooks/09-the-game-loop.ipynb` which covers:
+          * [x] Introduction to the "game loop" concept (e.g., initialize, loop, update, check for end).
+          * [x] Introducing `while` loops for indefinite repetition.
+          * [x] The concept of a "black box" function.
+          * [x] Using a provided `random_number()` function without needing to understand its internal workings.
+          * [x] Mini-Challenge 1: "Guess the Number" game (Hi/Low).
           * [ ] Mini-Challenge 2: "Random Math Test" game (e.g., 5 random addition problems).
         * [ ] Publish to TOC
     10. **Notebook 10 - Caesar Cipher**
-        * [ ] Create `notebooks/10-the-caesar-cipher.ipynb` which covers:
-          * [ ] Brief explanation of the Caesar Cipher and its history
-          * [ ] Statement of problem - we want a system that lets two parties exchange secret messages
-          * [ ] Let's Plan - how should we break up this problem?
-          * [ ] Learning more about strings
-            * [ ] string.upper()
-            * [ ] Deeper dive into how strings are represented (do not get into the complexity of unicode)
-              * [ ] Strings as sequences of characters
-              * [ ] Special characters / ignoring characters that are not in A-Z
-          * [ ] Encoding a character
-            * [ ] Changing characters to ints with ord()
-            * [ ] The modulo `%` operator - wrapping around fixed size lists.
-            * [ ] Your turn to code: the `encode_char()` function.
-          * [ ] Encoding a message
-            * [ ] Using a for loop to iterate over a message.
-            * [ ] Your turn to code: the `encode_message()` function
-          * [ ] Decoding a message
-            * [ ] Your turn to code: the `decode_char()` function
-            * [ ] Stop and think: How are `encode_char()` and `decode_char()` different?
-              * [ ] Can they share implementation? DRY
-              * [ ] Tip: testing `a == decode_char(offset, encode_char(offset, a))`
-            * [ ] Your turn to code: the `decode_message()` function
-            * [ ] Stop and Think: is the relationship between `encode_message()` and `decode_message()` similar to the one between `encode_char()` and `decode_char()`?
-              * [ ] Can we reuse code?
-              * [ ] What about testing?
+        * [x] Create `notebooks/10-the-caesar-cipher.ipynb` which covers:
+          * [x] Brief explanation of the Caesar Cipher and its history
+          * [x] Statement of problem - we want a system that lets two parties exchange secret messages
+          * [x] Let's Plan - how should we break up this problem?
+          * [x] Learning more about strings
+            * [x] string.upper()
+            * [x] Deeper dive into how strings are represented (do not get into the complexity of unicode)
+              * [x] Strings as sequences of characters
+              * [x] Handling non-alphabetic characters
+          * [x] Encoding a character
+            * [x] Changing characters to ints with ord()
+            * [x] The modulo `%` operator - wrapping around fixed size lists.
+            * [x] Helper function: `is_uppercase(char)`
+            * [x] Your turn to code: the `encode_char()` function.
+          * [x] Encoding a message
+            * [x] Using a for loop to iterate over a message.
+            * [x] Your turn to code: the `encode_message()` function
+          * [x] Decoding a message
+            * [x] Your turn to code: the `decode_char()` function
+            * [x] Stop and think: How are `encode_char()` and `decode_char()` different?
+              * [x] Can they share implementation? DRY
+              * [x] Tip: testing `a == decode_char(offset, encode_char(offset, a))`
+            * [x] Your turn to code: the `decode_message()` function
+            * [x] Stop and Think: is the relationship between `encode_message()` and `decode_message()` similar to the one between `encode_char()` and `decode_char()`?
+              * [x] Can we reuse code?
+              * [x] What about testing?
         * [ ] Publish to TOC
     11. **Notebook 11 - Prime Numbers**
-        * [ ] Create `notebooks/11-prime-numbers.ipynb` which covers:
+        * [x] Create `notebooks/11-prime-numbers.ipynb` which covers:
           * This notebook will work up to calculating a list of prime numbers.  Along the way, it will introduce some basic problem solving techniques and explain new programming tools that we will need to solve the problem.
           * [ ] Introduce the problem of finding prime numbers.
           * [ ] Discuss the problem solving technique of specifying the problem, understanding it, and breaking it into smaller pieces.
