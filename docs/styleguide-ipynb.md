@@ -29,7 +29,12 @@ This document outlines the best practices and conventions for creating iPython n
   * **Learning Objectives:** 2-3 bullet points outlining specific skills or knowledge students will gain.
   * **Prerequisites/Review:** A quick review of essential concepts from previous notebooks that will be used in the current one. Links to other notebooks must follow the format described in the **Linking Between Notebooks** section.
     * The link text should be the full title of the notebook being referenced, embedded naturally in the sentence.
-    * _Example:_ `*   \[Concepts from Notebook 2: First Steps with Python\]\(https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/02-first-steps-with-python.ipynb\), including variables and data types.`
+    * _Example:_
+
+      ```markdown
+        *   [Concepts from Notebook 2: First Steps with Python](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/02-first-steps-with-python.ipynb), including variables and data types.
+        ```
+
   * **Navigation:** At the end of the introduction, include a link back to the Table of Contents for easy navigation.
     * _Example:_ `[Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)`
   * **Estimated Time:** Each notebook should be designed to be completed in approximately **30-60 minutes**.
@@ -46,7 +51,7 @@ This document outlines the best practices and conventions for creating iPython n
       ```markdown
       ### Next Up: Notebook 4: Interactive Programs 🚀
 
-      In our next notebook, [Notebook 4: Interactive Programs](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/04-interactive-programs.ipynb)  we'll make our programs much more flexible...
+      In our next notebook, [Notebook 4: Interactive Programs](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/04-interactive-programs.ipynb) we'll make our programs much more flexible...
       ```
 
   * **Navigation:** At the very end of the notebook, include a link back to the Table of Contents. This link should be identical in format and text to the one used in the introduction to ensure a consistent user experience.
@@ -153,21 +158,33 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 * **Mathematical Formulas:** Use LaTeX for all mathematical formulas to visually distinguish them from Python code. This ensures they are rendered clearly and professionally.
   * _Example:_ `$$Area = \frac{base \times height}{2}$$` instead of `Area = (base * height) / 2`.
 * **Conciseness:** Keep explanations clear and to the point.
-* **Linking Between Notebooks:** All links to other notebooks in the project **must** be fully-qualified Google Colab URLs to ensure they work correctly for all users. Use the following structure:
-  * **Base URL:** `https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/`
-  * **Link Format:** `Link Text`
-  * **Deep Linking (Optional):** To link to a specific cell, append `#scrollTo=<cell-id>` to the URL.
-  * **Example (Standard Link):**
+* **Linking Between Notebooks:** All links to other notebooks in the project **must** be fully-qualified Google Colab URLs to ensure they work correctly for all users. Use the following strict format:
 
-    ```markdown
-    [Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)
-    ```
+  *   **Base URL:** `https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/`
+  *   **File Name:** The full filename of the target notebook (e.g., `01-getting-started.ipynb`).
+  *   **Full URL:** `https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/FILENAME.ipynb`
 
-  * **Example (Deep Link):**
+  **Link Text Rules:**
 
-    ```markdown
-    [Review functions in Notebook 5](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/05-reusable-code-with-functions.ipynb#scrollTo=1)
-    ```
+  1.  **Prerequisites/Review Links:** The link text must be the full, exact title of the notebook being referenced, as it appears at the top of that notebook's content.
+      *   **Correct Example:**
+          ```markdown
+          *   Concepts from [Notebook 2: First Steps with Python](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/02-first-steps-with-python.ipynb), including variables and data types.
+          ```
+      *   **Incorrect Example:** `[Click here for Notebook 2](...)`
+
+  2.  **"Next Up" Links:** In the end-of-notebook summary, the link to the next notebook must also use the full title of the target notebook as the link text.
+      *   **Correct Example:**
+          ```markdown
+          In our next notebook, [Notebook 4: Interactive Programs](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/04-interactive-programs.ipynb), we'll make our programs much more flexible...
+          ```
+      *   **Incorrect Example:** `In our next notebook, we'll learn about [interactive programs](...).`
+
+  3.  **"Return to Table of Contents" Links:** These links must always use the exact text "Return to Table of Contents".
+      *   **Correct Example:**
+          ```markdown
+          [Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)
+          ```
 
 ## 7. General Best Practices
 
