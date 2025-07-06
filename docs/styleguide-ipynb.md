@@ -37,7 +37,7 @@ This document outlines the best practices and conventions for creating iPython n
   * **Discussion Question (Meta-cognition):** Before the final summary, include an open-ended discussion question (`### 🤔 Discussion Question:`) to encourage students to reflect on their learning process. For example: "Think back on the challenges in this notebook. Which concepts 'clicked' for you right away? Which ones were a bit tricky? What strategies did you use when you got stuck?"
   * **Key Takeaways:** Bullet points highlighting the most important points.
   * **Next Steps/Preview:** Briefly mention what will be covered in the next notebook or suggest further exploration. Any links must follow the format described in the **Linking Between Notebooks** section.
-  * **Navigation:** At the end of the introduction, include a link back to the Table of Contents for easy navigation.
+  * **Navigation:** At the very end of the notebook, include a link back to the Table of Contents. This link should be identical in format and text to the one used in the introduction to ensure a consistent user experience.
     * _Example:_ `[Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)`
 
 * **Interactivity & Engagement:**
