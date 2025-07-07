@@ -151,7 +151,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [x] The concept of a "black box" function.
           * [x] Using a provided `random_number()` function without needing to understand its internal workings.
           * [x] Mini-Challenge 1: "Guess the Number" game (Hi/Low).
-          * [ ] Mini-Challenge 2: "Random Math Test" game (e.g., 5 random addition problems).
+          * [x] Mini-Challenge 2: "Random Math Test" game (e.g., 5 random addition problems).
         * [ ] Publish to TOC
     10. **Notebook 10 - Caesar Cipher**
         * [x] Create `notebooks/10-the-caesar-cipher.ipynb` which covers:
