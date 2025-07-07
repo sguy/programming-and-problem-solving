@@ -41,7 +41,7 @@ This document outlines the best practices and conventions for creating iPython n
     * Clearly state the estimated time at the beginning of the notebook.
 * **End of Notebook:**
   * **Summary/Recap:** A concise summary of the key concepts covered in the notebook.
-  * **Discussion Question (Meta-cognition):** Before the final summary, include an open-ended discussion question (`### 🤔 Discussion Question:`) to encourage students to reflect on their learning process. For example: "Think back on the challenges in this notebook. Which concepts 'clicked' for you right away? Which ones were a bit tricky? What strategies did you use when you got stuck?"
+  * **Discussion Question (Meta-cognition):** Before the final summary, include an open-ended discussion question (`### 🤔 Discussion Question:`) to encourage students to reflect on their learning process. These questions should be specific to the content and challenges of the current notebook, prompting reflection on the student's direct learning experience. For example, for a notebook on loops: "Think about the 'game loop' concept we explored. Can you identify a process in your daily life (like getting ready for school, making a sandwich, or playing a sport) that could be described using a 'loop'? What would be the 'initialization,' 'conditions,' and 'updates' in that loop? How does thinking about it this way change your understanding of that process?"
   * **Key Takeaways:** Bullet points highlighting the most important points.
   * **Next Steps/Preview:** Briefly mention what will be covered in the next notebook.
     * The section header (e.g., `### Next Up: ...`) should state the title of the next notebook but should **not** contain the link.
@@ -192,5 +192,8 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 * **Save Regularly:** Encourage students to save their work (though Colab autosaves).
 * **Iterative Improvement:** Be open to feedback and iterate on notebook content to improve the learning experience.
 
+## 8. Other Standards
+
+* The `id` field of each notebook cell should be a unique human readable kebab-cased name.
 ---
 This style guide is a living document and may be updated as the project evolves.

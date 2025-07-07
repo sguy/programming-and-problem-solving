@@ -23,11 +23,55 @@ This document provides guidelines for the Gemini agent when working on this proj
 - **Understand the Task:** Before creating or modifying a notebook, consult the `docs/task-list.md` file to understand the specific requirements, learning objectives, and scope for that notebook.
 - **Match Existing Style:** Read through several existing notebooks (e.g., `notebooks/01-getting-started.ipynb`, `notebooks/02-first-steps-with-python.ipynb`) to internalize the structure, tone, and style. Pay special attention to `notebooks/03-basic-calculations.ipynb` to see how SVG diagrams are used to illustrate concepts. For detailed rules on notebook formatting, refer to `docs/styleguide-ipynb.md`.
 - **Cell-Based Structure:** Remember that notebooks are a mix of Markdown cells for explanation and Python code cells for examples. Balance these appropriately.
-- **Table of Contents (`TOC`):** **CRITICAL:** A notebook is only added to `table-of-contents.ipynb` after its corresponding "Publish to TOC" task has been manually checked off (`[x]`) in `docs/task-list.md`. **Do not add a notebook to the TOC unless explicitly instructed to do so.** This ensures only completed and reviewed notebooks are visible to students.
+- **Table of Contents (`TOC`):** **CRITICAL:** Only notebooks with their corresponding "Publish to TOC" task manually checked off (`[x]`) in `docs/task-list.md` are to be included in `table-of-contents.ipynb`. **Do not add a notebook to the TOC unless explicitly instructed to do so.** This ensures only completed and reviewed notebooks are visible to students.
 
-## 4. Generating Explanatory Diagrams
+## 4. Editing Jupyter Notebooks (`.ipynb` files)
+
+When modifying Jupyter Notebooks, it is crucial to understand their underlying JSON structure to avoid corruption. Notebooks are composed of a list of "cells," each with a `cell_type` (e.g., "markdown" or "code") and a `source` field. The `source` field is an array of strings, where each string represents a line of content within that cell.  Cells are uniquely labeled with the 'id' field.
+
+**Strategy for Editing:**
+1.  **Cell-by-Cell Modification:** Always approach notebook edits on a cell-by-cell basis. Do not attempt to modify the entire notebook content as a single string.
+2.  **Identify the cell that you want to modify, then read it in as a dictonary**
+3.  **Identify Cell Type:** Determine if the target cell is a "markdown" cell or a "code" cell by using the `cell_type` field.
+4.  **Extract `source` Field:** Read the `source` field of the specific cell you intend to modify. This will be a JSON array of strings.
+    *   Example (from a markdown cell):
+        ```json
+        "source": [
+            "### My Markdown Heading\n",
+            "This is a paragraph of text.\n",
+            "\n",
+            "```python\n",
+            "print(\"Hello, World!\")\n",
+            "```\n"
+        ]
+        ```
+    *   Example (from a code cell):
+        ```json
+        "source": [
+            "my_variable = 10\n",
+            "print(my_variable)\n"
+        ]
+        ```
+5.  **Take the `source` array and change it into a single string**, `source_txt = source.join('')`
+6.  **Modify Content of `source_txt`:** Make your desired changes to the content - we will call this `new_source_txt`.
+7.  **Translate back into an array of strings:** `new_source = new_source_txt.split("\\n")`
+8.  **Update the cell:** `cell['source'] = new_source`
+9.  **Format new json:** `new_cell_json = json.dumps(cell, indent=2)`
+10.  **Re-insert cell into notebook:** Identify the lines that represented the 'old' json and replace them with the 'new' json.  Use the `replace` tool to update the cell with your modified content. The `new_string` argument for the `replace` tool must be the *entire, correctly JSON-formatted array* for the notebook cell.
+
+This cell-by-cell approach ensures that changes are localized, easier to debug, and result in cleaner `git diff` outputs.
+
+## 5. Generating Explanatory Diagrams
 
 - **Purpose:** Whenever a concept or problem can be clarified with a visual aid, generate a simple, clean SVG diagram.
 - **Location:** Store all generated diagrams in the `notebooks/images/` directory.
 - **Style:** Diagrams should be clear, uncluttered, and consistent with the visual style of existing diagrams in the project. Use them to illustrate problems (e.g., `picture-frame-problem.svg`) or visualize concepts (e.g., `flowchart_if_else_simple.svg`).
 - **Implementation:** When adding a diagram to a notebook, use a Markdown image tag with a fully qualified URL pointing to the raw GitHub content. Refer to `docs/styleguide-ipynb.md` for the exact URL format.
+
+## 6. Reviewing Notebooks
+
+- **Activity:** When asked to "Review Lesson X" (where X is a number), open the corresponding notebook (e.g., "Review Lesson 4" means `notebooks/04-interactive-programs.ipynb`).
+- **Rubric:** Ensure the notebook is in full compliance with the style guide defined in `docs/styleguide-ipynb.md`.
+- **Focus Areas:** Pay special attention to the narrative flow, tone, quality of challenges, and appropriate cognitive load.
+- **Feedback Format:** Initially, provide a human-readable summary of the notebook's evaluation (similar to a code review), followed by a numbered plan of steps to improve the notebook. Each step in the plan should then be addressed as a series of small, self-contained changes.
+- **Collaboration:** Before making each change, ask for approval and allow for additional feedback to work collaboratively.

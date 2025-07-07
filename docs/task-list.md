@@ -134,6 +134,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
     8. **Notebook 8 - Mastering Loops**
         * [x] Create `notebooks/08-for-loops.ipynb` which covers:
           * [x] Introduction to loops and the concept of iteration (DRY principle).
+          * [ ] Add a reminder about indented code blocks and where they have been seen before (functions, if/else statements).
           * [x] Using `for` loops to iterate directly over items in a list.
           * [x] Using `for` loops with `range()` to repeat actions a specific number of times.
           * [x] Mini-Challenge: Build Your Own `len()`.
