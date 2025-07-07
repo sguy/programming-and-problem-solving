@@ -4,6 +4,7 @@ This document provides guidelines for the Gemini agent when working on this proj
 
 ## 1. Project Mission and Core Principles
 
+- **Project Requirements:** Refer to `docs/PRD.md` for a detailed overview of project goals, target audience, core features, and technical requirements.
 - **Primary Goal:** To create high-quality, beginner-friendly educational materials for learning Python and problem-solving using Jupyter Notebooks.
 - **Target Audience:** Beginners with little to no programming experience. All content, especially code examples and explanations, must be simple, clear, and easy to understand.
 - **Pedagogical Style:** The tone should be encouraging, supportive, and educational. Use analogies and simple explanations. Avoid complex jargon or overly "clever" code. Refer to the existing notebooks to match this style.
@@ -11,18 +12,15 @@ This document provides guidelines for the Gemini agent when working on this proj
 
 ## 2. Technical Guidelines
 
-- **Linting and Formatting:** Before committing any code changes, always run the following commands from the project root to ensure code quality and consistency:
-    - `ruff check . --fix`
-    - `black .`
+- **Code Quality:** Adhere to the project's code style and linting rules as defined in `docs/styleguide-python.md`.
 - **Dependencies:** The project uses a `venv` for its environment and manages dependencies via `pyproject.toml`.
-- **Testing:** While most work is in notebooks, any changes to Python source code in `src/` should be accompanied by tests in the `tests/` directory. Run tests with `pytest`.
-- **Git Commits:** Follow the style of existing commit messages. They are typically concise and written in the imperative mood (e.g., "Fix layout for flowcharts," "Add notebook on decisions").
+- **Testing:** For Python source code in `src/`, ensure changes are accompanied by tests. Refer to `docs/styleguide-python.md` for testing guidelines.
+- **Git Commits:** Follow the style of existing commit messages (concise, imperative mood, e.g., "Fix layout for flowcharts," "Add notebook on decisions").
 
 ## 3. Workflow for Modifying Notebooks
 
 - **Understand the Task:** Before creating or modifying a notebook, consult the `docs/task-list.md` file to understand the specific requirements, learning objectives, and scope for that notebook.
-- **Match Existing Style:** Read through several existing notebooks (e.g., `notebooks/01-getting-started.ipynb`, `notebooks/02-first-steps-with-python.ipynb`) to internalize the structure, tone, and style. Pay special attention to `notebooks/03-basic-calculations.ipynb` to see how SVG diagrams are used to illustrate concepts. For detailed rules on notebook formatting, refer to `docs/styleguide-ipynb.md`.
-- **Cell-Based Structure:** Remember that notebooks are a mix of Markdown cells for explanation and Python code cells for examples. Balance these appropriately.
+- **Adhere to Style:** For detailed rules on notebook formatting, tone, and structure, refer to `docs/styleguide-ipynb.md`.
 - **Table of Contents (`TOC`):** **CRITICAL:** Only notebooks with their corresponding "Publish to TOC" task manually checked off (`[x]`) in `docs/task-list.md` are to be included in `table-of-contents.ipynb`. **Do not add a notebook to the TOC unless explicitly instructed to do so.** This ensures only completed and reviewed notebooks are visible to students.
 
 ## 4. Editing Jupyter Notebooks (`.ipynb` files)
