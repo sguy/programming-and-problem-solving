@@ -30,34 +30,18 @@ This document provides guidelines for the Gemini agent when working on this proj
 When modifying Jupyter Notebooks, it is crucial to understand their underlying JSON structure to avoid corruption. Notebooks are composed of a list of "cells," each with a `cell_type` (e.g., "markdown" or "code") and a `source` field. The `source` field is an array of strings, where each string represents a line of content within that cell.  Cells are uniquely labeled with the 'id' field.
 
 **Strategy for Editing:**
-1.  **Cell-by-Cell Modification:** Always approach notebook edits on a cell-by-cell basis. Do not attempt to modify the entire notebook content as a single string.
-2.  **Identify the cell that you want to modify, then read it in as a dictonary**
-3.  **Identify Cell Type:** Determine if the target cell is a "markdown" cell or a "code" cell by using the `cell_type` field.
-4.  **Extract `source` Field:** Read the `source` field of the specific cell you intend to modify. This will be a JSON array of strings.
-    *   Example (from a markdown cell):
-        ```json
-        "source": [
-            "### My Markdown Heading\n",
-            "This is a paragraph of text.\n",
-            "\n",
-            "```python\n",
-            "print(\"Hello, World!\")\n",
-            "```\n"
-        ]
-        ```
-    *   Example (from a code cell):
-        ```json
-        "source": [
-            "my_variable = 10\n",
-            "print(my_variable)\n"
-        ]
-        ```
-5.  **Take the `source` array and change it into a single string**, `source_txt = source.join('')`
-6.  **Modify Content of `source_txt`:** Make your desired changes to the content - we will call this `new_source_txt`.
-7.  **Translate back into an array of strings:** `new_source = new_source_txt.split("\\n")`
-8.  **Update the cell:** `cell['source'] = new_source`
-9.  **Format new json:** `new_cell_json = json.dumps(cell, indent=2)`
-10.  **Re-insert cell into notebook:** Identify the lines that represented the 'old' json and replace them with the 'new' json.  Use the `replace` tool to update the cell with your modified content. The `new_string` argument for the `replace` tool must be the *entire, correctly JSON-formatted array* for the notebook cell.
+1.  **Read the entire notebook file** and parse its JSON content into a dictionary.
+2.  **Identify the specific cell** that needs to be modified (e.g., by its `id` field).
+3.  **Modify the cell's content in memory:**
+    *   Access the `source` field of the target cell. This will be a JSON array of strings.
+    *   Join the `source` array into a single string (e.g., `source_text = "".join(cell["source"])`).
+    *   Perform the desired text modifications on `source_text`.
+    *   Split the modified `source_text` back into an array of strings, ensuring each line ends with `\n` (e.g., `new_source_array = [line + "\n" for line in modified_source_text.splitlines()]`).
+    *   Update the cell's `source` field with `new_source_array`.
+4.  **Generate JSON strings for replacement:**
+    *   Convert the *original* cell dictionary (before modification) into a perfectly formatted JSON string.
+    *   Convert the *modified* cell dictionary into a perfectly formatted JSON string.
+5.  **Use the `replace` tool:** Use the JSON string of the original cell as the `old_string` and the JSON string of the modified cell as the `new_string`. This ensures the change is precise and maintains the integrity of the notebook's JSON structure.
 
 This cell-by-cell approach ensures that changes are localized, easier to debug, and result in cleaner `git diff` outputs.
 
