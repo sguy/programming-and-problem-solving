@@ -87,19 +87,25 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [x] Performing calculations with hardcoded values (e.g., `length = 5`, `area = length * width`).
             * [x] Highlight that `(` and `)` were used in the perimeter example to ensure that the `+` was applied before the `*`
         * [x] Publish to TOC
-    4. **Notebook 4 - Interactive Programs**
+    4. **Notebook 3 - Extended Practice**
+        * [x] Create `notebooks/03-basic-calculations.extended-practice.ipynb` which covers:
+          * [x] Advanced problem-solving with basic arithmetic.
+          * [x] Multi-step problems requiring formula derivation (e.g., area of equilateral triangle).
+          * [x] Complex word problems involving unit conversions and multiple geometric shapes (e.g., Juice Glass Mystery).
+        * [x] Publish to TOC
+    5. **Notebook 4 - Interactive Programs**
         * [x] Create `notebooks/04-interactive-programs.ipynb` which covers:
             * [x] Introducing `input()` to get information from the user.
             * [x] Emphasizing string-to-number conversion (`int()`, `float()`).
         * [x] Publish to TOC
-    5. **Review Notebook (02-04)**
-        * [ ] Create `notebooks/02-04.review-notebook.ipynb` which covers:
-          * [ ] A concise list of topics from notebooks 02, 03, and 04.
-          * [ ] "Check Your Understanding" questions to reinforce concepts.
-          * [ ] "Mini-Challenge" problems combining skills.
-          * [ ] A brief discussion on problem-solving skills.
+    6. **Review Notebook (02-04)**
+        * [x] Create `notebooks/02-04.review-notebook.ipynb` which covers:
+          * [x] A concise list of topics from notebooks 02, 03, and 04.
+          * [x] "Check Your Understanding" questions to reinforce concepts.
+          * [x] "Mini-Challenge" problems combining skills.
+          * [x] A brief discussion on problem-solving skills.
         * [x] Publish to TOC
-    6. **Notebook 5 - Reusable Code with Functions**
+    7. **Notebook 5 - Reusable Code with Functions**
         * [x] Create `notebooks/05-reusable-code-with-functions.ipynb` which covers:
             * [x] Why use functions? (DRY principle).
             * [x] Defining functions with `def`, parameters, and `return`.
@@ -111,7 +117,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [x] Check Your Understanding: Parameters vs. Arguments.
             * [x] Discussion Question: Expanding Our Toolkit.
         * [x] Publish to TOC
-    7. **Notebook 6 - Python's Decision Power**
+    8. **Notebook 6 - Python's Decision Power**
         * [x] Create `notebooks/06-decisions.ipynb` which covers:
             * [x] Introduction: Making decisions.
             * [x] Understanding Boolean values (`True`, `False`).
@@ -125,7 +131,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [x] Simplifying Movie Ticket Prices.
             * [x] Discussion Question: Real-world examples of decisions.
         * [x] Publish to TOC
-    8. **Notebook 7 - Organizing with Lists**
+    9. **Notebook 7 - Organizing with Lists**
         * [x] Create `notebooks/07-lists.ipynb` which covers:
             * [x] Introduction to Lists for organizing information.
             * [x] Creating empty lists and lists with initial items.
@@ -138,7 +144,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [x] Mini-Challenge: Build a List from Scratch.
             * [x] Mini-Challenge: Simple Shopping Cart.
         * [ ] Publish to TOC
-    9. **Notebook 8 - Mastering Loops**
+    10. **Notebook 8 - Mastering Loops**
         * [x] Create `notebooks/08-for-loops.ipynb` which covers:
           * [x] Introduction to loops and the concept of iteration (DRY principle).
           * [ ] Add a reminder about indented code blocks and where they have been seen before (functions, if/else statements).
@@ -151,7 +157,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [x] Mini-Challenge: Multiplication Table.
           * [x] The Perfect Trio - `len()`, `range()`, and Indexing.
         * [ ] Publish to TOC
-    10. **Notebook 9 - The Game Loop**
+    11. **Notebook 9 - The Game Loop**
         * [x] Create `notebooks/09-the-game-loop.ipynb` which covers:
           * [x] Introduction to the "game loop" concept (e.g., initialize, loop, update, check for end).
           * [x] Introducing `while` loops for indefinite repetition.
@@ -160,7 +166,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [x] Mini-Challenge 1: "Guess the Number" game (Hi/Low).
           * [x] Mini-Challenge 2: "Random Math Test" game (e.g., 5 random addition problems).
         * [ ] Publish to TOC
-    11. **Notebook 10 - Caesar Cipher**
+    12. **Notebook 10 - Caesar Cipher**
         * [x] Create `notebooks/10-the-caesar-cipher.ipynb` which covers:
           * [x] Brief explanation of the Caesar Cipher and its history
           * [x] Statement of problem - we want a system that lets two parties exchange secret messages
@@ -188,7 +194,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
               * [x] Can we reuse code?
               * [x] What about testing?
         * [ ] Publish to TOC
-    12. **Notebook 11 - Prime Numbers**
+    13. **Notebook 11 - Prime Numbers**
         * [x] Create `notebooks/11-prime-numbers.ipynb` which covers:
           * This notebook will work up to calculating a list of prime numbers.  Along the way, it will introduce some basic problem solving techniques and explain new programming tools that we will need to solve the problem.
           * [ ] Introduce the problem of finding prime numbers.
