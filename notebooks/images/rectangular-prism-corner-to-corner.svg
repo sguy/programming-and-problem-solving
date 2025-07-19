@@ -1,0 +1,40 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="white"/>
+  <style>
+    .label { font: bold 18px sans-serif; fill: #333; text-anchor: middle; }
+    .edge { stroke: black; stroke-width: 1.5; fill: none; }
+    .hidden-line { stroke: #888; stroke-width: 1; stroke-dasharray: 4; }
+    .diag-base { stroke: red; stroke-width: 2; stroke-dasharray: 5; }
+    .diag-main { stroke: blue; stroke-width: 2; stroke-dasharray: 5; }
+    .right-angle { stroke: black; stroke-width: 1; fill: none; }
+  </style>
+
+  <!-- Hidden Edges -->
+  <line class="hidden-line" x1="100" y1="250" x2="150" y2="200"/>
+  <line class="hidden-line" x1="150" y1="200" x2="150" y2="100"/>
+  <line class="hidden-line" x1="150" y1="200" x2="350" y2="200"/>
+
+  <!-- Diagonals -->
+  <line class="diag-base" x1="100" y1="250" x2="350" y2="200"/> <!-- Base diagonal -->
+  <line class="diag-main" x1="100" y1="250" x2="350" y2="100"/> <!-- Main diagonal -->
+
+  <!-- Visible Edges -->
+  <line class="edge" x1="100" y1="250" x2="300" y2="250"/>
+  <line class="edge" x1="100" y1="250" x2="100" y2="150"/>
+  <line class="edge" x1="300" y1="250" x2="300" y2="150"/>
+  <line class="edge" x1="100" y1="150" x2="300" y2="150"/>
+  <line class="edge" x1="300" y1="150" x2="350" y2="100"/>
+  <line class="edge" x1="300" y1="250" x2="350" y2="200"/>
+  <line class="edge" x1="350" y1="100" x2="350" y2="200"/>
+  <line class="edge" x1="150" y1="100" x2="350" y2="100"/>
+  <line class="edge" x1="100" y1="150" x2="150" y2="100"/>
+
+  <!-- Right Angle Markers -->
+  <polyline class="right-angle" points="290,250 300,250 300,240"/>
+  <polyline class="right-angle" points="340,200 350,200 350,190"/>
+
+  <!-- Labels -->
+  <text class="label" x="200" y="270">l</text>
+  <text class="label" x="335" y="235">w</text>
+  <text class="label" x="315" y="200">h</text>
+</svg>
