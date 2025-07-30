@@ -143,8 +143,15 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
             * [x] Mini-Challenge: Guest List.
             * [x] Mini-Challenge: Build a List from Scratch.
             * [x] Mini-Challenge: Simple Shopping Cart.
-        * [ ] Publish to TOC
-    10. **Notebook 8 - Mastering Loops**
+        * [x] Publish to TOC
+    10. **Review Notebook (05-07)**
+        * [x] Create `notebooks/05-07.review-notebook.ipynb` which covers:
+          * [x] A concise list of topics from notebooks 05, 06, and 07.
+          * [x] "Check Your Understanding" questions to reinforce concepts.
+          * [x] "Mini-Challenge" problems combining skills.
+          * [x] A brief discussion on problem-solving skills.
+        * [x] Publish to TOC
+    11. **Notebook 8 - Mastering Loops**
         * [x] Create `notebooks/08-for-loops.ipynb` which covers:
           * [x] Introduction to loops and the concept of iteration (DRY principle).
           * [ ] Add a reminder about indented code blocks and where they have been seen before (functions, if/else statements).
@@ -156,8 +163,8 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [x] Mini-Challenge: Multiples.
           * [x] Mini-Challenge: Multiplication Table.
           * [x] The Perfect Trio - `len()`, `range()`, and Indexing.
-        * [ ] Publish to TOC
-    11. **Notebook 9 - The Game Loop**
+        * [x] Publish to TOC
+    12. **Notebook 9 - The Game Loop**
         * [x] Create `notebooks/09-the-game-loop.ipynb` which covers:
           * [x] Introduction to the "game loop" concept (e.g., initialize, loop, update, check for end).
           * [x] Introducing `while` loops for indefinite repetition.
@@ -165,8 +172,8 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [x] Using a provided `random_number()` function without needing to understand its internal workings.
           * [x] Mini-Challenge 1: "Guess the Number" game (Hi/Low).
           * [x] Mini-Challenge 2: "Random Math Test" game (e.g., 5 random addition problems).
-        * [ ] Publish to TOC
-    12. **Notebook 10 - Caesar Cipher**
+        * [x] Publish to TOC
+    13. **Notebook 10 - Caesar Cipher**
         * [x] Create `notebooks/10-the-caesar-cipher.ipynb` which covers:
           * [x] Brief explanation of the Caesar Cipher and its history
           * [x] Statement of problem - we want a system that lets two parties exchange secret messages
@@ -194,7 +201,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
               * [x] Can we reuse code?
               * [x] What about testing?
         * [ ] Publish to TOC
-    13. **Notebook 11 - Prime Numbers**
+    14. **Notebook 11 - Prime Numbers**
         * [x] Create `notebooks/11-prime-numbers.ipynb` which covers:
           * This notebook will work up to calculating a list of prime numbers.  Along the way, it will introduce some basic problem solving techniques and explain new programming tools that we will need to solve the problem.
           * [ ] Introduce the problem of finding prime numbers.

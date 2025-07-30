@@ -8,57 +8,58 @@ This document outlines the project goals, target audience, core features, techni
 
 The PAPS project aims to provide a comprehensive set of self-study Jupyter notebooks for students aged 13-16, serving as a complete introduction to programming and problem-solving.
 
-*   **Primary Goal:** To create high-quality, beginner-friendly educational materials for learning Python and problem-solving using Jupyter Notebooks.
-*   **Key Objectives:**
-    *   Assume no prior exposure to programming.
-    *   Assume students will run notebooks on Google Colab (zero-installation platform).
-    *   Present programming as a versatile tool applicable across many disciplines (mathematics, finance, science, language arts).
-    *   Each notebook should take approximately 30-60 minutes for a student to work through.
-    *   Each notebook should provide many opportunities for student experimentation.
+* **Primary Goal:** To create high-quality, beginner-friendly educational materials for learning Python and problem-solving using Jupyter Notebooks.
+* **Key Objectives:**
+  * Assume no prior exposure to programming.
+  * Assume students will run notebooks on Google Colab (zero-installation platform).
+  * Present programming as a versatile tool applicable across many disciplines (mathematics, finance, science, language arts).
+  * Each notebook should take approximately 30-60 minutes for a student to work through.
+  * Each notebook should provide many opportunities for student experimentation.
 
 ## 3. Target Audience
 
-*   **Primary Learners:** Students between 13-16 years old with little to no prior programming experience.
-*   **Assumed Prior Knowledge:** None in programming. Basic computer literacy.
-*   **Learning Styles:** The materials should cater to interactive learning, with a balance of theoretical explanation and practical application.
+* **Primary Learners:** Students between 13-16 years old with little to no prior programming experience.
+* **Assumed Prior Knowledge:** None in programming. Basic computer literacy.
+* **Learning Styles:** The materials should cater to interactive learning, with a balance of theoretical explanation and practical application.
 
 ## 4. Core Features / Content Areas (Project Deliverables)
 
 The project will deliver a set of Jupyter notebooks covering fundamental programming and problem-solving concepts. For a detailed breakdown of the content for each notebook, refer to the [PAPS Project Plan & Task List](task-list.md).
 
-*   **Initial Notebooks:** Focus on introducing Jupyter Notebooks, Google Colab, basic Markdown, and Python fundamentals (variables, types, `print()`, error handling).
-*   **Additional Notebooks (Extended Case Studies):** Introduce new Python concepts and problem-solving techniques through engaging challenges, including functions, data structures (tuples, lists, dictionaries, classes), and open-ended discussion questions.
+* **Initial Notebooks:** Focus on introducing Jupyter Notebooks, Google Colab, basic Markdown, and Python fundamentals (variables, types, `print()`, error handling).
+* **Additional Notebooks (Extended Case Studies):** Introduce new Python concepts and problem-solving techniques through engaging challenges, including functions, data structures (tuples, lists, dictionaries, classes), and open-ended discussion questions.
 
 ## 5. Technical Requirements
 
-*   **Platform:** Jupyter Notebooks, primarily run on Google Colaboratory (Colab). All descriptions of the Jupyter notebook interface should refer to what Google Colab presents.
-*   **Primary Language:** Python.
-*   **Code Style/Linting:** Adherence to project conventions, enforced by `ruff` and `black`.
-*   **Dependency Management:** Managed via `pyproject.toml` within a `venv`.
-*   **Testing:** `pytest` for any Python source code in the `src/` directory.
-*   **Version Control:** Git/GitHub.
+* **Platform:** Jupyter Notebooks, primarily run on Google Colaboratory (Colab). All descriptions of the Jupyter notebook interface should refer to what Google Colab presents.
+* **Primary Language:** Python.
+* **Code Style/Linting:** Adherence to project conventions, enforced by `ruff` and `black`.
+* **Dependency Management:** Managed via `pyproject.toml` within a `venv`.
+* **Testing:** `pytest` for any Python source code in the `src/` directory.
+* **Version Control:** Git/GitHub.
 
 ## 6. Pedagogical Approach & Style Guidelines
 
-*   **Tone:** Encouraging, supportive, and educational.
-*   **Explanation Style:** Simple, clear, and easy to understand. Use analogies. Avoid complex jargon or overly "clever" code.
-*   **Notebook Structure:** A balanced mix of Markdown cells for explanation and Python code cells for examples and exercises.
-*   **Diagrams:** Simple, clean SVG diagrams stored in `notebooks/images/` to clarify concepts. Referenced using fully qualified GitHub raw content URLs.
-*   **Interactive Elements:** Mini-challenges, discussion questions, and opportunities for experimentation.
-*   **Comments:** Add comments sparingly, focusing on *why* something is done.
-*   **Convention Adherence:** Strictly follow existing coding style, formatting, and project structure.
+* **Tone:** Encouraging, supportive, and educational.
+* **Explanation Style:** Simple, clear, and easy to understand. Use analogies. Avoid complex jargon or overly "clever" code.
+* **Notebook Structure:** A balanced mix of Markdown cells for explanation and Python code cells for examples and exercises.
+* **Diagrams:** Simple, clean SVG diagrams stored in `notebooks/images/` to clarify concepts. Referenced using fully qualified GitHub raw content URLs.
+* **Interactive Elements:** Mini-challenges, discussion questions, and opportunities for experimentation.
+* **Comments:** Add comments sparingly, focusing on *why* something is done.
+* **Convention Adherence:** Strictly follow existing coding style, formatting, and project structure.
 
 ## 7. Success Metrics
 
 Success will be measured by:
-*   The completeness of the planned set of Jupyter notebooks.
-*   Adherence to the defined pedagogical and technical standards.
-*   Feedback from target audience (e.g., clarity, engagement, effectiveness in teaching).
+
+* The completeness of the planned set of Jupyter notebooks.
+* Adherence to the defined pedagogical and technical standards.
+* Feedback from target audience (e.g., clarity, engagement, effectiveness in teaching).
 
 ## 8. Future Considerations / Out of Scope
 
-*   **Out of Scope for Initial Phase:** Deployment to platforms other than Google Colab, advanced topics beyond the scope of introductory programming for the target age group.
-*   **Potential Future Expansions:** Additional case studies, integration with other learning platforms, advanced topics for older students.
+* **Out of Scope for Initial Phase:** Deployment to platforms other than Google Colab, advanced topics beyond the scope of introductory programming for the target age group.
+* **Potential Future Expansions:** Additional case studies, integration with other learning platforms, advanced topics for older students.
 
 ## 9. Research Background / References
 

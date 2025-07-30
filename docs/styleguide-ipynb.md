@@ -41,7 +41,7 @@ This document outlines the best practices and conventions for creating iPython n
     * Clearly state the estimated time at the beginning of the notebook.
 * **End of Notebook:**
   * **Summary/Recap:** A concise summary of the key concepts covered in the notebook.
-  * **Discussion Question (Meta-cognition):** Before the final summary, include an open-ended discussion question (`### 🤔 Discussion Question:`) to encourage students to reflect on their learning process. These questions should be specific to the content and challenges of the current notebook, prompting reflection on the student's direct learning experience. For example, for a notebook on loops: "Think about the 'game loop' concept we explored. Can you identify a process in your daily life (like getting ready for school, making a sandwich, or playing a sport) that could be described using a 'loop'? What would be the 'initialization,' 'conditions,' and 'updates' in that loop? How does thinking about it this way change your understanding of that process?"
+  * **Reflection Question:** At the end of the notebook, as part of the summary or conclusion, weave in an open-ended question to encourage students to reflect on their learning process. This should feel like a natural part of the wrap-up, not a separate, labeled section. The question should be specific to the content and challenges of the current notebook. For example, in a notebook about functions, you might ask: "As you built functions in the challenges, did you find it easier to write the function first and then test it, or to think about the test cases first? There's no right answer, but thinking about your own process is a key part of becoming a great programmer."
   * **Key Takeaways:** Bullet points highlighting the most important points.
   * **Next Steps/Preview:** Briefly mention what will be covered in the next notebook.
     * The section header (e.g., `### Next Up: ...`) should state the title of the next notebook but should **not** contain the link.
@@ -160,28 +160,33 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 * **Conciseness:** Keep explanations clear and to the point.
 * **Linking Between Notebooks:** All links to other notebooks in the project **must** be fully-qualified Google Colab URLs to ensure they work correctly for all users. Use the following strict format:
 
-  *   **Base URL:** `https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/`
-  *   **File Name:** The full filename of the target notebook (e.g., `01-getting-started.ipynb`).
-  *   **Full URL:** `https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/FILENAME.ipynb`
+  * **Base URL:** `https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/`
+  * **File Name:** The full filename of the target notebook (e.g., `01-getting-started.ipynb`).
+  * **Full URL:** `https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/FILENAME.ipynb`
 
   **Link Text Rules:**
 
-  1.  **Prerequisites/Review Links:** The link text must be the full, exact title of the notebook being referenced, as it appears at the top of that notebook's content.
-      *   **Correct Example:**
+  1. **Prerequisites/Review Links:** The link text must be the full, exact title of the notebook being referenced, as it appears at the top of that notebook's content.
+      * **Correct Example:**
+
           ```markdown
           *   Concepts from [Notebook 2: First Steps with Python](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/02-first-steps-with-python.ipynb), including variables and data types.
           ```
-      *   **Incorrect Example:** `[Click here for Notebook 2](...)`
 
-  2.  **"Next Up" Links:** In the end-of-notebook summary, the link to the next notebook must also use the full title of the target notebook as the link text.
-      *   **Correct Example:**
+      * **Incorrect Example:** `[Click here for Notebook 2](...)`
+
+  2. **"Next Up" Links:** In the end-of-notebook summary, the link to the next notebook must also use the full title of the target notebook as the link text.
+      * **Correct Example:**
+
           ```markdown
           In our next notebook, [Notebook 4: Interactive Programs](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/04-interactive-programs.ipynb), we'll make our programs much more flexible...
           ```
-      *   **Incorrect Example:** `In our next notebook, we'll learn about [interactive programs](...).`
 
-  3.  **"Return to Table of Contents" Links:** These links must always use the exact text "Return to Table of Contents".
-      *   **Correct Example:**
+      * **Incorrect Example:** `In our next notebook, we'll learn about [interactive programs](...).`
+
+  3. **"Return to Table of Contents" Links:** These links must always use the exact text "Return to Table of Contents".
+      * **Correct Example:**
+
           ```markdown
           [Return to Table of Contents](https://colab.research.google.com/github/sguy/programming-and-problem-solving/blob/main/notebooks/table-of-contents.ipynb)
           ```
@@ -195,5 +200,16 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 ## 8. Other Standards
 
 * The `id` field of each notebook cell should be a unique human readable kebab-cased name.
+
+## 9. Review Notebooks
+
+Review notebooks are a special type of notebook designed to help students consolidate their learning. They should follow all the general style guidelines, with a few specific additions:
+
+*   **Structure:** Review notebooks should be structured to cover a range of topics from previous notebooks. They should consist of two main sections:
+    *   `## ✅ Check Your Understanding`: A series of quick questions to test recall and comprehension of key concepts.
+    *   `## 🎯 Mini-Challenges`: A series of small coding challenges that require students to apply the concepts they have learned in a more practical way.
+*   **Content:** The questions and challenges should be cumulative, covering material from the specified range of notebooks, but can also include concepts from earlier notebooks to reinforce foundational knowledge.
+*   **Tone:** The tone should be encouraging and supportive, emphasizing that the review is a tool for self-assessment and practice, not a test.
+
 ---
 This style guide is a living document and may be updated as the project evolves.
