@@ -219,3 +219,37 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [ ] Your turn to code: Putting It All Together: Generating a list of prime numbers. (Use a loop to iterate through a range, call `is_prime()`, and add primes to a list).
           * [ ] Reflecting on the problem solving process - an important step.  How do you think?  What clicks with you?  Meta-cognition.
         * [ ] Publish to TOC
+    15. **Notebook 12.a - Functions, Sequences, and Plots**
+        * [ ] Create `notebooks/12.a-functions-sequences-and-plots.ipynb` which covers:
+          * [ ] Frame with a concrete problem: modeling the distance traveled by a falling object.
+          * [ ] Representing a rule (linear and quadratic) as a Python function.
+          * [ ] Storing sequences in lists, including using list comprehensions.
+          * [ ] Using `matplotlib` as a "black box" to create "position vs. time" plots to visually contrast linear and quadratic motion.
+          * [ ] Challenge: Generate and plot the sequence for the area of an equilateral triangle.
+        * [ ] Publish to TOC
+    16. **Notebook 12.b - Finding Linear Patterns**
+        * [ ] Create `notebooks/12.b-finding-linear-patterns.ipynb` which covers:
+          * [ ] Frame with a concrete problem: deducing a taxi fare rule from a sequence of costs.
+          * [ ] Introducing the "Method of First Differences" to find a hidden linear function.
+          * [ ] Writing a Python function to calculate the first differences of a list.
+          * [ ] Challenge: Given a sequence of total costs for cupcakes, deduce the base cost of the box.
+        * [ ] Publish to TOC
+    17. **Notebook 12.c - Cracking the Quadratic Code**
+        * [ ] Create `notebooks/12.c-cracking-the-quadratic-code.ipynb` which covers:
+          * [ ] Frame with a concrete problem: finding the physical law for a falling object from experimental data.
+          * [ ] Showing that first differences (speed) are not constant for a quadratic sequence.
+          * [ ] Introducing the "Method of Second Differences" to solve the puzzle.
+          * [ ] Explicitly defining acceleration as the "change in speed" (the "change of the change in position").
+          * [ ] Relating the constant second difference to constant acceleration.
+          * [ ] Challenge: Discover the quadratic function for the "Handshake Problem".
+        * [ ] Publish to TOC
+    18. **Notebook 12.d - The Big Picture: From Differences to Rates of Change**
+        * [ ] Create `notebooks/12.d-the-big-picture.ipynb` which covers:
+          * [ ] Frame with a concrete problem: showing that the velocity (rate of change) of a falling object is linear, and its acceleration is constant.
+          * [ ] Explicitly defining speed as "change of position" and acceleration as "change of speed".
+          * [ ] Creating three plots: a parabolic "position vs. time", a linear "speed vs. time" (from first differences), and a constant "acceleration vs. time" (from second differences).
+          * [ ] Highlighting the visual transformation between the three plots.
+          * [ ] Making the intuitive leap from discrete differences to the continuous derivative by shrinking the interval `h`.
+          * [ ] Building a `plot_derivative` function to visualize a function and its approximate derivative.
+          * [ ] Challenge: Use the `plot_derivative` tool to observe the pattern of derivatives for linear, quadratic, and cubic functions.
+        * [ ] Publish to TOC
