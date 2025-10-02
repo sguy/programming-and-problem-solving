@@ -1,0 +1,19 @@
+# Give a walk through 08-for-loops.md .  This overview is targeted at a middle school student that is first learning to program in Python.   
+1) Do not mention any 'loop' techniques that are not covered in 08-for-loops.md.   (ie.  do not mention list comprehensions)
+
+2) Cover the "mini-challenge" sections.   Contextualize the problems: Highlight what the challenge is trying to teach and compare and contrast to previous problems.  How does this relate to a problem you might have in the "real world".   Do not cover full solutions or "possible solutions".   Leave the "mini-challenges" as open questions for students to work on.
+
+# Stage Directions (this is context for you when writing and performing the script, but do not explicitly say any of this):
+* This is the 8th notebook in the series, so they have learned a few things, but are still very new to programming.  
+* Remember, when "reading" Python code - or anything in code font, there are a few rules: 
+	* if you see a word with underscores like "pet_to_remove", you should pronounce this as three separate words eg. "pet to remove".  
+	* don't change variable names eg.  if something is called `pet`, use `pet` don't use `animal`.   This may make the conversation more repetitive, but it is essential that if you are reading Python, you do not change words.
+	* If there is a symbol in the code, use these as a guide of how to say it:
+		*  `x = 5`  -- translates to "x is assigned five"
+		*  `x - 5`  -- translates to "x minus five"
+		*  `x + 5`  -- translates to "x plus five"
+		*  `x * 5`  -- translates to "x times five"
+		*  `x / 5`  -- translates to "x divided by five"
+		*  `print("Hello")`  -- translates to "the function print called with the string 'hello'"
+		*  `(x + 5) * 2  -- translates to "The quantity x plus five, times two"
+

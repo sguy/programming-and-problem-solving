@@ -221,34 +221,41 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
         * [ ] Publish to TOC
     15. **Notebook 12.a - Functions, Sequences, and Plots**
         * [ ] Create `notebooks/12.a-functions-sequences-and-plots.ipynb` which covers:
-          * [ ] Frame with a concrete problem: modeling the distance traveled by a falling object.
-          * [ ] Representing a rule (linear and quadratic) as a Python function.
+          * [ ] Add a detailed introduction explaining the motivation for studying the 'sensitivity' of functions (the method of differences) and its real-world applications (e.g., in physics, finance, and data analysis).
+          * [ ] Explicitly define the concepts of independent and dependent variables.
+          * [ ] Frame with a concrete problem: modeling the distance (dependent) traveled by a falling object over time (independent).
+          * [ ] Representing a rule as a Python function.
           * [ ] Storing sequences in lists, including using list comprehensions.
-          * [ ] Using `matplotlib` as a "black box" to create "position vs. time" plots to visually contrast linear and quadratic motion.
-          * [ ] Challenge: Generate and plot the sequence for the area of an equilateral triangle.
+          * [ ] Using `matplotlib` to create plots to visually contrast linear and quadratic motion, emphasizing the x-axis as the independent variable and y-axis as the dependent.
         * [ ] Publish to TOC
     16. **Notebook 12.b - Finding Linear Patterns**
-        * [x] Create `notebooks/12.b-finding-linear-patterns.ipynb` which covers:
-          * [x] Frame with a concrete problem: deducing a taxi fare rule from a sequence of costs.
-          * [x] Introducing the "Method of First Differences" to find a hidden linear function.
-          * [x] Writing a Python function to calculate the first differences of a list.
-        * [x] Publish to TOC
+        * [ ] Create `notebooks/12.b-finding-linear-patterns.ipynb` which covers:
+          * [ ] Start with the simplest case: analyzing a constant function (degree 0) to show its first difference is zero.
+          * [ ] Frame with a concrete problem: deducing a taxi fare rule (dependent) based on distance (independent).
+          * [ ] Introduce the "Method of First Differences" as a way to measure the average rate of change or sensitivity.
+          * [ ] Connect the first difference to the average slope between points on the plot.
+          * [ ] Python Challenge: Write a function `discover_linear_rule(data)` that automates the process of finding `m` and `b`.
+        * [ ] Publish to TOC
     17. **Notebook 12.c - Cracking the Quadratic Code**
         * [ ] Create `notebooks/12.c-cracking-the-quadratic-code.ipynb` which covers:
-          * [ ] Frame with a concrete problem: finding the physical law for a falling object from experimental data.
-          * [ ] Showing that first differences (speed) are not constant for a quadratic sequence.
-          * [ ] Introducing the "Method of Second Differences" to solve the puzzle.
-          * [ ] Explicitly defining acceleration as the "change in speed" (the "change of the change in position").
-          * [ ] Relating the constant second difference to constant acceleration.
-          * [ ] Challenge: Discover the quadratic function for the "Handshake Problem".
+          * [ ] Frame with a concrete problem: analyzing the position of a falling object over time.
+          * [ ] Show that the first difference (average velocity) is not constant.
+          * [ ] Introduce the "Method of Second Differences" (average acceleration) and show it is constant for a quadratic sequence.
+          * [ ] Python Challenge: Write a function `is_quadratic(data)` that returns `True` if the second difference is constant.
         * [ ] Publish to TOC
-    18. **Notebook 12.d - The Big Picture: From Differences to Rates of Change**
-        * [ ] Create `notebooks/12.d-the-big-picture.ipynb` which covers:
-          * [ ] Frame with a concrete problem: showing that the velocity (rate of change) of a falling object is linear, and its acceleration is constant.
-          * [ ] Explicitly defining speed as "change of position" and acceleration as "change of speed".
-          * [ ] Creating three plots: a parabolic "position vs. time", a linear "speed vs. time" (from first differences), and a constant "acceleration vs. time" (from second differences).
-          * [ ] Highlighting the visual transformation between the three plots.
-          * [ ] Making the intuitive leap from discrete differences to the continuous derivative by shrinking the interval `h`.
-          * [ ] Building a `plot_derivative` function to visualize a function and its approximate derivative.
-          * [ ] Challenge: Use the `plot_derivative` tool to observe the pattern of derivatives for linear, quadratic, and cubic functions.
+    18. **Notebook 12.d - The Method of Differences**
+        * [ ] Create `notebooks/12.d-the-method-of-differences.ipynb` which covers:
+          * [ ] Generalize the method: how to know when to stop taking differences (i.e., when they become zero).
+          * [ ] Introduce the **Principle of Degree Reduction**: explain that taking a difference reduces the polynomial degree by one. Use a table to visualize the Quadratic -> Linear -> Constant -> Zero progression.
+          * [ ] Use this to reliably determine if a sequence is linear or quadratic.
+          * [ ] Introduce the formal method for deriving coefficients `a`, `b`, and `c`.
+          * [ ] **Structure:** Place the detailed algebraic derivations inside collapsed `<details>` sections to keep the main narrative focused on the concepts. The "how" is optional.
+          * [ ] Python Challenge: Write a function `analyze_sequence(data)` that returns the degree of the polynomial and its coefficients.
+          * [ ] Visualization Challenge: Create a `plot_differences(sequence)` function that uses `matplotlib.subplots` to show the original sequence, its first differences, and second differences in a single figure with three stacked plots.
+        * [ ] Publish to TOC
+    19. **Notebook 12.e - A Glimpse of Calculus**
+        * [ ] Create `notebooks/12.e-a-glimpse-of-calculus.ipynb` which covers:
+          * [ ] A conceptual, "soft introduction" to the ideas of derivatives, framed as "instantaneous sensitivity."
+          * [ ] Explicitly connect the average rate of change over an interval to the instantaneous rate of change at a point.
+          * [ ] Python Challenge: Create a `plot_secant_line(f, x, h)` function and use a loop to shrink `h` towards zero, visualizing the secant line becoming the tangent line.
         * [ ] Publish to TOC
