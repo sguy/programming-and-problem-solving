@@ -228,12 +228,11 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [ ] Challenge: Generate and plot the sequence for the area of an equilateral triangle.
         * [ ] Publish to TOC
     16. **Notebook 12.b - Finding Linear Patterns**
-        * [ ] Create `notebooks/12.b-finding-linear-patterns.ipynb` which covers:
-          * [ ] Frame with a concrete problem: deducing a taxi fare rule from a sequence of costs.
-          * [ ] Introducing the "Method of First Differences" to find a hidden linear function.
-          * [ ] Writing a Python function to calculate the first differences of a list.
-          * [ ] Challenge: Given a sequence of total costs for cupcakes, deduce the base cost of the box.
-        * [ ] Publish to TOC
+        * [x] Create `notebooks/12.b-finding-linear-patterns.ipynb` which covers:
+          * [x] Frame with a concrete problem: deducing a taxi fare rule from a sequence of costs.
+          * [x] Introducing the "Method of First Differences" to find a hidden linear function.
+          * [x] Writing a Python function to calculate the first differences of a list.
+        * [x] Publish to TOC
     17. **Notebook 12.c - Cracking the Quadratic Code**
         * [ ] Create `notebooks/12.c-cracking-the-quadratic-code.ipynb` which covers:
           * [ ] Frame with a concrete problem: finding the physical law for a falling object from experimental data.
