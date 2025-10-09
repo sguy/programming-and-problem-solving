@@ -97,6 +97,7 @@ Use consistent visual cues (e.g., emojis or icons) to denote different types of 
 * `## 🐍 New Concept:` When introducing a new Python command, programming concept, or key vocabulary.
   * _Example: "`## 🐍 New Concept:` Variables - Variables are like containers that store information."_
   * **Connect to Prior Knowledge:** When possible, explicitly connect the new concept to something students have already learned. Draw comparisons (e.g., "Just like an `if` statement, a function definition uses an indented block of code...") or highlight contrasts to prevent confusion (e.g., "Unlike the `+` operator with numbers, using `+` with strings joins them together instead of doing math.").
+  * **Link to External Documentation:** When introducing a new function or concept from an external library (e.g., `plt.plot()` from Matplotlib), provide a link to the official documentation. This helps students learn to find information independently. This can be framed as a `### 🔗 External Resources:` section.
 * `### ⚠️ Heads Up!:` For important distinctions, common pitfalls, or things students need to be particularly careful about.
   * _Example: "`### ⚠️ Heads Up!:` Python is case-sensitive, meaning `myVariable` and `myvariable` are different."_
 * `### 🤔 Discussion Question:` To prompt thought and reflection. These can be open-ended.

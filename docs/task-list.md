@@ -225,22 +225,33 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [ ] Explicitly define the concepts of independent and dependent variables.
           * [ ] Frame with a concrete problem: modeling the distance (dependent) traveled by a falling object over time (independent).
           * [ ] Representing a rule as a Python function.
-          * [ ] Storing sequences in lists, including using list comprehensions.
+          * [ ] **Advanced Functions:** Introduce the concept of functions as first-class citizens in Python, showing how they can be passed as arguments to other functions.
+          * [ ] **Sequence Generation:** Create a reusable helper function `get_function_values(func, end_x)` that uses a standard `for` loop to generate a sequence of values.
+          * [ ] **Check Your Understanding:** Add a multiple-choice question to check understanding of passing functions as arguments.
+          * [ ] **Mini-Challenge:** Add a challenge asking students to define their own simple function and use `get_function_values` to generate data from it.
           * [ ] Using `matplotlib` to create plots to visually contrast linear and quadratic motion, emphasizing the x-axis as the independent variable and y-axis as the dependent.
         * [ ] Publish to TOC
     16. **Notebook 12.b - Finding Linear Patterns**
         * [ ] Create `notebooks/12.b-finding-linear-patterns.ipynb` which covers:
-          * [ ] Start with the simplest case: analyzing a constant function (degree 0) to show its first difference is zero.
-          * [ ] Frame with a concrete problem: deducing a taxi fare rule (dependent) based on distance (independent).
-          * [ ] Introduce the "Method of First Differences" as a way to measure the average rate of change or sensitivity.
+          * [ ] Introduce `math.nan` from the standard `math` library as a placeholder for undefined values.
+          * [ ] Create a `calculate_differences` function that returns a padded list of the same length as the input, with `math.nan` at the start.
+          * [ ] **Case Study 1 (Constant):**
+            * [ ] Define a Python function for a constant rule, e.g., `calc_subway_fare(stop_number)`.
+            * [ ] Use the `get_function_values` helper (from 12.a) to generate a sequence from this function.
+            * [ ] Analyze the first difference to show it is zero.
+          * [ ] **Case Study 2 (Linear):**
+            * [ ] Define a Python function for a linear rule, e.g., `calc_taxi_fare(miles)`.
+            * [ ] Use `get_function_values` to generate a sequence from this function.
+            * [ ] Analyze the first difference to show it is constant.
+          * [ ] Introduce the "Method of First Differences" using $d_1(n)$ notation, emphasizing that the math index `n` now matches the Python index `n`.
           * [ ] Connect the first difference to the average slope between points on the plot.
           * [ ] Python Challenge: Write a function `discover_linear_rule(data)` that automates the process of finding `m` and `b`.
         * [ ] Publish to TOC
     17. **Notebook 12.c - Cracking the Quadratic Code**
         * [ ] Create `notebooks/12.c-cracking-the-quadratic-code.ipynb` which covers:
           * [ ] Frame with a concrete problem: analyzing the position of a falling object over time.
-          * [ ] Show that the first difference (average velocity) is not constant.
-          * [ ] Introduce the "Method of Second Differences" (average acceleration) and show it is constant for a quadratic sequence.
+          * [ ] Show that the first difference, $d_1(n)$, (average velocity) is not constant.
+          * [ ] Introduce the "Method of Second Differences", $d_2(n)$, (average acceleration) and show it is constant for a quadratic sequence.
           * [ ] Python Challenge: Write a function `is_quadratic(data)` that returns `True` if the second difference is constant.
         * [ ] Publish to TOC
     18. **Notebook 12.d - The Method of Differences**
@@ -248,10 +259,10 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [ ] Generalize the method: how to know when to stop taking differences (i.e., when they become zero).
           * [ ] Introduce the **Principle of Degree Reduction**: explain that taking a difference reduces the polynomial degree by one. Use a table to visualize the Quadratic -> Linear -> Constant -> Zero progression.
           * [ ] Use this to reliably determine if a sequence is linear or quadratic.
-          * [ ] Introduce the formal method for deriving coefficients `a`, `b`, and `c`.
+          * [ ] Introduce the formal method for deriving coefficients `a`, `b`, and `c` using $d_1(n)$ and $d_2(n)$ notation.
           * [ ] **Structure:** Place the detailed algebraic derivations inside collapsed `<details>` sections to keep the main narrative focused on the concepts. The "how" is optional.
           * [ ] Python Challenge: Write a function `analyze_sequence(data)` that returns the degree of the polynomial and its coefficients.
-          * [ ] Visualization Challenge: Create a `plot_differences(sequence)` function that uses `matplotlib.subplots` to show the original sequence, its first differences, and second differences in a single figure with three stacked plots.
+          * [ ] Visualization Challenge: Create a `plot_differences(sequence)` function that uses `matplotlib.subplots` to show the original sequence and its padded differences on aligned axes.
         * [ ] Publish to TOC
     19. **Notebook 12.e - A Glimpse of Calculus**
         * [ ] Create `notebooks/12.e-a-glimpse-of-calculus.ipynb` which covers:
