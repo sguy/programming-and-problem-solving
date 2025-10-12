@@ -220,38 +220,38 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [ ] Reflecting on the problem solving process - an important step.  How do you think?  What clicks with you?  Meta-cognition.
         * [ ] Publish to TOC
     15. **Notebook 12.a - Functions, Sequences, and a Thrown Ball**
-        * [ ] Refactor `notebooks/12.a-functions-sequences-and-plots.ipynb` to establish the new through-line.
-          * [ ] **Scenario:** The series will analyze the 1D motion of a ball thrown straight up from a 10m bridge.
-          * [ ] **Function:** The primary model will be `height(t) = 10 + 50*t - 5*t^2`.
-          * [ ] **Narrative:** The introduction will frame the series around finding the rule that governs the ball's flight.
-          * [ ] **Clarity:** The text must carefully distinguish between the ball's 1D vertical motion and the 2D parabolic shape of its height-vs-time graph.
-          * [ ] **Cleanup:** Remove the old, secondary `linear_model` example.
-        * [ ] Publish to TOC
+        * [x] Refactor `notebooks/12.a-functions-sequences-and-plots.ipynb` to establish the new through-line.
+          * [x] **Scenario:** The series will analyze the 1D motion of a ball thrown straight up from a 10m bridge.
+          * [x] **Function:** The primary model will be `height(t) = 10 + 50*t - 5*t^2`.
+          * [x] **Narrative:** The introduction will frame the series around finding the rule that governs the ball's flight.
+          * [x] **Clarity:** The text must carefully distinguish between the ball's 1D vertical motion and the 2D parabolic shape of its height-vs-time graph.
+          * [x] **Cleanup:** Remove the old, secondary `linear_model` example.
+        * [x] Publish to TOC
 
     16. **Notebook 12.b - Finding Linear Patterns**
-        * [ ] Refactor `notebooks/12.b-finding-linear-patterns.ipynb` to use the new examples.
-          * [ ] **Primary Example:** Replace the taxi/subway examples with a more concrete **Cell Phone Plan** scenario (`Cost = 10*GB + 25`) to teach the Method of First Differences.
-          * [ ] **Callback Example:** Add a secondary section that analyzes the ball's `velocity` data (`v(t) = 50 - 10t`). Students will discover it is linear, reinforcing the "degree reduction" principle and connecting back to the through-line.
-          * [ ] **Consistency:** Ensure the robust `calculate_differences` function (that handles `nan`) is used.
-        * [ ] Publish to TOC
+        * [x] Refactor `notebooks/12.b-finding-linear-patterns.ipynb` to use the new examples.
+          * [x] **Primary Example:** Replace the taxi/subway examples with a more concrete **Cell Phone Plan** scenario (`Cost = 10*GB + 25`) to teach the Method of First Differences.
+          * [x] **Callback Example:** Add a secondary section that analyzes the ball's `velocity` data (`v(t) = 50 - 10t`). Students will discover it is linear, reinforcing the "degree reduction" principle and connecting back to the through-line.
+          * [x] **Consistency:** Ensure the robust `calculate_differences` function (that handles `nan`) is used.
+        * [x] Publish to TOC
 
     17. **Notebook 12.c - Cracking the Quadratic Code**
-        * [ ] Refactor `notebooks/12.c-cracking-the-quadratic-code.ipynb` to align with the through-line.
-          * [ ] **Data:** All analysis will be done on the `height` data generated from the official through-line function (`[10, 55, 90, 115, 130, 135]`).
-          * [ ] **Narrative:** Directly continue the story by having students find that the first difference (average velocity) is not constant, but the second difference (average acceleration) is.
-          * [ ] **Cleanup:** Remove the `is_quadratic` helper function challenge in favor of a more direct analysis of the differences.
-        * [ ] Publish to TOC
+        * [x] Refactor `notebooks/12.c-cracking-the-quadratic-code.ipynb` to align with the through-line.
+          * [x] **Data:** All analysis will be done on the `height` data generated from the official through-line function (`[10, 55, 90, 115, 130, 135]`).
+          * [x] **Narrative:** Directly continue the story by having students find that the first difference (average velocity) is not constant, but the second difference (average acceleration) is.
+          * [x] **Cleanup:** Remove the `is_quadratic` helper function challenge in favor of a more direct analysis of the differences.
+        * [x] Publish to TOC
 
     18. **Notebook 12.d - The Method of Differences**
-        * [ ] Refactor `notebooks/12.d-the-method-of-differences.ipynb` to solve the through-line problem.
-          * [ ] **Main Challenge:** The primary goal will be to use the `height` data and the full Method of Differences to derive the coefficients `a=-5`, `b=50`, and `c=10`, thus re-discovering the original formula.
-          * [ ] **Structure:** Place the detailed algebraic derivations for the coefficients inside a collapsible `<details>` block to keep the main narrative focused.
-          * [ ] **Cleanup:** The fudge pricing puzzle can be kept as a secondary challenge, but the main focus must be on the thrown ball.
-        * [ ] Publish to TOC
+        * [x] Refactor `notebooks/12.d-the-method-of-differences.ipynb` to solve the through-line problem.
+          * [x] **Main Challenge:** The primary goal will be to use the `height` data and the full Method of Differences to derive the coefficients `a=-5`, `b=50`, and `c=10`, thus re-discovering the original formula.
+          * [x] **Structure:** Place the detailed algebraic derivations for the coefficients inside a collapsible `<details>` block to keep the main narrative focused.
+          * [x] **Cleanup:** The fudge pricing puzzle can be kept as a secondary challenge, but the main focus must be on the thrown ball.
+        * [x] Publish to TOC
 
     19. **Notebook 12.e - A Glimpse of Calculus**
-        * [ ] Refactor `notebooks/12.e-a-glimpse-of-calculus.ipynb` to conclude the through-line.
-          * [ ] **Narrative:** The introduction will use the "How does a radar gun work?" analogy to frame the secant method as a real-world measurement of average velocity over a small interval.
-          * [ ] **Function:** All examples and challenges will use the `height(t) = 10 + 50t - 5t^2` function.
-          * [ ] **Goal:** The notebook will focus on finding the ball's *instantaneous velocity* at a specific point in time.
-        * [ ] Publish to TOC
+        * [x] Refactor `notebooks/12.e-a-glimpse-of-calculus.ipynb` to conclude the through-line.
+          * [x] **Narrative:** The introduction will use the "How does a radar gun work?" analogy to frame the secant method as a real-world measurement of average velocity over a small interval.
+          * [x] **Function:** All examples and challenges will use the `height(t) = 10 + 50t - 5t^2` function.
+          * [x] **Goal:** The notebook will focus on finding the ball's *instantaneous velocity* at a specific point in time.
+        * [x] Publish to TOC
