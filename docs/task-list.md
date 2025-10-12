@@ -219,54 +219,39 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
           * [ ] Your turn to code: Putting It All Together: Generating a list of prime numbers. (Use a loop to iterate through a range, call `is_prime()`, and add primes to a list).
           * [ ] Reflecting on the problem solving process - an important step.  How do you think?  What clicks with you?  Meta-cognition.
         * [ ] Publish to TOC
-    15. **Notebook 12.a - Functions, Sequences, and Plots**
-        * [ ] Create `notebooks/12.a-functions-sequences-and-plots.ipynb` which covers:
-          * [ ] Add a detailed introduction explaining the motivation for studying the 'sensitivity' of functions (the method of differences) and its real-world applications (e.g., in physics, finance, and data analysis).
-          * [ ] Explicitly define the concepts of independent and dependent variables.
-          * [ ] Frame with a concrete problem: modeling the distance (dependent) traveled by a falling object over time (independent).
-          * [ ] Representing a rule as a Python function.
-          * [ ] **Advanced Functions:** Introduce the concept of functions as first-class citizens in Python, showing how they can be passed as arguments to other functions.
-          * [ ] **Sequence Generation:** Create a reusable helper function `get_function_values(func, end_x)` that uses a standard `for` loop to generate a sequence of values.
-          * [ ] **Check Your Understanding:** Add a multiple-choice question to check understanding of passing functions as arguments.
-          * [ ] **Mini-Challenge:** Add a challenge asking students to define their own simple function and use `get_function_values` to generate data from it.
-          * [ ] Using `matplotlib` to create plots to visually contrast linear and quadratic motion, emphasizing the x-axis as the independent variable and y-axis as the dependent.
+    15. **Notebook 12.a - Functions, Sequences, and a Thrown Ball**
+        * [ ] Refactor `notebooks/12.a-functions-sequences-and-plots.ipynb` to establish the new through-line.
+          * [ ] **Scenario:** The series will analyze the 1D motion of a ball thrown straight up from a 10m bridge.
+          * [ ] **Function:** The primary model will be `height(t) = 10 + 50*t - 5*t^2`.
+          * [ ] **Narrative:** The introduction will frame the series around finding the rule that governs the ball's flight.
+          * [ ] **Clarity:** The text must carefully distinguish between the ball's 1D vertical motion and the 2D parabolic shape of its height-vs-time graph.
+          * [ ] **Cleanup:** Remove the old, secondary `linear_model` example.
         * [ ] Publish to TOC
+
     16. **Notebook 12.b - Finding Linear Patterns**
-        * [ ] Create `notebooks/12.b-finding-linear-patterns.ipynb` which covers:
-          * [ ] Introduce `math.nan` from the standard `math` library as a placeholder for undefined values.
-          * [ ] Create a `calculate_differences` function that returns a padded list of the same length as the input, with `math.nan` at the start.
-          * [ ] **Case Study 1 (Constant):**
-            * [ ] Define a Python function for a constant rule, e.g., `calc_subway_fare(stop_number)`.
-            * [ ] Use the `get_function_values` helper (from 12.a) to generate a sequence from this function.
-            * [ ] Analyze the first difference to show it is zero.
-          * [ ] **Case Study 2 (Linear):**
-            * [ ] Define a Python function for a linear rule, e.g., `calc_taxi_fare(miles)`.
-            * [ ] Use `get_function_values` to generate a sequence from this function.
-            * [ ] Analyze the first difference to show it is constant.
-          * [ ] Introduce the "Method of First Differences" using $d_1(n)$ notation, emphasizing that the math index `n` now matches the Python index `n`.
-          * [ ] Connect the first difference to the average slope between points on the plot.
-          * [ ] Python Challenge: Write a function `discover_linear_rule(data)` that automates the process of finding `m` and `b`.
+        * [ ] Refactor `notebooks/12.b-finding-linear-patterns.ipynb` to use the new examples.
+          * [ ] **Primary Example:** Replace the taxi/subway examples with a more concrete **Cell Phone Plan** scenario (`Cost = 10*GB + 25`) to teach the Method of First Differences.
+          * [ ] **Callback Example:** Add a secondary section that analyzes the ball's `velocity` data (`v(t) = 50 - 10t`). Students will discover it is linear, reinforcing the "degree reduction" principle and connecting back to the through-line.
+          * [ ] **Consistency:** Ensure the robust `calculate_differences` function (that handles `nan`) is used.
         * [ ] Publish to TOC
+
     17. **Notebook 12.c - Cracking the Quadratic Code**
-        * [ ] Create `notebooks/12.c-cracking-the-quadratic-code.ipynb` which covers:
-          * [ ] Frame with a concrete problem: analyzing the position of a falling object over time.
-          * [ ] Show that the first difference, $d_1(n)$, (average velocity) is not constant.
-          * [ ] Introduce the "Method of Second Differences", $d_2(n)$, (average acceleration) and show it is constant for a quadratic sequence.
-          * [ ] Python Challenge: Write a function `is_quadratic(data)` that returns `True` if the second difference is constant.
+        * [ ] Refactor `notebooks/12.c-cracking-the-quadratic-code.ipynb` to align with the through-line.
+          * [ ] **Data:** All analysis will be done on the `height` data generated from the official through-line function (`[10, 55, 90, 115, 130, 135]`).
+          * [ ] **Narrative:** Directly continue the story by having students find that the first difference (average velocity) is not constant, but the second difference (average acceleration) is.
+          * [ ] **Cleanup:** Remove the `is_quadratic` helper function challenge in favor of a more direct analysis of the differences.
         * [ ] Publish to TOC
+
     18. **Notebook 12.d - The Method of Differences**
-        * [ ] Create `notebooks/12.d-the-method-of-differences.ipynb` which covers:
-          * [ ] Generalize the method: how to know when to stop taking differences (i.e., when they become zero).
-          * [ ] Introduce the **Principle of Degree Reduction**: explain that taking a difference reduces the polynomial degree by one. Use a table to visualize the Quadratic -> Linear -> Constant -> Zero progression.
-          * [ ] Use this to reliably determine if a sequence is linear or quadratic.
-          * [ ] Introduce the formal method for deriving coefficients `a`, `b`, and `c` using $d_1(n)$ and $d_2(n)$ notation.
-          * [ ] **Structure:** Place the detailed algebraic derivations inside collapsed `<details>` sections to keep the main narrative focused on the concepts. The "how" is optional.
-          * [ ] Python Challenge: Write a function `analyze_sequence(data)` that returns the degree of the polynomial and its coefficients.
-          * [ ] Visualization Challenge: Create a `plot_differences(sequence)` function that uses `matplotlib.subplots` to show the original sequence and its padded differences on aligned axes.
+        * [ ] Refactor `notebooks/12.d-the-method-of-differences.ipynb` to solve the through-line problem.
+          * [ ] **Main Challenge:** The primary goal will be to use the `height` data and the full Method of Differences to derive the coefficients `a=-5`, `b=50`, and `c=10`, thus re-discovering the original formula.
+          * [ ] **Structure:** Place the detailed algebraic derivations for the coefficients inside a collapsible `<details>` block to keep the main narrative focused.
+          * [ ] **Cleanup:** The fudge pricing puzzle can be kept as a secondary challenge, but the main focus must be on the thrown ball.
         * [ ] Publish to TOC
+
     19. **Notebook 12.e - A Glimpse of Calculus**
-        * [ ] Create `notebooks/12.e-a-glimpse-of-calculus.ipynb` which covers:
-          * [ ] A conceptual, "soft introduction" to the ideas of derivatives, framed as "instantaneous sensitivity."
-          * [ ] Explicitly connect the average rate of change over an interval to the instantaneous rate of change at a point.
-          * [ ] Python Challenge: Create a `plot_secant_line(f, x, h)` function and use a loop to shrink `h` towards zero, visualizing the secant line becoming the tangent line.
+        * [ ] Refactor `notebooks/12.e-a-glimpse-of-calculus.ipynb` to conclude the through-line.
+          * [ ] **Narrative:** The introduction will use the "How does a radar gun work?" analogy to frame the secant method as a real-world measurement of average velocity over a small interval.
+          * [ ] **Function:** All examples and challenges will use the `height(t) = 10 + 50t - 5t^2` function.
+          * [ ] **Goal:** The notebook will focus on finding the ball's *instantaneous velocity* at a specific point in time.
         * [ ] Publish to TOC
