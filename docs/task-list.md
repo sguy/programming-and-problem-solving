@@ -73,9 +73,13 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
         *   [x] Introduce nested dictionaries to handle more complex data like a player's inventory or a list of multiple players.
 
 *   **Series 11.x: The Secrets of Encryption**
-    *   [ ] **Refactor:** Combine and replace the old notebooks 10 and 11.
-    *   [ ] **Content:** Create a narrative-driven series on cryptography.
-    *   [ ] **Concepts:** Cover encoding vs. encryption, Caesar ciphers, integer factorization (introducing `tuples`), GCF/LCM (introducing `sets`), finding prime numbers, and an intuitive look at public-key crypto.
+    *   [x] **Refactor:** Combine and replace the old notebooks 10 and 11.
+    *   [x] **Content:** Create a narrative-driven series on cryptography.
+    *   [x] **Concepts:** Cover encoding vs. encryption, Caesar ciphers, integer factorization (introducing `tuples`), GCF/LCM (introducing `sets`), finding prime numbers, and an intuitive look at public-key crypto.
+    *   [x] **Notebook 11.1: The Caesar Cipher:** Implement the Caesar cipher, covering encoding vs. encryption, string manipulation, and the modulo operator.
+    *   [ ] **Notebook 11.2: Breaking the Code:** Implement brute-force attacks and frequency analysis to break Caesar ciphers.
+    *   [ ] **Notebook 11.3: The Problem of Key Exchange:** Introduce the key exchange problem, tuples, and integer factorization.
+    *   [ ] **Notebook 11.4: Public-Key Cryptography:** Provide an intuitive overview of public-key cryptography and introduce sets.
 
 *   **Series 12.x: Exponential Growth and Financial Literacy**
     *   [ ] **New Series:** Create a new series focused on exponential growth.
