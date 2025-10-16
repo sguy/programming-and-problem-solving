@@ -56,202 +56,51 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
     - Finance
       - Compound interest
 
-## Phase 3: Notebooks
+## Phase 3: Core Curriculum and Thematic Series
 
-* **Goal:** Write notebooks which will provide an introduction to the Jupyter notebook environment, the Python programming language, and problem solving techniques.
-* **Note:** A notebook will only be added to the `table-of-contents.ipynb` after its corresponding "Publish to TOC" task has been manually checked off (`[x]`). This ensures only completed and reviewed notebooks are visible to students.
-* **Tasks:**
-    1. **Notebook 1 - Getting Started**
-        * [x] Create `notebooks/01-getting-started.ipynb`which covers the following:
-          * [x] Understanding Jupyter Notebooks and their cell-based structure (Markdown vs. Code cells).
-          * [x] Navigating and using the Google Colab interface (e.g., adding/deleting cells, using the Table of Contents, saving to Google Drive, managing AI assistant settings).
-          * [x] Writing, editing, and rendering basic Markdown (e.g., headings, lists).
-          * [x] Running Python code cells and observing their output.
-        * [x] Publish to TOC
-    2. **Notebook 2 - First Steps with Python**
-        * [x] Create `notebooks/02-first-steps-with-python.ipynb`which covers the following:
-          * [x] What is programming? (Conceptual introduction)
-          * [x] Comments
-          * [x] Using the `print()` function for output
-          * [x] Variables
-          * [x] Introduction to Types
-            * [x] Strings (str)
-            * [x] Numbers - for the first lesson don't make a distinction between int and float
-          * [x] Syntax Highlighting
-          * [x] Basic "Reading errors": understanding simple error messages
-        * [x] Publish to TOC
-    3. **Notebook 3 - Shapes and Calculations**
-        * [x] Create `notebooks/03-basic-calculations.ipynb` which covers:
-            * [x] Introduction: Why calculate perimeter, area, volume?
-            * [x] Basic Arithmetic in Python (`+`, `-`, `*`, `/`).
-            * [x] Performing calculations with hardcoded values (e.g., `length = 5`, `area = length * width`).
-            * [x] Highlight that `(` and `)` were used in the perimeter example to ensure that the `+` was applied before the `*`
-        * [x] Publish to TOC
-    4. **Notebook 3 - Extended Practice**
-        * [x] Create `notebooks/03-basic-calculations.extended-practice.ipynb` which covers:
-          * [x] Advanced problem-solving with basic arithmetic.
-          * [x] Multi-step problems requiring formula derivation (e.g., area of equilateral triangle).
-          * [x] Complex word problems involving unit conversions and multiple geometric shapes (e.g., Juice Glass Mystery).
-        * [x] Publish to TOC
-    5. **Notebook 4 - Interactive Programs**
-        * [x] Create `notebooks/04-interactive-programs.ipynb` which covers:
-            * [x] Introducing `input()` to get information from the user.
-            * [x] Emphasizing string-to-number conversion (`int()`, `float()`).
-        * [x] Publish to TOC
-    6. **Review Notebook (02-04)**
-        * [x] Create `notebooks/02-04.review-notebook.ipynb` which covers:
-          * [x] A concise list of topics from notebooks 02, 03, and 04.
-          * [x] "Check Your Understanding" questions to reinforce concepts.
-          * [x] "Mini-Challenge" problems combining skills.
-          * [x] A brief discussion on problem-solving skills.
-        * [x] Publish to TOC
-    7. **Notebook 5 - Reusable Code with Functions**
-        * [x] Create `notebooks/05-reusable-code-with-functions.ipynb` which covers:
-            * [x] Why use functions? (DRY principle).
-            * [x] Defining functions with `def`, parameters, and `return`.
-            * [x] Exploring different function patterns (e.g., with/without parameters, with/without return values).
-            * [x] Case Study: Using function **composition** to solve a larger problem (surface area of a pyramid).
-            * [x] Parameters vs. Arguments.
-            * [x] Functions in Python vs. Functions in Math.
-            * [x] Combining Functions and User Input.
-            * [x] Check Your Understanding: Parameters vs. Arguments.
-            * [x] Discussion Question: Expanding Our Toolkit.
-        * [x] Publish to TOC
-    8. **Notebook 6 - Python's Decision Power**
-        * [x] Create `notebooks/06-decisions.ipynb` which covers:
-            * [x] Introduction: Making decisions.
-            * [x] Understanding Boolean values (`True`, `False`).
-            * [x] Using Comparison Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`) to create Boolean expressions.
-            * [x] Conditional Statements: `if`, `else`, `elif`.
-            * [x] Mini-Challenge: e.g., "Movie Ticket Pricer" using conditionals.
-            * [x] Code Structure and Indentation.
-            * [x] Visualizing Decisions with Flowcharts.
-            * [x] Extending the Movie Ticket Pricer - Discount Days.
-            * [x] Refactoring - Improving Your Code's Design.
-            * [x] Simplifying Movie Ticket Prices.
-            * [x] Discussion Question: Real-world examples of decisions.
-        * [x] Publish to TOC
-    9. **Notebook 7 - Organizing with Lists**
-        * [x] Create `notebooks/07-lists.ipynb` which covers:
-            * [x] Introduction to Lists for organizing information.
-            * [x] Creating empty lists and lists with initial items.
-            * [x] Adding items to a list using `.append()`.
-            * [x] Accessing items in a list using **indexing** (e.g., `my_list[0]`).
-            * [x] Understanding the concept of a **method** as a function that belongs to an object.
-            * [x] Getting the length of a list using `len()`.
-            * [x] Mini-Challenge: Score Keeper.
-            * [x] Mini-Challenge: Guest List.
-            * [x] Mini-Challenge: Build a List from Scratch.
-            * [x] Mini-Challenge: Simple Shopping Cart.
-        * [x] Publish to TOC
-    10. **Review Notebook (05-07)**
-        * [x] Create `notebooks/05-07.review-notebook.ipynb` which covers:
-          * [x] A concise list of topics from notebooks 05, 06, and 07.
-          * [x] "Check Your Understanding" questions to reinforce concepts.
-          * [x] "Mini-Challenge" problems combining skills.
-          * [x] A brief discussion on problem-solving skills.
-        * [x] Publish to TOC
-    11. **Notebook 8 - Mastering Loops**
-        * [x] Create `notebooks/08-for-loops.ipynb` which covers:
-          * [x] Introduction to loops and the concept of iteration (DRY principle).
-          * [ ] Add a reminder about indented code blocks and where they have been seen before (functions, if/else statements).
-          * [x] Using `for` loops to iterate directly over items in a list.
-          * [x] Using `for` loops with `range()` to repeat actions a specific number of times.
-          * [x] Mini-Challenge: Build Your Own `len()`.
-          * [x] Mini-Challenge: Filter the Pets.
-          * [x] Mini-Challenge: Simple Statistics.
-          * [x] Mini-Challenge: Multiples.
-          * [x] Mini-Challenge: Multiplication Table.
-          * [x] The Perfect Trio - `len()`, `range()`, and Indexing.
-        * [x] Publish to TOC
-    12. **Notebook 9 - The Game Loop**
-        * [x] Create `notebooks/09-the-game-loop.ipynb` which covers:
-          * [x] Introduction to the "game loop" concept (e.g., initialize, loop, update, check for end).
-          * [x] Introducing `while` loops for indefinite repetition.
-          * [x] The concept of a "black box" function.
-          * [x] Using a provided `random_number()` function without needing to understand its internal workings.
-          * [x] Mini-Challenge 1: "Guess the Number" game (Hi/Low).
-          * [x] Mini-Challenge 2: "Random Math Test" game (e.g., 5 random addition problems).
-        * [x] Publish to TOC
-    13. **Notebook 10 - Caesar Cipher**
-        * [x] Create `notebooks/10-the-caesar-cipher.ipynb` which covers:
-          * [x] Brief explanation of the Caesar Cipher and its history
-          * [x] Statement of problem - we want a system that lets two parties exchange secret messages
-          * [x] Let's Plan - how should we break up this problem?
-          * [x] Learning more about strings
-            * [x] string.upper()
-            * [x] Deeper dive into how strings are represented (do not get into the complexity of unicode)
-              * [x] Strings as sequences of characters
-              * [x] Handling non-alphabetic characters
-          * [x] Encoding a character
-            * [x] Changing characters to ints with ord()
-            * [x] The modulo `%` operator - wrapping around fixed size lists.
-            * [x] Helper function: `is_uppercase(char)`
-            * [x] Your turn to code: the `encode_char()` function.
-          * [x] Encoding a message
-            * [x] Using a for loop to iterate over a message.
-            * [x] Your turn to code: the `encode_message()` function
-          * [x] Decoding a message
-            * [x] Your turn to code: the `decode_char()` function
-            * [x] Stop and think: How are `encode_char()` and `decode_char()` different?
-              * [x] Can they share implementation? DRY
-              * [x] Tip: testing `a == decode_char(offset, encode_char(offset, a))`
-            * [x] Your turn to code: the `decode_message()` function
-            * [x] Stop and Think: is the relationship between `encode_message()` and `decode_message()` similar to the one between `encode_char()` and `decode_char()`?
-              * [x] Can we reuse code?
-              * [x] What about testing?
-        * [ ] Publish to TOC
-    14. **Notebook 11 - Prime Numbers**
-        * [x] Create `notebooks/11-prime-numbers.ipynb` which covers:
-          * This notebook will work up to calculating a list of prime numbers.  Along the way, it will introduce some basic problem solving techniques and explain new programming tools that we will need to solve the problem.
-          * [ ] Introduce the problem of finding prime numbers.
-          * [ ] Discuss the problem solving technique of specifying the problem, understanding it, and breaking it into smaller pieces.
-          * [ ] Discussion - how would you break up this problem?  Use a click-to-reveal cell that outlines how we will be solving the problem in this lesson.
-          * [ ] Revise the modulo operator (`%`) - using it for divisibility instead of wrapping around a fixed size list.  How are these ideas related?
-          * [ ] Your turn to code: The is_divisible function
-          * [ ] Logic: How to determine if a single number is prime? (Algorithm: e.g., check for divisors from 2 up to number - 1).
-          * [ ] Python Tool: Reminder of how to use Loops (e.g., `for` loops with `range()`).
-          * [ ] Mini-challenge: print the multiples of 3 from 3 * 1 to 3 * 6.
-          * [ ] Tip: Remember range goes from 0 to n-1 inclusive.
-          * [ ] Building Block: The `is_prime(number)` function. (Implement the logic, using a loop to check divisors).
-          * [ ] Revise lists.
-          * [ ] Mini-challenge: make a list of multiples of 3 from 3 * 1 to 3 * 6.
-          * [ ] Your turn to code: Putting It All Together: Generating a list of prime numbers. (Use a loop to iterate through a range, call `is_prime()`, and add primes to a list).
-          * [ ] Reflecting on the problem solving process - an important step.  How do you think?  What clicks with you?  Meta-cognition.
-        * [ ] Publish to TOC
-    15. **Notebook 12.a - Functions, Sequences, and a Thrown Ball**
-        * [x] Refactor `notebooks/12.a-functions-sequences-and-plots.ipynb` to establish the new through-line.
-          * [x] **Scenario:** The series will analyze the 1D motion of a ball thrown straight up from a 10m bridge.
-          * [x] **Function:** The primary model will be `height(t) = 10 + 50*t - 5*t^2`.
-          * [x] **Narrative:** The introduction will frame the series around finding the rule that governs the ball's flight.
-          * [x] **Clarity:** The text must carefully distinguish between the ball's 1D vertical motion and the 2D parabolic shape of its height-vs-time graph.
-          * [x] **Cleanup:** Remove the old, secondary `linear_model` example.
-        * [x] Publish to TOC
+* **Goal:** Guide students from basic programming concepts to advanced, project-based applications.
+* **Structure:** The curriculum is now organized into thematic series, with each number representing a major topic or project.
 
-    16. **Notebook 12.b - Finding Linear Patterns**
-        * [x] Refactor `notebooks/12.b-finding-linear-patterns.ipynb` to use the new examples.
-          * [x] **Primary Example:** Replace the taxi/subway examples with a more concrete **Cell Phone Plan** scenario (`Cost = 10*GB + 25`) to teach the Method of First Differences.
-          * [x] **Callback Example:** Add a secondary section that analyzes the ball's `velocity` data (`v(t) = 50 - 10t`). Students will discover it is linear, reinforcing the "degree reduction" principle and connecting back to the through-line.
-          * [x] **Consistency:** Ensure the robust `calculate_differences` function (that handles `nan`) is used.
-        * [x] Publish to TOC
+*   **Series 1-9: Python Fundamentals**
+    *   [ ] **As-is:** Notebooks 1 through 9 will be preserved, covering the initial introduction to Python, calculations, functions, decisions, lists, and loops.
 
-    17. **Notebook 12.c - Cracking the Quadratic Code**
-        * [x] Refactor `notebooks/12.c-cracking-the-quadratic-code.ipynb` to align with the through-line.
-          * [x] **Data:** All analysis will be done on the `height` data generated from the official through-line function (`[10, 55, 90, 115, 130, 135]`).
-          * [x] **Narrative:** Directly continue the story by having students find that the first difference (average velocity) is not constant, but the second difference (average acceleration) is.
-          * [x] **Cleanup:** Remove the `is_quadratic` helper function challenge in favor of a more direct analysis of the differences.
-        * [x] Publish to TOC
+*   **Series 10: Dictionaries and F-Strings**
+    *   [ ] **New Notebook:** Create a new notebook `10-dictionaries.ipynb`.
+    *   [ ] **Content:** Use a fun, game-based example to teach dictionaries.
+        *   [ ] Introduce dictionaries by creating a `player` data structure to hold stats (`health`, `gold`, etc.).
+        *   [ ] Reinforce functions by creating "game engine" functions that operate on the player dictionary (e.g., `take_damage()`, `is_alive()`, `pickup_coin()`).
+        *   [ ] Introduce f-strings as a clean way to create a `display_status()` function.
+        *   [ ] Introduce nested dictionaries to handle more complex data like a player's inventory or a list of multiple players.
 
-    18. **Notebook 12.d - The Method of Differences**
-        * [x] Refactor `notebooks/12.d-the-method-of-differences.ipynb` to solve the through-line problem.
-          * [x] **Main Challenge:** The primary goal will be to use the `height` data and the full Method of Differences to derive the coefficients `a=-5`, `b=50`, and `c=10`, thus re-discovering the original formula.
-          * [x] **Structure:** Place the detailed algebraic derivations for the coefficients inside a collapsible `<details>` block to keep the main narrative focused.
-          * [x] **Cleanup:** The fudge pricing puzzle can be kept as a secondary challenge, but the main focus must be on the thrown ball.
-        * [x] Publish to TOC
+*   **Series 11.x: The Secrets of Encryption**
+    *   [ ] **Refactor:** Combine and replace the old notebooks 10 and 11.
+    *   [ ] **Content:** Create a narrative-driven series on cryptography.
+    *   [ ] **Concepts:** Cover encoding vs. encryption, Caesar ciphers, integer factorization (introducing `tuples`), GCF/LCM (introducing `sets`), finding prime numbers, and an intuitive look at public-key crypto.
 
-    19. **Notebook 12.e - A Glimpse of Calculus**
-        * [x] Refactor `notebooks/12.e-a-glimpse-of-calculus.ipynb` to conclude the through-line.
-          * [x] **Narrative:** The introduction will use the "How does a radar gun work?" analogy to frame the secant method as a real-world measurement of average velocity over a small interval.
-          * [x] **Function:** All examples and challenges will use the `height(t) = 10 + 50t - 5t^2` function.
-          * [x] **Goal:** The notebook will focus on finding the ball's *instantaneous velocity* at a specific point in time.
-        * [x] Publish to TOC
+*   **Series 12.x: Exponential Growth and Financial Literacy**
+    *   [ ] **New Series:** Create a new series focused on exponential growth.
+    *   [ ] **Content:** Students will numerically discover `e` and `limits` through the lens of compound interest.
+    *   [ ] **Concepts:** Introduce logarithms for solving "how long?" problems (e.g., doubling time), the Rule of 72, and other growth/decay models.
+    *   [ ] **Library Intro:** This series will be the new home for introducing third-party libraries (`matplotlib`) and the associated concepts of `named` and `optional` arguments.
+
+*   **Series 13.x: The Calculus of Derivatives**
+    *   [ ] **Adapt:** This series will consist of the content from the *original* 12.x series.
+    *   [ ] **Content:** Focus on the Method of Differences and finding numerical derivatives.
+    *   [ ] **Refactor:** Remove the introduction to `matplotlib` and libraries, as that content has been moved to the new 12.x series.
+
+*   **Series 14.x: Data Analysis with Pandas**
+    *   [ ] **New Series:** Create a series on practical data analysis.
+    *   [ ] **Content:** Introduce the Pandas library, `DataFrames`, reading data from files, and performing common operations like sorting, filtering, grouping, and basic statistics.
+
+*   **Series 15.x: The Calculus of Integration**
+    *   [ ] **New Series:** Create a companion series to the derivatives lessons.
+    *   [ ] **Content:** Focus on numerical integration (Riemann sums) to find the area under a curve.
+
+*   **Series 16.x: Introduction to Classes (Object-Oriented Programming)**
+    *   [ ] **New Series:** Create a gentle introduction to classes and OOP.
+    *   [ ] **Content:** Motivate the need for classes by modeling a practical system (e.g., a simple simulation) to show how classes bundle data and behavior.
+
+*   **Series 17.x: Markov Chains and Language Models**
+    *   [ ] **New Capstone Series:** Create a final project that demystifies the basic principles of LLMs.
+    *   [ ] **Content:** Build a simple Markov chain from a text corpus.
+    *   [ ] **Concepts:** Use this project to teach file I/O and advanced string manipulation.

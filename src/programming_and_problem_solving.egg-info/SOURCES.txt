@@ -1,4 +1,4 @@
-LICENSE
+README.md
 pyproject.toml
 src/programming_and_problem_solving.egg-info/PKG-INFO
 src/programming_and_problem_solving.egg-info/SOURCES.txt
