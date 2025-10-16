@@ -65,12 +65,12 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
     *   [ ] **As-is:** Notebooks 1 through 9 will be preserved, covering the initial introduction to Python, calculations, functions, decisions, lists, and loops.
 
 *   **Series 10: Dictionaries and F-Strings**
-    *   [ ] **New Notebook:** Create a new notebook `10-dictionaries.ipynb`.
-    *   [ ] **Content:** Use a fun, game-based example to teach dictionaries.
-        *   [ ] Introduce dictionaries by creating a `player` data structure to hold stats (`health`, `gold`, etc.).
-        *   [ ] Reinforce functions by creating "game engine" functions that operate on the player dictionary (e.g., `take_damage()`, `is_alive()`, `pickup_coin()`).
-        *   [ ] Introduce f-strings as a clean way to create a `display_status()` function.
-        *   [ ] Introduce nested dictionaries to handle more complex data like a player's inventory or a list of multiple players.
+    *   [x] **New Notebook:** Create a new notebook `10-dictionaries.ipynb`.
+    *   [x] **Content:** Use a fun, game-based example to teach dictionaries.
+        *   [x] Introduce dictionaries by creating a `player` data structure to hold stats (`health`, `gold`, etc.).
+        *   [x] Reinforce functions by creating "game engine" functions that operate on the player dictionary (e.g., `take_damage()`, `is_alive()`, `pickup_coin()`).
+        *   [x] Introduce f-strings as a clean way to create a `display_status()` function.
+        *   [x] Introduce nested dictionaries to handle more complex data like a player's inventory or a list of multiple players.
 
 *   **Series 11.x: The Secrets of Encryption**
     *   [ ] **Refactor:** Combine and replace the old notebooks 10 and 11.
