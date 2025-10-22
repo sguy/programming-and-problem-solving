@@ -73,13 +73,38 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
         *   [x] Introduce nested dictionaries to handle more complex data like a player's inventory or a list of multiple players.
 
 *   **Series 11.x: The Secrets of Encryption**
-    *   [x] **Refactor:** Combine and replace the old notebooks 10 and 11.
-    *   [x] **Content:** Create a narrative-driven series on cryptography.
-    *   [x] **Concepts:** Cover encoding vs. encryption, Caesar ciphers, integer factorization (introducing `tuples`), GCF/LCM (introducing `sets`), finding prime numbers, and an intuitive look at public-key crypto.
-    *   [x] **Notebook 11.1: The Caesar Cipher:** Implement the Caesar cipher, covering encoding vs. encryption, string manipulation, and the modulo operator.
-    *   [ ] **Notebook 11.2: Breaking the Code:** Implement brute-force attacks and frequency analysis to break Caesar ciphers.
-    *   [ ] **Notebook 11.3: The Problem of Key Exchange:** Introduce the key exchange problem, tuples, and integer factorization.
-    *   [ ] **Notebook 11.4: Public-Key Cryptography:** Provide an intuitive overview of public-key cryptography and introduce sets.
+    *   [ ] **Refactor:** The 11.x series will be restructured into a 5-part narrative on cryptography, building concepts from the ground up.
+    *   [ ] **Goal:** To introduce core cryptographic concepts, show their real-world relevance, and practice Python skills like string manipulation, modular arithmetic, and working with tuples.
+
+    *   [ ] **Notebook 11.a: An Introduction to Secret Messages**
+        *   **Concepts:** Introduce foundational vocabulary.
+            *   **Encoding vs. Encrypting:** Frame encoding as enhancing a message for a public purpose (e.g., compression like JPEG/ZIP, error resilience) and encrypting as hiding a message's content for a private purpose.
+            *   **Plaintext & Ciphertext.**
+        *   **Mini-Challenge: The ASCII Codec:** Implement `encode` and `decode` functions using `ord()` and `chr()` to give a hands-on example of a public, reversible transformation.
+        *   **Visuals:** Add a diagram illustrating the difference between an encoding/decoding process and an encryption/decryption process.
+
+    *   [ ] **Notebook 11.b: The Caesar Cipher**
+        *   **Concepts:** Implement a simple symmetric encryption algorithm, reinforcing the new vocabulary.
+        *   **Mini-Challenge: The Encryption Pipeline:**
+            *   **1. The Codec:** Write `letter_to_number` and `number_to_letter` functions (the encoding/decoding step).
+            *   **2. The Cipher:** Write `shift_number` and `unshift_number` functions that operate only on numbers (the encrypting/decrypting step).
+            *   **3. The Pipeline:** Combine the helper functions into `encrypt_message` and `decrypt_message` functions to process full strings.
+        *   **Visuals:** Add a diagram showing the full pipeline: `Letter -> Encode -> Number -> Encrypt -> Shifted Number`.
+
+    *   [ ] **Notebook 11.c: The Key Exchange Problem & One-Way Functions**
+        *   **Concepts:** Introduce the problem of sharing keys secretly and the concept of a one-way function as a solution. Introduce Python `tuples` as a way to store structured data.
+        *   **Mini-Challenge: Advanced Prime Factorization:** Write a function `get_prime_factorization(n)` that returns a list of `(prime, count)` tuples (e.g., `12` -> `[(2, 2), (3, 1)]`). This provides a strong motivation for using tuples.
+
+    *   [ ] **Notebook 11.d (Optional): Practice with Factoring**
+        *   **Concepts:** Provide optional, deeper practice with number theory problems.
+        *   **Mini-Challenge 1: The Age Puzzle:** "Alice's age is between 30-40, Bob's is 40-50. The product of their ages is a perfect cube. Find their ages." Guide students to use prime factorization to solve this, reinforcing the concepts from 11.c.
+        *   **Mini-Challenge 2: Greatest Common Factor (GCF):** Write a `gcf(a, b)` function that uses the `(prime, count)` tuple data from the previous notebook, reinforcing the utility of the data structure.
+
+    *   [ ] **Notebook 11.e: Public-Key Cryptography in the Real World**
+        *   **Concepts:** Explain how a key exchange works conceptually and connect it to real-world applications like HTTPS.
+        *   **The Analogy (Conversational Paint Mixing):** Present the paint mixing analogy in a step-by-step conversational format between Alice and Bob, clarifying what the eavesdropper Eve can see vs. what remains private.
+        *   **Closing the Loop:** Conclude the analogy by explaining that the final shared secret "paint" is used as the key for a faster symmetric cipher to encrypt the actual messages.
+        *   **Mini-Challenge: The Clockwork Modulo:** Give students a hands-on taste of the real math by having them calculate `public_value = (base ** secret) % modulus` with small numbers, demystifying the "transformation" step of the analogy.
 
 *   **Series 12.x: Exponential Growth and Financial Literacy**
     *   [ ] **New Series:** Create a new series focused on exponential growth.
