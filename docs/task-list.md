@@ -95,7 +95,7 @@ This plan is designed to be iterative. Some tasks, especially around notebook de
         *   **Concepts:** Introduce the problem of sharing keys secretly and the concept of a one-way function as a solution. Introduce Python `tuples` as a way to store structured data.
         *   **Mini-Challenge: Advanced Prime Factorization:** Write a function `get_prime_factorization(n)` that returns a list of `(prime, count)` tuples (e.g., `12` -> `[(2, 2), (3, 1)]`). This provides a strong motivation for using tuples.
 
-    *   [ ] **Notebook 11.d (Optional): Practice with Factoring**
+    *   [x] **Notebook 11.d (Optional): Practice with Factoring**
         *   **Concepts:** Provide optional, deeper practice with number theory problems.
         *   **Mini-Challenge 1: The Age Puzzle:** "Alice's age is between 30-40, Bob's is 40-50. The product of their ages is a perfect cube. Find their ages." Guide students to use prime factorization to solve this, reinforcing the concepts from 11.c.
         *   **Mini-Challenge 2: Greatest Common Factor (GCF):** Write a `gcf(a, b)` function that uses the `(prime, count)` tuple data from the previous notebook, reinforcing the utility of the data structure.

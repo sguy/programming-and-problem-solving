@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="400" viewBox="0 0 700 400">
+  <rect width="100%" height="100%" fill="white"/>
+  <defs>
+    <style>
+      .title { font-family: sans-serif; font-size: 22px; font-weight: bold; text-anchor: middle; }
+      .step-box { fill: #e0e0e0; stroke: #333; stroke-width: 1; rx: 5; ry: 5; }
+      .step-text { font-family: sans-serif; font-size: 16px; text-anchor: middle; fill: #333; }
+      .shared-step { fill: #d4edda; stroke: #28a745; }
+      .gcf-step { fill: #ffeeba; stroke: #ffc107; }
+      .lcm-step { fill: #d1ecf1; stroke: #17a2b8; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); }
+      .label { font-family: sans-serif; font-size: 14px; text-anchor: middle; fill: #555; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <text x="350" y="30" class="title">GCF vs. LCM: Algorithmic Comparison</text>
+
+  <!-- Shared Step 1: Get Prime Factors -->
+  <rect x="250" y="70" width="200" height="50" class="step-box shared-step" />
+  <text x="350" y="100" class="step-text">1. Get Prime Factors (A &amp; B)</text>
+  <line x1="350" y1="120" x2="350" y2="150" class="arrow" />
+
+  <!-- GCF Path -->
+  <text x="175" y="170" class="label">For GCF:</text>
+  <rect x="75" y="180" width="200" height="50" class="step-box gcf-step" />
+  <text x="175" y="210" class="step-text">2. Find Intersection of Factors</text>
+
+  <!-- LCM Path -->
+  <text x="525" y="170" class="label">For LCM:</text>
+  <rect x="425" y="180" width="200" height="50" class="step-box lcm-step" />
+  <text x="525" y="210" class="step-text">2. Find Union of Factors</text>
+
+  <!-- Connecting arrows from shared step 1 -->
+  <line x1="350" y1="120" x2="175" y2="180" class="arrow" />
+  <line x1="350" y1="120" x2="525" y2="180" class="arrow" />
+
+  <!-- Arrows from GCF/LCM to shared step 3 -->
+  <line x1="175" y1="230" x2="300" y2="270" class="arrow" />
+  <line x1="525" y1="230" x2="400" y2="270" class="arrow" />
+
+  <!-- Shared Step 3: Convert Factors to Number -->
+  <rect x="250" y="270" width="200" height="50" class="step-box shared-step" />
+  <text x="350" y="300" class="step-text">3. Convert Factors to Number</text>
+
+  <!-- Final arrow -->
+  <line x1="350" y1="320" x2="350" y2="350" class="arrow" />
+  <rect x="250" y="340" width="200" height="50" class="step-box shared-step" />
+  <text x="350" y="370" class="step-text">Result (GCF or LCM)</text>
+</svg>
